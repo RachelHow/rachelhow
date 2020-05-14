@@ -2,7 +2,28 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.title {
-  color: #333;
-  line-height: 1.15;
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+h1, h2{
+  color: #000;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+  color: #000;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  background: linear-gradient(180deg, #FFF0F0 0%,
+   rgba(255, 255, 255, 0) 100%);
+}
+
+img {
+  height: 400px;
+  /* justify-content: center; */
 }

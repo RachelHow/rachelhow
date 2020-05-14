@@ -9,10 +9,11 @@ export default ({ children }) => (
       <meta name="author" content="Rachel How"/>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700" rel="stylesheet"/>
     </Head>
 
     <nav>
-      Nav Item
+      {/* Nav Item */}
     </nav>
 
     {children}

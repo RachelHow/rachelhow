@@ -1,12 +1,21 @@
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
+import Hero from '../components/Hero';
+import Intro from '../components/Intro';
+import IDesign from '../components/IDesign';
+import IBuild from '../components/IBuild';
+import IWrite from '../components/IWrite';
+import Resume from '../components/Resume';
 
 export default function IndexPage() {
   return (
-    <div>
+    <div className="container mx-auto">
       <Layout />
-      <div className="hero">
-        <h1 className="title">Next.js + Tailwind CSS</h1>
-      </div>
+      <Hero />
+      <Intro/>
+      <IDesign/>
+      <IBuild/>
+      <IWrite/>
+      <Resume/>
     </div>
   )
 }
