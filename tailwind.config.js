@@ -23,6 +23,9 @@ module.exports = {
       'xl': '1.5rem', //24px
       'xxl': '3rem' //48px
     },
+    inset: {
+      'smiley':'16rem',
+    },
     extend: {}
   },
   variants: {},

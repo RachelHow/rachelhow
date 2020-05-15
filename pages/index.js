@@ -8,14 +8,15 @@ import Resume from '../components/Resume';
 
 export default function IndexPage() {
   return (
-    <div className="container mx-auto">
-      <Layout />
-      <Hero />
-      <Intro/>
-      <IDesign/>
-      <IBuild/>
-      <IWrite/>
-      <Resume/>
+    <div>
+      <Layout>
+        <Hero/>
+        <Intro/>
+        <IDesign/>
+        <IBuild/>
+        <IWrite/>
+        <Resume/>
+      </Layout>
     </div>
   )
 }

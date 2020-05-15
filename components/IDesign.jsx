@@ -1,7 +1,7 @@
 import React from 'react';
 
 const IDesign = () => (
-    <div className="py-16">
+    <div className="container mx-auto py-16">
       <div className="pb-8 w-1/2">
         <h2 className="text-xxl">I design</h2>
         I believe in building on a <strong>problem</strong>, not the solution.

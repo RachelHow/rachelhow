@@ -1,7 +1,8 @@
 import React from 'react';
+import Ic_ExternalLink from "../src/Ic_ExternalLink";
 
 const Resume = () => (
-    <div className="py-16">
+    <div className="container mx-auto py-16">
       <div className="pb-8 w-1/2">
         <h2 className="text-xxl">Résumé</h2>
       </div>
@@ -23,13 +24,13 @@ const Resume = () => (
             React
         </div>
       </div>
-      <div>
+      <div className="pb-8">
         <h3 className="text-l">Milestones</h3>
         <div>
             <strong>2019:</strong> Won Top 10 team in a 24 Hour Hackathon
         </div>
       </div>
-      Download my résumé
+        <button><Ic_ExternalLink/> &nbsp; Download my résumé</button>
     </div>
 );
 

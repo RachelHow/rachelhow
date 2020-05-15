@@ -1,7 +1,7 @@
 import React from 'react';
 
 const IBuild = () => (
-    <div className="py-16">
+    <div className="container mx-auto py-16">
       <div className="pb-8 w-1/2">
         <h2 className="text-xxl">I build</h2>
         To keep my creativity going, I love to build stuff with <strong>React. </strong> 
