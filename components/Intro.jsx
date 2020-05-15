@@ -6,7 +6,7 @@ const Intro = () => (
     <h3 className="text-l font-bold">hi :)</h3>
     <div className="pt-4 pb-4">
       As a self-taught full stack designer, I help businesses solve problems
-      with igital product design and strategy. I’ve been working across several
+      with digital product design and strategy. I’ve been working across several
       B2C &amp; B2B industries in Malaysia and across the globe.
       Currently, I’m a Product Designer at <strong>Fave</strong>!
       <br /><br />
