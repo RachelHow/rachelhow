@@ -12,7 +12,7 @@ export default ({ children }) => (
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700" rel="stylesheet"/>
     </Head>
 
-    <nav className="fixed px-20 py-8">
+    <nav className="fixed px-16 py-8">
       <h2>Rachel How ☻</h2>
     </nav>
 
