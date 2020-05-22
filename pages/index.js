@@ -1,10 +1,7 @@
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
-import IDesign from '../components/IDesign';
-import IBuild from '../components/IBuild';
-import IWrite from '../components/IWrite';
-import Resume from '../components/Resume';
+import Collection from '../components/Collection';
 
 export default function IndexPage() {
   return (
@@ -12,10 +9,7 @@ export default function IndexPage() {
       <Layout>
         <Hero/>
         <Intro/>
-        <IDesign/>
-        <IBuild/>
-        <IWrite/>
-        <Resume/>
+        <Collection/>
       </Layout>
     </div>
   )

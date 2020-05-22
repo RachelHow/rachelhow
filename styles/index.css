@@ -6,10 +6,6 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
-a {
-  font-weight: 700;
-}
-
 h1,
 h2 {
   color: #000;
@@ -23,12 +19,18 @@ h3 {
   font-family: 'Poppins', sans-serif;
 }
 
+h4 {
+  color: #000;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
 .hero {
   background: linear-gradient(180deg, #FFF0F0 0%,
   rgba(255, 255, 255, 0) 100%);
 }
 
-img {
+.profileimage {
   height: 400px;
 }
 
@@ -41,16 +43,14 @@ button {
   padding: 12px 20px;
 }
 
-.write-card {
-  padding: 24px 36px;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-  margin-bottom: 26px;
+.collectionimg {
+  border-radius: 10px;
+  object-fit: cover;
+  min-height: 200px;
 }
 
-.write-date {
-  color: #a4a4a4;
+.caption {
+  color: #727272;
 }
 
 

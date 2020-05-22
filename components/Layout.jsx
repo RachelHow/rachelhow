@@ -1,5 +1,5 @@
 import Head from "next/head";
-// import Link from "next/link";
+import Link from "next/link";
 
 export default ({ children }) => (
   <div>
@@ -13,7 +13,10 @@ export default ({ children }) => (
     </Head>
 
     <nav className="fixed px-16 py-8">
-      <h2>Rachel How ☻</h2>
+      <div className="inline-block">
+        <Link href="/"><h2>Rachel How ☻</h2></Link>
+        <Link href="/resume">Resume</Link>
+      </div>
     </nav>
 
     {children}

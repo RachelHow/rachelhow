@@ -1,7 +1,7 @@
 import React from "react";
 
 const Intro = () => (
-  <div className="container mx-auto">
+  <div className="container mx-auto py-16 sm:px-10">
     <h3 className="text-l font-bold">hi :)</h3>
     <div className="pt-4">
         Product Designer at <a href="https://myfave.com">Fave</a>.
