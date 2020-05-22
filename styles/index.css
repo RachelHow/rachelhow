@@ -43,6 +43,10 @@ button {
   padding: 12px 20px;
 }
 
+.introsection {
+  max-width: 40vw;
+}
+
 .collectionimg {
   border-radius: 10px;
   object-fit: cover;
@@ -51,6 +55,18 @@ button {
 
 .caption {
   color: #727272;
+}
+
+.pill {
+  border: 1.5px solid #000;
+  border-radius: 100px;
+  padding: 4px 12px;
+  outline: none;
+}
+
+.pill:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 

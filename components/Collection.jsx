@@ -12,7 +12,7 @@ const Collection = () => (
             return <div key={index}>
                 <a href={c.url} target="_blank">
                   <img src={c.image} className="collectionimg"/>
-                  <h4 className="pt-4 text-l">{c.name}</h4>
+                  <h4 className="py-4 text-l">{c.name}</h4>
                   <span className="caption">{c.desc}</span>
                 </a>
             </div>

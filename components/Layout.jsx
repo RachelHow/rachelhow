@@ -12,10 +12,14 @@ export default ({ children }) => (
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700" rel="stylesheet"/>
     </Head>
 
-    <nav className="fixed px-16 py-8">
-      <div className="inline-block">
-        <Link href="/"><h2>Rachel How ☻</h2></Link>
-        <Link href="/resume">Resume</Link>
+    <nav className="fixed w-screen px-16 py-8">
+      <div>
+        <Link href="/">
+          <a className="float-left font-bold font-display pt-1">Rachel How ☻</a>
+        </Link>
+        <Link href="/resume">
+          <a className="float-right font-display pill">Résumé</a>
+        </Link>
       </div>
     </nav>
 
