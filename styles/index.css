@@ -31,7 +31,8 @@ h4 {
 }
 
 .profileimage {
-  height: 400px;
+  max-height: 400px;
+  width: auto;
 }
 
 button {

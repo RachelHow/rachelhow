@@ -2,7 +2,7 @@ import React from "react";
 
 const Intro = () => (
   <div className="container mx-auto py-16 sm:px-10">
-    <div className="w-1/2">
+    <div className="w-1/2 md:w-2/3 sm:w-full">
         Product Designer at <a href="https://myfave.com/careers" className="font-bold">Fave</a>.
         As a self-taught full stack designer, I help businesses solve problems
         with digital product design and strategy. I’ve been working across several
