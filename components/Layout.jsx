@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Ic_ExternalLink from "../src/Ic_ExternalLink";
 
 export default ({ children }) => (
   <div>
@@ -17,9 +18,10 @@ export default ({ children }) => (
         <Link href="/">
           <a className="float-left font-bold font-display pt-1">Rachel How ☻</a>
         </Link>
-        <Link href="/resume">
-          <a className="float-right font-display pill">Résumé</a>
-        </Link>
+        <a href="https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl" 
+        target="_blank" className="float-right font-display pill">
+          My Résumé
+        </a>
       </div>
     </nav>
 

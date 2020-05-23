@@ -44,18 +44,10 @@ button {
   padding: 12px 20px;
 }
 
-.introsection {
-  max-width: 40vw;
-}
-
 .collectionimg {
   border-radius: 10px;
   object-fit: cover;
   min-height: 200px;
-}
-
-.caption {
-  color: #727272;
 }
 
 .pill {
