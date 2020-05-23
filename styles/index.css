@@ -35,6 +35,7 @@ h4 {
 }
 
 .profileimage {
+  height: auto;
   max-height: 400px;
   width: auto;
 }
