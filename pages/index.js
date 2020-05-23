@@ -7,7 +7,6 @@ export default function IndexPage() {
     <div>
       <Layout>
         <Hero/>
-        {/* <Intro/> */}
         <Collection/>
       </Layout>
     </div>

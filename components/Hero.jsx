@@ -5,7 +5,7 @@ const Hero = () => (
   <div className="hero py-24">
     <div className="container mx-auto text-center sm:px-10">
       <h1 className="text-xxl md:text-xl sm:text-xl">I’m Rachel How 👋</h1>
-      <div className="flex justify-center">
+      <div className="flex justify-center profilecontainer">
         <img src={profileimage} alt="profileimage" className="profileimage"/>
       </div>
       <h1 className="text-xxl md:text-xl sm:text-xl">Product Designer + Maker.</h1>
