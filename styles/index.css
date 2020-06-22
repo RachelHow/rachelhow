@@ -10,24 +10,30 @@ h1,
 h2 {
   color: #000;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 h3 {
   color: #000;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 h4 {
   color: #000;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Karla', sans-serif;
+}
+
+.header {
+  z-index: 40;
+  /* background-color: #fff; */
+  position: fixed;
 }
 
 .hero {
-  background: linear-gradient(180deg, #FFF0F0 0%,
-  rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #FFF0F0 0%, rgba(255, 255, 255, 0) 100%);
+  /* background-color: #fff; */
 }
 
 .profilecontainer {

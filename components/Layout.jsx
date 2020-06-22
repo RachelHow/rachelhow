@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Ic_ExternalLink from "../src/Ic_ExternalLink";
 
 export default ({ children }) => (
   <div>
@@ -13,15 +12,21 @@ export default ({ children }) => (
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700" rel="stylesheet"/>
     </Head>
 
-    <nav className="fixed w-screen px-16 py-8 sm:px-4">
+    <nav className="header w-screen px-16 py-8 sm:px-8">
       <div>
         <Link href="/">
           <a className="float-left font-bold font-display pt-1">Rachel How ☻</a>
         </Link>
-        <a href="https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl" 
-        target="_blank" className="float-right font-display pill">
-          My Résumé
-        </a>
+        <div className="float-right">
+          <a href="https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl" 
+          target="_blank" className="font-display mr-8">
+            Résumé
+          </a>
+          <a href="mailto:rachelhow95@gmail.com?Subject=Hello!" 
+          target="_blank" className="font-display pill">
+            Contact
+          </a>
+        </div>
       </div>
     </nav>
 

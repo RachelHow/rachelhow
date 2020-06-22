@@ -1,0 +1,22 @@
+.markdown {
+  @apply text-base;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown h2 {
+  @apply text-xxl mt-12 mb-4 ;
+}
+
+.markdown h3 {
+  @apply text-xl mt-8 mb-4;
+}
+
+.markdown h5 {
+  @apply text-l mt-8 mb-4;
+}

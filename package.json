@@ -2,7 +2,7 @@
   "name": "rachelhow-portfolio",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "next --port 8000",
     "build": "next build",
     "start": "next start"
   },
@@ -12,8 +12,12 @@
   },
   "license": "MIT",
   "dependencies": {
+    "date-fns": "^2.14.0",
+    "dotenv": "^8.2.0",
     "next": "^9.2.0",
     "next-images": "^1.4.0",
+    "prismic-javascript": "^3.0.0",
+    "prismic-reactjs": "^1.3.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

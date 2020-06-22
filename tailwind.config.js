@@ -15,7 +15,8 @@ module.exports = {
       bold: 700,
     },
     colors: {
-      'lightgray': '#727272'
+      'lightgray': '#404040',
+      'white':'#fff'
     },
     fontSize: {
       'xxs': '0.6875rem', //11px
@@ -24,10 +25,10 @@ module.exports = {
       'base': '1rem',
       'l': '1.25rem', 
       'xl': '2rem',
-      'xxl': '3rem' //48px
+      'xxl': '2.5rem'
     },
     inset: {
-      'smileylg':'16rem',
+      'smileylg':'28rem',
       'smileymd':'4rem',
       'smileysm':'4rem'
     },
