@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import GoogleAnalytics from "./GoogleAnalytics";
 
 export default ({ children }) => (
   <div>
@@ -10,20 +11,21 @@ export default ({ children }) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700" rel="stylesheet"/>
-    </Head>
+      <GoogleAnalytics/>
+   </Head>
 
     <nav className="header w-screen px-16 py-8 sm:px-8">
       <div>
         <Link href="/">
-          <a className="float-left font-bold font-display pt-1">Rachel How ☻</a>
+          <a className="float-left font-bold font-display">Rachel How ☻</a>
         </Link>
         <div className="float-right">
           <a href="https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl" 
-          target="_blank" className="font-display mr-8">
+          target="_blank" className="font-display mr-8 sm:mr-4 sm:text-s">
             Résumé
           </a>
           <a href="mailto:rachelhow95@gmail.com?Subject=Hello!" 
-          target="_blank" className="font-display pill">
+          target="_blank" className="font-display pill sm:text-s">
             Contact
           </a>
         </div>
@@ -33,7 +35,7 @@ export default ({ children }) => (
     {children}
 
     <footer className="py-6 text-center">
-      2020 Rachel How
+      © 2020 Rachel How
     </footer>
   </div>
 );

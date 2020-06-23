@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hero = () => (
-  <div className="hero pt-32 pb-12 px-16">
+  <div className="hero pt-32 pb-12 px-16 sm:px-10 sm:pt-24">
     <div className="flex container mx-auto 
     md:grid-cols-1 md:flex-col-reverse 
     sm:grid-cols-1 sm:flex-col-reverse">
@@ -27,7 +27,7 @@ const Hero = () => (
         <br/>• Available for Projects &amp; Speaking Engagements
       </div>
 
-      <div className="profilecontainer w-1/2 md:block md:mx-auto sm:block sm:mx-auto">
+      <div className="profilecontainer w-1/2 md:block md:mx-auto sm:block sm:w-full sm:h-auto sm:mx-auto">
         <img src="https://i.ibb.co/1XDHznB/profileimage.png" alt="profileimage" 
         className="profileimage float-right md:float-none sm:float-none"/>
       </div>
