@@ -21,7 +21,7 @@ const Hero = () => (
           / <a href="https://www.behance.net/rachelhow" className="font-bold">Behance </a> 
           / <a href="https://www.linkedin.com/in/rachelhow" className="font-bold">LinkedIn </a>
           / <a href="https://twitter.com/rachelhxw" className="font-bold">Twitter </a>
-          / <a href="https://medium.com/@rachelhoww" className="font-bold">Medium </a>
+          / <a href="https://medium.com/@rachelhxw" className="font-bold">Medium </a>
           / <a href="https://github.com/rachelhow" className="font-bold">GitHub </a>
         </div>
         <br/>• Available for Projects &amp; Speaking Engagements
