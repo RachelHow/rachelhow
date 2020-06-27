@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 function Speaking() {
   return (
     <Layout>
-        <div className="container mx-auto pt-32 pb-48">
+        <div className="container mx-auto pt-32 pb-48 sm:pt-48 sm:px-10">
             <div className="pb-10 text-center">
               <h2 className="text-xxl md:text-xl sm:text-xl">Speaking</h2>
             </div>
