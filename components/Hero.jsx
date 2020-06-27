@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hero = () => (
-  <div className="hero pt-32 pb-12 px-16 sm:px-10 sm:pt-24">
+  <div className="hero pt-32 pb-12 px-16 sm:px-10 sm:pt-40">
     <div className="flex container mx-auto 
     md:grid-cols-1 md:flex-col-reverse 
     sm:grid-cols-1 sm:flex-col-reverse">

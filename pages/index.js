@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import Head from 'next/head';
 import { getAllPostsForHome } from '../lib/api';
 import Hero from '../components/Hero';
+import Articles from '../components/Articles';
 import AllPosts from '../components/allPosts';
 
 export default function IndexPage({ preview, allPosts }) {
@@ -18,6 +19,7 @@ export default function IndexPage({ preview, allPosts }) {
           <h2 className="text-xxl md:text-xl sm:text-xl">Selected Work</h2>
         </div>
         {morePosts.length > 0 && <AllPosts posts={morePosts} />}
+        <Articles/>
       </Layout>
     </div>
   )

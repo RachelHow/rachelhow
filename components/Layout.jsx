@@ -15,17 +15,24 @@ export default ({ children }) => (
    </Head>
 
     <nav className="header w-screen px-16 py-8 sm:px-8">
-      <div>
-        <Link href="/">
-          <a className="float-left font-bold font-display">Rachel How ☻</a>
-        </Link>
-        <div className="float-right">
+      <div className="sm:flex-col">
+        <div className="float-left sm:pb-4 sm:w-full sm:flex sm:justify-center">
+          <Link href="/">
+            <a className="font-bold font-display sm:text-xl">Rachel How ☻</a>
+          </Link>
+        </div>
+        <div className="float-right sm:w-full sm:flex sm:justify-center">
+          <Link href="/speaking">
+            <a className="font-display mr-8 sm:mr-8 sm:text-base sm:pt-2">
+              Speaking
+            </a>
+          </Link>
           <a href="https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl" 
-          target="_blank" className="font-display mr-8 sm:mr-4 sm:text-s">
+          target="_blank" className="font-display mr-8 sm:mr-8 sm:text-base sm:pt-2">
             Résumé
           </a>
           <a href="mailto:rachelhow95@gmail.com?Subject=Hello!" 
-          target="_blank" className="font-display pill sm:text-s">
+          target="_blank" className="font-display pill sm:text-base">
             Contact
           </a>
         </div>
