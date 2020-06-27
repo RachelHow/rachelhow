@@ -14,9 +14,9 @@ export default ({ children }) => (
       <GoogleAnalytics/>
    </Head>
 
-    <nav className="header w-screen px-16 py-8 sm:px-8">
+    <nav className="header w-screen px-16 py-8 sm:px-8 sm:py-4">
       <div className="sm:flex-col">
-        <div className="float-left sm:pb-4 sm:w-full sm:flex sm:justify-center">
+        <div className="float-left sm:pb-2 sm:w-full sm:flex sm:justify-center">
           <Link href="/">
             <a className="font-bold font-display sm:text-xl">Rachel How ☻</a>
           </Link>
