@@ -8,7 +8,7 @@ const Hero = () => (
       
       <div className="w-1/2 md:w-full md:text-center sm:text-center sm:w-full">
         <h1 className="text-xxl md:text-xl sm:text-xl pt-8">
-          I design websites and apps to give delightful user experiences.
+          I design web/app experiences that transform businesses.
           &nbsp;<span className="smiley text-xxl absolute">☻</span>
         </h1>
         <div className="pt-4 text-lightgray">

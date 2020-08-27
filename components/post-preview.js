@@ -15,7 +15,7 @@ export default function PostPreview({ title, coverImage, excerpt, slug, }) {
       <h3 className="text-l mb-3">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">
-            <RichText render={title} />
+            <RichText render={title}/>
           </a>
         </Link>
       </h3>

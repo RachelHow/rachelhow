@@ -16,7 +16,7 @@ export default function IndexPage({ preview, allPosts }) {
         </Head>
       <Hero/>
         <div className="pt-10 text-center">
-          <h2 className="text-xxl md:text-xl sm:text-xl">Selected Work</h2>
+          <h2 className="text-xl md:text-xl sm:text-xl">Selected Work</h2>
         </div>
         {morePosts.length > 0 && <AllPosts posts={morePosts} />}
         <Articles/>

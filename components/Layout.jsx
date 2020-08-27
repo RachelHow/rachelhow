@@ -10,7 +10,7 @@ export default ({ children }) => (
       <meta name="author" content="Rachel How"/>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700" rel="stylesheet"/>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600" rel="stylesheet"/>
       <GoogleAnalytics/>
    </Head>
 
@@ -32,7 +32,7 @@ export default ({ children }) => (
             Résumé
           </a>
           <a href="mailto:rachelhow95@gmail.com?Subject=Hello!" 
-          target="_blank" className="font-display pill sm:text-base">
+          target="_blank" className="font-display sm:text-base transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
             Contact
           </a>
         </div>
