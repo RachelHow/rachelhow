@@ -13,8 +13,8 @@ export default ({ children }) => (
       <meta property="og:type" content="website" />
       <meta name="og:description" content="Product Designer"/>
       <meta property="og:url" content="https://rachelhow.com"/>
-      <meta property="og:image" content="/images/URL-image-preview.png" /> 
-      <meta property="twitter:image" content="/images/URL-image-preview.png" />
+      <meta property="og:image" content="https://i.ibb.co/wyWj5XP/URL-image-preview.png" /> 
+      <meta property="twitter:image" content="https://i.ibb.co/wyWj5XP/URL-image-preview.png" />
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800" rel="stylesheet"/>
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <link rel="canonical" href="https://rachelhow.com"/>
