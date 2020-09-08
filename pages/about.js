@@ -35,11 +35,11 @@ function About() {
       </div>
 
       <div className="container px-16 md:px-4 sm:px-8 text-center">
-        <div className="flex justify-center pb-4">
+        <div className="justify-center pb-4">
           <img
             src="/images/designsprint-01.png"
             alt="designsprint1"
-            className="rounded-lg mx-auto profileimage"
+            className="rounded-lg mx-auto"
             width="80%"
             height="auto"
           />
@@ -74,11 +74,11 @@ function About() {
       </div>
 
       <div className="container px-16 md:px-4 sm:px-8 text-center">
-        <div className="flex justify-center pb-4">
+        <div className="justify-center pb-4">
           <img
             src="/images/designsprint-02.png"
             alt="designsprint2"
-            className="rounded-lg mx-auto profileimage"
+            className="rounded-lg mx-auto"
             width="80%"
             height="auto"
           />
