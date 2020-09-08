@@ -7,6 +7,14 @@ const Milestones = () => (
         Milestones <Ic_DownArrow size="28" color="#202020" />
       </h3>
 
+      {/* <div className="flex pb-4 sm:pb-8 md:flex-col sm:flex-col">
+        <p className="text-s md:text-xxs text-lightgray uppercase tracking-wider pr-12 leading-12">
+          ???, 2020
+        </p>
+        <h4 className="text-base font-b">
+          Podcast Guest of CuriousKaki to share about my journey in design
+        </h4>
+      </div> */}
       <div className="flex pb-4 sm:pb-8 md:flex-col sm:flex-col">
         <p className="text-s md:text-xxs text-lightgray uppercase tracking-wider pr-12 leading-12">
           Aug, 2020
