@@ -1,9 +1,9 @@
 import React from "react";
 
 const About = () => (
-  <div className="pt-32 pb-40 px-16 md:px-4 sm:px-8">
-    <div className="container flex sm:grid-cols-1 sm:flex-col">
-      <div className="profilecontainer md:pr-12">
+  <div className="pt-32 pb-40 sm:px-8">
+    <div className="container flex px-16 md:px-4 sm:grid-cols-1 sm:flex-col">
+      <div className="md:pr-12">
         <img
           src="https://i.ibb.co/1XDHznB/profileimage.png"
           alt="rachel-how"
