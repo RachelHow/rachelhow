@@ -12,7 +12,7 @@ const About = () => (
       </div>
       <div className="w-1/2 m-auto md:w-3/4 sm:w-full sm:pt-12">
         <h2 className="text-xxl md:text-xl sm:text-xl">
-          Hi! I’m Rachel, a Product Designer who codes &amp; write.
+          Hi! I’m Rachel, a Product Designer who codes &amp; writes.
         </h2>
         <br />
         <span className="text-lightgray text-base md:text-s">
