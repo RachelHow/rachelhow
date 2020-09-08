@@ -11,7 +11,7 @@ function Speaking() {
               Hey there!<br/>
               I'm still working on this page, but if you'd 
               like to have me come speak at your event, do send me an&nbsp;
-              <a href="mailto:rachelhow95@gmail.com?Subject=Speaking Opportunity"
+              <a href="mailto:rachelhow95@gmail.com?Subject=Speaking Engagement"
               className="font-bold">email</a>!
               <br/>
               I usually like to speak about Product Design, Indie Hacking, Productivity

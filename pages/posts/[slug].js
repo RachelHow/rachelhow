@@ -38,7 +38,7 @@ export default function Post({ post, morePosts, preview }) {
             </article>
             <SectionSeparator />
             <div className="pt-10 text-center">
-              <h2 className="text-l">Check out my other work</h2>
+              <h4 className="text-l">Check out my other work</h4>
             </div>
             {morePosts && morePosts.length > 0 && (
               <AllPosts posts={morePosts} />

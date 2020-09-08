@@ -3,47 +3,106 @@
 @import "tailwindcss/utilities";
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
-h1,
+h1 {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #FF5EB9 0%, #6679FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: multiply;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
 h2 {
-  color: #000;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  /* about section headings */
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #FF84C0, #FE5F5F 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 h3 {
+  /* section headings */
+  font-family: 'Inter', sans-serif;
   color: #000;
-  font-weight: 500;
-  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: -0.02em;
 }
 
 h4 {
-  color: #000;
+  /* article names, project names */
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  line-height: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-weight: 400;
+}
+
+.pink-gradient-text {
+  background: linear-gradient(to right, #FF84C0, #FE5F5F 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header {
   z-index: 40;
-  /* background-color: #fff; */
   position: fixed;
+  background-color: rgba(255, 255, 255, 0.6); 
+  backdrop-filter: saturate(180%) blur(5px);
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  box-shadow: 0px 0.5px 0.5px #dbdbdb;
+  transition: box-shadow .2s ease 0s;
 }
 
 .hero {
-  background: linear-gradient(180deg, #FFF0F0 0%, rgba(255, 255, 255, 0) 100%);
-  /* background-color: #fff; */
+  background-color: #fff;
+  height: 100vh;
+}
+
+.hero-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  text-align: center;
+}
+
+.hero-glow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -5;
 }
 
 .profilecontainer {
-  max-height: 400px;
+  max-height: 350px; 
+  /* previously 400px */
 }
 
 .profileimage {
   height: auto;
   max-height: 400px;
   width: auto;
+  border-radius: 24px;
 }
 
 button {
@@ -55,45 +114,12 @@ button {
   padding: 12px 20px;
 }
 
-.collectionimg {
-  border-radius: 10px;
-  object-fit: cover;
-  min-height: 200px;
-}
-
-.pill {
-  border: 1.5px solid #000;
-  border-radius: 100px;
-  padding: 4px 12px;
-  outline: none;
-}
-
-.pill:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.article-card {
-  background: #FFFFFF;
-  /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
-  border-radius: 8px;
-  padding: 16px 0;
-  margin-bottom: 16px;
-}
-
-.article-pill {
-  background: #FFEFEF;
-  border-radius: 100px;
-  padding: 6px 12px;
-  color: #EC6B6B;
-}
-
 /* animation */
 
-.smiley {
-  -webkit-animation: spin 4s linear infinite;
-  -moz-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite;
+.spin-animation {
+  -webkit-animation: spin 6s linear infinite;
+  -moz-animation: spin 6s linear infinite;
+  animation: spin 6s linear infinite;
 }
 
 @-moz-keyframes spin {
@@ -115,6 +141,28 @@ button {
   }
 }
 
+.bounce-animation {
+  animation: bounce 0.5s infinite alternate;
+  -webkit-animation: bounce 0.5s infinite alternate;
+  -moz-animation: bounce 0.5s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2.5px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2.5px);
+  }
+}
+
 /* mobile */
 @media screen and (max-width: 639px) {
   .header {
@@ -122,5 +170,8 @@ button {
   }
   .hero {
     background: #fff;
+  }
+  .hero-glow {
+    max-width: 60%;
   }
 }

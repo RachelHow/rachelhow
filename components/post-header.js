@@ -10,7 +10,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
         <CoverImage title={RichText.asText(title)} url={coverImage.url} />
       </div>
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-xxl mb-4">{title[0].text}</h1>
+        <h4 className="text-xxl sm:text-xl mb-4">{title[0].text}</h4>
         <div className="block mb-6">
           {author && <Avatar name={author.name} picture={author.picture} />}
         </div>

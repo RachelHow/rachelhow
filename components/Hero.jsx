@@ -1,37 +1,26 @@
 import React from "react";
+import Ic_DownArrow from "../src/Ic_DownArrow";
 
 const Hero = () => (
-  <div className="hero pt-32 pb-12 px-16 sm:px-10 sm:pt-40">
-    <div className="flex container mx-auto 
-    md:grid-cols-1 md:flex-col-reverse 
-    sm:grid-cols-1 sm:flex-col-reverse">
-      
-      <div className="w-1/2 md:w-full md:text-center sm:text-center sm:w-full">
-        <h1 className="text-xxl md:text-xl sm:text-xl pt-8">
-          I design web/app experiences that transform businesses.
-          &nbsp;<span className="smiley text-xxl absolute">☻</span>
-        </h1>
-        <div className="pt-4 text-lightgray">
-          Product Designer at <a href="https://myfave.com/careers" className="font-bold">Fave</a>
-          &nbsp;by day, self-taught coder by night. Based in Kuala Lumpur.
-          ☕️Currently building: &nbsp; 
-          <a href="https://malaysianswhomake.com" className="font-bold">Malaysians Who Make</a>
-          <br/><br/>
-          <a href="https://dribbble.com/rachelhow" className="font-bold">Dribbble </a> 
-          / <a href="https://www.behance.net/rachelhow" className="font-bold">Behance </a> 
-          / <a href="https://www.linkedin.com/in/rachelhow" className="font-bold">LinkedIn </a>
-          / <a href="https://twitter.com/rachelhxw" className="font-bold">Twitter </a>
-          / <a href="https://medium.com/@rachelhxw" className="font-bold">Medium </a>
-          / <a href="https://github.com/rachelhow" className="font-bold">GitHub </a>
-        </div>
-        <br/>• Available for Projects &amp; Speaking Engagements
-      </div>
-
-      <div className="profilecontainer w-1/2 md:block md:mx-auto sm:block sm:w-full sm:h-auto sm:mx-auto">
-        <img src="https://i.ibb.co/1XDHznB/profileimage.png" alt="profileimage" 
-        className="profileimage float-right md:float-none sm:float-none"/>
-      </div>
-
+  <div className="flex h-screen">
+    <div className="hero-glow">
+      <img
+        src="/images/Gradient Glow.png"
+        alt="gradientglow"
+        className="spin-animation"
+      />
+    </div>
+    <div className="container m-auto sm:px-8">
+      <h1 className="text-center text-xxxl md:text-xxl sm:text-xl">
+        I design web/app experiences
+        <br />
+        that your users will love.
+      </h1>
+    </div>
+    <div className="hero-caption text-lightgray text-s sm:px-12">
+      Welcome to my journey where I explore,{" "}
+      <span className="italic line-through">fail</span> challenge myself and
+      grow. <Ic_DownArrow size="16" />
     </div>
   </div>
 );

@@ -11,28 +11,29 @@ export default ({ children }) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800" rel="stylesheet"/>
       <GoogleAnalytics/>
    </Head>
 
-    <nav className="header w-screen px-16 py-8 sm:px-8 sm:py-4">
-      <div className="sm:flex-col">
+    <nav className="header w-screen px-16 py-6 sm:px-8 sm:py-4">
+      <div>
         <div className="float-left sm:pb-2 sm:w-full sm:flex sm:justify-center">
           <Link href="/">
-            <a className="font-bold font-display sm:text-xl">Rachel How ☻</a>
+            <a className="font-eb sm:text-xl">Rachel How ☻</a>
           </Link>
         </div>
         <div className="float-right sm:w-full sm:flex sm:justify-center">
-          <Link href="/speaking">
-            <a className="font-display mr-8 sm:mr-8 sm:text-base sm:pt-2">
-              Speaking
-            </a>
-          </Link>
+          <a href="https://www.notion.so/FAQ-1bf38aa7b403424b8058bb74eea8e873" 
+          target="_blank"
+          className="font-sb mr-12 sm:mr-12 sm:text-base sm:pt-2">
+            FAQ
+          </a>
           <a href="https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl" 
-          target="_blank" className="font-display mr-8 sm:mr-8 sm:text-base sm:pt-2">
+          target="_blank" className="font-sb mr-12 sm:mr-12 sm:text-base sm:pt-2">
             Résumé
           </a>
           <a href="mailto:rachelhow95@gmail.com?Subject=Hello!" 
-          target="_blank" className="font-display sm:text-base transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+          target="_blank" className="font-sb sm:text-base sm:pt-2">
             Contact
           </a>
         </div>
@@ -41,8 +42,10 @@ export default ({ children }) => (
 
     {children}
 
-    <footer className="py-6 text-center">
-      © 2020 Rachel How
+    <footer className="py-12 text-center">
+      <div className="text-lightgray text-s sm:px-12">
+        © 2020 All rights reserved. Designed + Coded by Rachel How
+      </div>
     </footer>
   </div>
 );

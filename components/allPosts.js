@@ -1,9 +1,9 @@
-import PostPreview from './post-preview'
+import PostPreview from "./post-preview";
 
 export default function AllPosts({ posts }) {
   return (
-    <div className="container mx-auto py-16 sm:px-10 sm:py-8">
-      <div className="grid grid-cols-3 col-gap-10 row-gap-10 text-center sm:grid-cols-1 sm:px-0">
+    <div className="py-12">
+      <div>
         {posts.map(({ node }) => (
           <PostPreview
             key={node._meta.uid}
@@ -14,9 +14,8 @@ export default function AllPosts({ posts }) {
             slug={node._meta.uid}
             excerpt={node.excerpt}
           />
-        ))
-        }
+        ))}
       </div>
     </div>
-  )
+  );
 }
