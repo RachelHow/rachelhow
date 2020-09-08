@@ -104,7 +104,7 @@ function About() {
 
       <div className="container px-16 pt-16 md:px-4 sm:px-8 text-center">
         <SectionSeparator />
-        <div className="justify-center pb-4 pt-24">
+        <div className="inline-block justify-center pb-4 pt-24">
           <img
             src="/images/Avatar-Online.png"
             alt="avatar-rachel"
