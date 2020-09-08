@@ -41,7 +41,14 @@ const Milestones = () => (
       </div>
 
       <div className="pt-12">
-        <span className="font-b">Contact me</span> for collaboration / speaking engagements
+        <a
+            href="mailto:rachelhow95@gmail.com?Subject=Hello!"
+            target="_blank"
+            className="font-b pr-2"
+          >
+            <h5>Contact me</h5>
+          </a> 
+         for collaboration / speaking engagements
       </div>
     </div>
   </div>

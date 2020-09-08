@@ -9,7 +9,7 @@ body {
 
 h1 {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #FF5EB9 0%, #6679FF 100%);
+  background: linear-gradient(to right, #EF8EFF 0%, #FF3535 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -43,6 +43,18 @@ h4 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   line-height: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+h5 {
+  display: inline;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(90deg, #FF5EB9 0%, #6679FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: multiply;
+  font-weight: 800;
   letter-spacing: -0.02em;
 }
 
@@ -105,13 +117,13 @@ p {
   border-radius: 24px;
 }
 
-button {
-  display: flex;
+.cta-button {
+  display: inline;
   background-color: #fff;
   vertical-align: middle;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-  border-radius: 20px;
-  padding: 12px 20px;
+  border-radius: 60px;
+  padding: 16px 24px;
 }
 
 /* animation */

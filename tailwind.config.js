@@ -30,8 +30,8 @@ module.exports = {
     },
     colors: {
       'white':'#fff',
-      'lightgray': '#525252',
       'lightestgray': '#f2f2f2',
+      'lightgray': '#525252',
       'medgray': '#C2C2C2',
       'black':'#202020'
     },
