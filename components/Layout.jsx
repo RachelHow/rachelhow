@@ -9,9 +9,15 @@ export default ({ children }) => (
       <meta charSet="utf-8" />
       <meta name="author" content="Rachel How"/>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700" rel="stylesheet"/>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600" rel="stylesheet"/>
+      <meta property="og:title" content="Rachel How" />
+      <meta property="og:type" content="website" />
+      <meta name="og:description" content="Product Designer"/>
+      <meta property="og:url" content="https://rachelhow.com"/>
+      <meta property="og:image" content="/images/URL-image-preview.png" /> 
+      <meta property="twitter:image" content="/images/URL-image-preview.png" />
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800" rel="stylesheet"/>
+      <link rel="shortcut icon" href="/favicon/favicon.ico" />
+      <link rel="canonical" href="https://rachelhow.com"/>
       <GoogleAnalytics/>
    </Head>
 
