@@ -38,8 +38,8 @@ function About() {
         <div className="flex justify-center pb-4">
           <img
             src="/images/designsprint-01.png"
-            alt="designsprint"
-            className="rounded-lg mx-auto"
+            alt="designsprint1"
+            className="rounded-lg mx-auto profileimage"
             width="80%"
             height="auto"
           />
@@ -77,8 +77,8 @@ function About() {
         <div className="flex justify-center pb-4">
           <img
             src="/images/designsprint-02.png"
-            alt="designsprint"
-            className="rounded-lg mx-auto"
+            alt="designsprint2"
+            className="rounded-lg mx-auto profileimage"
             width="80%"
             height="auto"
           />
@@ -104,7 +104,7 @@ function About() {
 
       <div className="container px-16 pt-16 md:px-4 sm:px-8 text-center">
         <SectionSeparator />
-        <div className="flex justify-center pb-4 pt-24">
+        <div className="justify-center pb-4 pt-24">
           <img
             src="/images/Avatar-Online.png"
             alt="avatar-rachel"
