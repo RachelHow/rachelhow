@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import GoogleAnalytics from "./GoogleAnalytics";
+import MakerWidget from "./MakerWidget";
 import Ic_Twitter from "../src/Ic_Twitter";
 import Ic_LinkedIn from "../src/Ic_LinkedIn";
 import Ic_Dribbble from "../src/Ic_Dribbble";
@@ -33,6 +34,7 @@ export default ({ children }) => (
       />
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <link rel="canonical" href="https://rachelhow.com" />
+      <MakerWidget />
       <GoogleAnalytics />
     </Head>
 

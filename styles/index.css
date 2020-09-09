@@ -70,10 +70,10 @@ p {
 }
 
 .header {
-  z-index: 40;
+  z-index: 50;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.6); 
-  backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(10px);
   -webkit-backdrop-filter: saturate(180%) blur(5px);
   box-shadow: 0px 0.5px 0.5px #dbdbdb;
   transition: box-shadow .2s ease 0s;
