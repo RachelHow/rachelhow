@@ -22,11 +22,11 @@ export default ({ children }) => (
       <meta property="og:url" content="https://rachelhow.com" />
       <meta
         property="og:image"
-        content="https://i.ibb.co/wyWj5XP/URL-image-preview.png"
+        content="https://i.ibb.co/4TXZvfK/URL-image-preview.png"
       />
       <meta
         property="twitter:image"
-        content="https://i.ibb.co/wyWj5XP/URL-image-preview.png"
+        content="https://i.ibb.co/4TXZvfK/URL-image-preview.png"
       />
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800"
@@ -47,11 +47,7 @@ export default ({ children }) => (
         </div>
         <div className="float-right sm:w-full sm:flex sm:justify-center">
           <Link href="/about">
-          <a
-            className="font-sb mr-12 sm:mr-12 sm:text-base sm:pt-2"
-          >
-            About
-          </a>
+            <a className="font-sb mr-12 sm:mr-12 sm:text-base sm:pt-2">About</a>
           </Link>
           <a
             href="https://www.notion.so/FAQ-1bf38aa7b403424b8058bb74eea8e873"
