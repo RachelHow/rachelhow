@@ -17,6 +17,14 @@ const Milestones = () => (
       </div> */}
       <div className="flex pb-4 sm:pb-8 md:flex-col sm:flex-col">
         <p className="text-s md:text-xxs text-lightgray uppercase tracking-wider pr-12 leading-12">
+          Sep 14, 2020
+        </p>
+        <h4 className="text-base font-b">
+          Guest Speaker at Monash University Malaysia
+        </h4>
+      </div>
+      <div className="flex pb-4 sm:pb-8 md:flex-col sm:flex-col">
+        <p className="text-s md:text-xxs text-lightgray uppercase tracking-wider pr-12 leading-12">
           Aug 31, 2020
         </p>
         <h4 className="text-base font-b">
