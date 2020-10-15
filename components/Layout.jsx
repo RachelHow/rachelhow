@@ -9,7 +9,7 @@ import Ic_Behance from "../src/Ic_Behance";
 import Ic_Medium from "../src/Ic_Medium";
 import Ic_Github from "../src/Ic_Github";
 
-export default ({ children }) => (
+const Layout = ({ children }) => (
   <div>
     <Head>
       <title>Rachel How</title>
@@ -103,3 +103,5 @@ export default ({ children }) => (
     </footer>
   </div>
 );
+
+export default Layout
