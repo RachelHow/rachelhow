@@ -1,8 +1,8 @@
 import React from "react";
 const Ic_Github = () => (
   <svg
-    width="28"
-    height="28"
+    width="24"
+    height="24"
     viewBox="0 0 28 28"
     className="inline"
     fill="none"

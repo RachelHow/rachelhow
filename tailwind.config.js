@@ -16,7 +16,7 @@ module.exports = {
       'lg': {'min': '1024px'}
     },
     fontFamily: {
-      display: ['Inter', 'sans-serif'],
+      display: ['Silka', 'Inter', 'sans-serif'],
       body: ['Inter', 'sans-serif']
     },
     fontWeight: {
@@ -33,7 +33,7 @@ module.exports = {
       'lightestgray': '#f2f2f2',
       'lightgray': '#525252',
       'medgray': '#C2C2C2',
-      'black':'#202020'
+      'black':'#1a1a1a'
     },
     fontSize: {
       'xxs': '0.6875rem', //11px
@@ -52,7 +52,7 @@ module.exports = {
     },
     extend: {
       lineHeight: {
-        '12': '2.3rem'
+        '12': '2.4rem'
       }
     }
   },

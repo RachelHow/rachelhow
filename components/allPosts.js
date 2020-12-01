@@ -4,15 +4,16 @@ export default function AllPosts({ posts }) {
   return (
     <div className="py-12">
       <div>
-        {posts.map(({ node }) => (
+        {posts.map((post) => (
           <PostPreview
-            key={node._meta.uid}
-            title={node.title}
-            coverImage={node.coverimage}
-            date={node.date}
-            author={node.author}
-            slug={node._meta.uid}
-            excerpt={node.excerpt}
+            key={post.slug}
+            title={post.title}
+            coverImage={post.coverImage}
+            date={post.date}
+            readingTime={post.readingTime}
+            author={post.author}
+            slug={post.slug}
+            excerpt={post.excerpt}
           />
         ))}
       </div>
