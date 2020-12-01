@@ -1,0 +1,22 @@
+.post {
+  @apply text-base;
+}
+
+.post p,
+.post ul,
+.post ol,
+.post blockquote {
+  @apply my-6;
+}
+
+.post h2 {
+  @apply text-xxl mt-12 mb-4 ;
+}
+
+.post h3 {
+  @apply text-xl mt-8 mb-4;
+}
+
+.post h5 {
+  @apply text-l mt-8 mb-4;
+}

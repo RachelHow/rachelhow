@@ -2,13 +2,35 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: "Silka";
+  src: url("/public/fonts/silka-regular-webfont.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Silka";
+  src: url("/public/fonts/silka-semibold-webfont.ttf");
+  font-style: medium;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Silka";
+  src: url("/public/fonts/silka-bold-webfont.ttf");
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
 
 h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Silka', 'Inter', sans-serif;
   background: linear-gradient(to right, #EF8EFF 0%, #FF3535 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -20,7 +42,7 @@ h1 {
 
 h2 {
   /* about section headings */
-  font-family: 'Inter', sans-serif;
+  font-family: 'Silka', 'Inter', sans-serif;
   background: linear-gradient(to right, #FF84C0, #FE5F5F 70%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -31,7 +53,7 @@ h2 {
 
 h3 {
   /* section headings */
-  font-family: 'Inter', sans-serif;
+  font-family: 'Silka', 'Inter', sans-serif;
   color: #000;
   font-weight: 400;
   line-height: 2.8rem;
@@ -40,15 +62,15 @@ h3 {
 
 h4 {
   /* article names, project names */
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-family: 'Silka', 'Inter', sans-serif;
+  font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: -0.02em;
 }
 
 h5 {
   display: inline;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Silka', 'Inter', sans-serif;
   background: linear-gradient(90deg, #FF5EB9 0%, #6679FF 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -59,6 +81,7 @@ h5 {
 }
 
 p {
+  font-family: 'Inter', sans-serif;;
   font-weight: 400;
 }
 
@@ -72,10 +95,10 @@ p {
 .header {
   z-index: 50;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.6); 
+  background-color: rgba(255, 255, 255, 0.8); 
   backdrop-filter: saturate(180%) blur(10px);
-  -webkit-backdrop-filter: saturate(180%) blur(5px);
-  box-shadow: 0px 0.5px 0.5px #dbdbdb;
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  box-shadow: 0px 0.5px 0.25px #dbdbdb;
   transition: box-shadow .2s ease 0s;
 }
 
@@ -94,9 +117,9 @@ p {
 
 .hero-glow {
   position: absolute;
-  left: 0;
+  left: 50%;
   right: 0;
-  top: 0;
+  top: 15%;
   bottom: 0;
   margin: auto;
   display: flex;
@@ -112,9 +135,9 @@ p {
 
 .profileimage {
   height: auto;
-  max-height: 400px;
+  max-height: 200px;
   width: auto;
-  border-radius: 24px;
+  border-radius: 100%;
 }
 
 .cta-button {

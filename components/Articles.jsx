@@ -1,76 +1,85 @@
-import Ic_DownArrow from "../src/Ic_DownArrow";
-import Ic_RightArrow from "../src/Ic_RightArrow";
+import Ic_DownArrow from '../src/Ic_DownArrow'
+import Ic_RightArrow from '../src/Ic_RightArrow'
 
 const ArticleList = [
   {
     name:
-      "I Launched a Side Project to Showcase Malaysian Creators — Malaysians Who Make",
-    date: "June 24, 2020 | Featured on Prototypr",
+      'I Launched a Side Project to Showcase Malaysian Creators — Malaysians Who Make',
+    date: 'June 24, 2020 | Featured on Prototypr',
     url:
-      "https://blog.prototypr.io/i-launched-a-side-project-to-showcase-malaysian-creators-malaysians-who-make-cf1fcc209419",
+      'https://blog.prototypr.io/i-launched-a-side-project-to-showcase-malaysian-creators-malaysians-who-make-cf1fcc209419',
   },
   {
-    name: "My lifelong journey of learning, failing and standing back up",
-    date: "June 16, 2020",
+    name: 'My lifelong journey of learning, failing and standing back up',
+    date: 'June 16, 2020',
     url:
-      "https://medium.com/@rachelhxw/my-lifelong-journey-of-learning-failing-and-standing-back-up-dc0f94b1edc",
+      'https://medium.com/@rachelhxw/my-lifelong-journey-of-learning-failing-and-standing-back-up-dc0f94b1edc',
   },
   {
-    name: "Create native Lottie animations with Sketch and AE, the simple way.",
-    date: "Sep 9, 2019 | Featured on Fave",
+    name: 'Create native Lottie animations with Sketch and AE, the simple way.',
+    date: 'Sep 9, 2019 | Featured on Fave',
     url:
-      "https://medium.com/fave-engineering/create-native-lottie-animations-with-sketch-and-ae-the-simple-way-f3f43ad8f4ce",
+      'https://medium.com/fave-engineering/create-native-lottie-animations-with-sketch-and-ae-the-simple-way-f3f43ad8f4ce',
   },
   {
     name:
-      "What I’ve learned from joining a hackathon with only 1.5 months of coding experience",
-    date: "May 3, 2019",
+      'What I’ve learned from joining a hackathon with only 1.5 months of coding experience',
+    date: 'May 3, 2019',
     url:
-      "https://medium.com/@rachelhoww/what-ive-learned-from-joining-a-hackathon-with-only-1-5-months-of-coding-experience-59d9a80f2c52",
+      'https://medium.com/@rachelhoww/what-ive-learned-from-joining-a-hackathon-with-only-1-5-months-of-coding-experience-59d9a80f2c52',
   },
   {
-    name: "UI/UX Case Study: NameLink App Design Concept",
-    date: "Mar 10, 2019",
+    name: 'UI/UX Case Study: NameLink App Design Concept',
+    date: 'Mar 10, 2019',
     url:
-      "https://medium.com/@rachelhoww/namelink-app-design-concept-46a3a6c1aee1",
+      'https://medium.com/@rachelhoww/namelink-app-design-concept-46a3a6c1aee1',
   },
-];
+]
 
 const Articles = () => (
-  <div className="text-white bg-black">
-    <div className="container py-20 px-16 md:px-4 sm:px-8">
-      <h3 className="text-white pb-16 text-xl md:text-xl sm:text-xl">
-        Articles <Ic_DownArrow size="28" color="#fff" />
+  <div>
+    <div className='container py-12 px-8 md:px-4 sm:px-8 sm:py-12'>
+      <h3 className='pb-4 text-xxl md:text-xl sm:text-xl sm:pb-0'>
+        Articles <Ic_DownArrow size='28' color='#fff' />
       </h3>
-      
-      <div>
-        <ul className="grid grid-cols-2 gap-10 sm:grid-cols-1">
-          {ArticleList.map((a, index) => {
 
+      <div>
+        <ul>
+          {ArticleList.map((a, index) => {
             // remove bottom border for last item in list
-            return ArticleList.length - 1 === index ? 
-              <li key={index} className="pb-10">
-                <div className="text-xs md:text-xxs text-medgray py-2 uppercase tracking-wider">{a.date}</div>
-                <a href={a.url} target="_blank">
-                  <h4 className="text-l md:text-base pb-2">{a.name}</h4>
-                  <p className="text-s md:text-xxs text-medgray">Read on Medium <Ic_RightArrow size="14" color="#d8d8d8"/></p>
+            return ArticleList.length - 1 === index ? (
+              <li key={index} className='py-4'>
+                <div className='text-xs md:text-xxs text-lightgray py-1 tracking-wider'>
+                  {a.date}
+                </div>
+                <a href={a.url} target='_blank'>
+                  <h4 className='text-base font-sb pb-1'>{a.name}</h4>
+                  <p className='text-s md:text-xxs text-lightgray'>
+                    Read on Medium <Ic_RightArrow size='14' color='#202020' />
+                  </p>
                 </a>
               </li>
-              :
-              <li key={index} className="pb-10 border-b last:border-b-0 border-lightgray">
-              <div className="text-xs md:text-xxs text-medgray py-2 uppercase tracking-wider">{a.date}</div>
-              <a href={a.url} target="_blank">
-                <h4 className="text-l md:text-base pb-2">{a.name}</h4>
-                <p className="text-s md:text-xxs text-medgray">Read on Medium <Ic_RightArrow size="14" color="#d8d8d8"/></p>
-              </a>
-            </li>
-            
+            ) : (
+              <li
+                key={index}
+                className='py-4 border-b last:border-b-0 border-lightestgray'
+              >
+                <div className='text-xs md:text-xxs text-lightgray py-1 tracking-wider'>
+                  {a.date}
+                </div>
+                <a href={a.url} target='_blank'>
+                  <h4 className='text-base font-sb pb-1'>{a.name}</h4>
+                  <p className='text-s md:text-xxs text-lightgray'>
+                    Read on Medium <Ic_RightArrow size='14' color='#202020' />
+                  </p>
+                </a>
+              </li>
+            )
           })}
         </ul>
       </div>
-
     </div>
   </div>
-);
+)
 
-export default Articles;
+export default Articles

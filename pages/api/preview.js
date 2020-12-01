@@ -1,38 +1,28 @@
-import { PrismicClient } from '../../lib/api'
+import { getPreviewPostBySlug } from '../../lib/graphcms'
 
-function linkResolver(doc) {
-  // Pretty URLs for known types
-  if (doc.type === 'post') {
-    return `/posts/${doc.uid}`
-  }
-
-  // Fallback for other types, in case new custom types get created
-  return `/${doc.uid}`
-}
-
-export default async function preview(req, res) {
-  const ref = req.query.token
-
-  // Check the token parameter against the Prismic SDK
-  const url = await PrismicClient.previewSession(ref, linkResolver, '/')
-
-  if (!url) {
+export default async function handler(req, res) {
+  // Check the secret and next parameters
+  // This secret should only be known to this API route and the CMS
+  if (
+    req.query.secret !== process.env.GRAPHCMS_PREVIEW_SECRET ||
+    !req.query.slug
+  ) {
     return res.status(401).json({ message: 'Invalid token' })
   }
 
+  // Fetch the headless CMS to check if the provided `slug` exists
+  const post = await getPreviewPostBySlug(req.query.slug)
+
+  // If the slug doesn't exist prevent preview mode from being enabled
+  if (!post) {
+    return res.status(401).json({ message: 'Invalid slug' })
+  }
+
   // Enable Preview Mode by setting the cookies
-  res.setPreviewData({
-    ref, // pass the ref to pages so that they can fetch the draft ref
-  })
+  res.setPreviewData({})
 
-  // Redirect the user to the share endpoint from same origin. This is
-  // necessary due to a Chrome bug:
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=696204
-  res.write(
-    `<!DOCTYPE html><html><head><meta http-equiv="Refresh" content="0; url=${url}" />
-    <script>window.location.href = '${url}'</script>
-    </head>`
-  )
-
+  // Redirect to the path from the fetched post
+  // We don't redirect to req.query.slug as that might lead to open redirect vulnerabilities
+  res.writeHead(307, { Location: `/posts/${post.slug}` })
   res.end()
 }
