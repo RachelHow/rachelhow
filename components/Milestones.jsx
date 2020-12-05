@@ -34,7 +34,7 @@ const Milestones = () => (
               <p className='text-s text-lightgray uppercase tracking-wider'>
                 {a.date}
               </p>
-              <p className='text-l font-m'>{a.stone}</p>
+              <p className='text-l sm:text-base font-m'>{a.stone}</p>
             </li>
           ))}
         </ul>

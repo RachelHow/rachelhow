@@ -3,11 +3,26 @@
   line-height: 1.7;
 }
 
-.post p,
-.post ul,
-.post ol,
-.post blockquote {
+.post p {
   @apply my-6;
+}
+
+.post blockquote {
+  border-left: 6px solid #f2f2f2;
+  margin: 12px 12px;
+  padding: 12px 30px;
+}
+
+.post ol {
+  @apply ml-12;
+  list-style-type: decimal;
+  line-height: 2;
+}
+
+.post ul {
+  @apply ml-12;
+  list-style-type: disc;
+  line-height: 2;
 }
 
 .post h1 {
@@ -20,7 +35,7 @@
 }
 
 .post h3 {
-  @apply text-xl mt-8 mb-4;
+  @apply text-xl font-sb mt-12 mb-4;
 }
 
 .post h5 {

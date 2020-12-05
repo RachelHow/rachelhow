@@ -24,7 +24,7 @@ const About = () => (
             >
               email me
             </a>{' '}
-            for freelance projects/speaking engagements. For detailed work
+            for freelance projects &amp; speaking engagements. For detailed work
             history, here's my{' '}
             <a
               href='https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl'

@@ -3,7 +3,7 @@ import PostPreview from "./post-preview";
 export default function AllPosts({ posts }) {
   return (
     <div className="py-8">
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-1 sm:grid-cols-1">
+      <div className="grid grid-cols-2 col-gap-12 md:grid-cols-1 sm:grid-cols-1">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}

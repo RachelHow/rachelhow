@@ -37,7 +37,7 @@ export default function IndexPage({ preview, allPosts }) {
           {morePosts.length > 0 && <AllPosts posts={morePosts} />}
         </div> */}
         
-        <div className="container grid grid-cols-2 py-16 md:px-4 sm:px-8 sm:py-8">
+        <div className="container grid grid-cols-2 sm:grid-cols-1 py-16 md:px-4 sm:px-8 sm:py-20">
           <Milestones />
         </div>
 
