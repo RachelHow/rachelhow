@@ -2,7 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@font-face {
+/* @font-face {
   font-family: "Silka";
   src: url("/public/fonts/silka-regular-webfont.ttf");
   font-style: normal;
@@ -22,7 +22,7 @@
   font-style: bold;
   font-weight: 700;
   font-display: swap;
-}
+} */
 
 body {
   font-family: 'Inter', sans-serif;
@@ -30,30 +30,19 @@ body {
 }
 
 h1 {
-  font-family: 'Silka', 'Inter', sans-serif;
-  background: linear-gradient(to right, #EF8EFF 0%, #FF3535 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  mix-blend-mode: multiply;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.05em;
 }
 
 h2 {
-  /* about section headings */
-  font-family: 'Silka', 'Inter', sans-serif;
-  background: linear-gradient(to right, #FF84C0, #FE5F5F 70%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
 h3 {
-  /* section headings */
-  font-family: 'Silka', 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #000;
   font-weight: 400;
   line-height: 2.8rem;
@@ -61,8 +50,7 @@ h3 {
 }
 
 h4 {
-  /* article names, project names */
-  font-family: 'Silka', 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: -0.02em;
@@ -70,12 +58,7 @@ h4 {
 
 h5 {
   display: inline;
-  font-family: 'Silka', 'Inter', sans-serif;
-  background: linear-gradient(90deg, #FF5EB9 0%, #6679FF 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  mix-blend-mode: multiply;
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -83,6 +66,11 @@ h5 {
 p {
   font-family: 'Inter', sans-serif;;
   font-weight: 400;
+}
+
+.underlinestyle {
+  text-decoration: underline wavy red;
+  text-underline-offset: 1em;
 }
 
 .pink-gradient-text {
@@ -117,9 +105,9 @@ p {
 
 .hero-glow {
   position: absolute;
-  left: 50%;
+  left: 75%;
   right: 0;
-  top: 15%;
+  top: 0;
   bottom: 0;
   margin: auto;
   display: flex;
@@ -134,10 +122,17 @@ p {
 }
 
 .profileimage {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 320px;
   object-fit: cover;
-  border-radius: 100%;
+  border-radius: 16px;
+}
+
+.blogpreviewimg {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .cta-button {

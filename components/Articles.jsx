@@ -38,8 +38,8 @@ const ArticleList = [
 
 const Articles = () => (
   <div>
-    <div className='container py-12 px-8 md:px-4 sm:px-8 sm:py-12'>
-      <h3 className='pb-4 text-xxl md:text-xl sm:text-xl sm:pb-0'>
+    <div className='container py-12 md:px-4 sm:px-8 sm:py-12'>
+      <h3 className='font-sb pb-4 text-xxl sm:pb-0'>
         Articles <Ic_DownArrow size='28' color='#fff' />
       </h3>
 
@@ -49,11 +49,11 @@ const Articles = () => (
             // remove bottom border for last item in list
             return ArticleList.length - 1 === index ? (
               <li key={index} className='py-4'>
-                <div className='text-xs md:text-xxs text-lightgray py-1 tracking-wider'>
+                <div className='text-base text-lightgray uppercase tracking-wider'>
                   {a.date}
                 </div>
                 <a href={a.url} target='_blank'>
-                  <h4 className='text-base font-sb pb-1'>{a.name}</h4>
+                  <h4 className='text-base font-sb'>{a.name}</h4>
                   <p className='text-s md:text-xxs text-lightgray'>
                     Read on Medium <Ic_RightArrow size='14' color='#202020' />
                   </p>
@@ -64,11 +64,11 @@ const Articles = () => (
                 key={index}
                 className='py-4 border-b last:border-b-0 border-lightestgray'
               >
-                <div className='text-xs md:text-xxs text-lightgray py-1 tracking-wider'>
+                <div className='text-s text-lightgray uppercase tracking-wider'>
                   {a.date}
                 </div>
                 <a href={a.url} target='_blank'>
-                  <h4 className='text-base font-sb pb-1'>{a.name}</h4>
+                  <h4 className='text-base font-sb'>{a.name}</h4>
                   <p className='text-s md:text-xxs text-lightgray'>
                     Read on Medium <Ic_RightArrow size='14' color='#202020' />
                   </p>

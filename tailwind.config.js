@@ -16,24 +16,22 @@ module.exports = {
       'lg': {'min': '1024px'}
     },
     fontFamily: {
-      display: ['Silka', 'Inter', 'sans-serif'],
+      display: ['Inter', 'sans-serif'],
       body: ['Inter', 'sans-serif']
     },
     fontWeight: {
-      normal: 400,
-      bold: 700,
+      l: 300,
       r: 400,
       m: 500,
       sb: 600,
-      b: 700,
-      eb: 800
+      b: 700
     },
     colors: {
       'white':'#fff',
-      'lightestgray': '#f2f2f2',
-      'lightgray': '#525252',
-      'medgray': '#C2C2C2',
-      'black':'#1a1a1a'
+      'lightestgray': '#f2f2f2', //prev F2F2F2
+      'lightgray': '#525252', //prev 525252
+      'medgray': '#8E96A4', //prev C2C2C2
+      'black':'#2D3A53'
     },
     fontSize: {
       'xxs': '0.6875rem', //11px

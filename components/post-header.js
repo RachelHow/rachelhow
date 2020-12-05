@@ -1,5 +1,4 @@
 import Avatar from '../components/avatar'
-import Date from '../components/date'
 import CoverImage from '../components/cover-image'
 
 export default function PostHeader({ title, coverImage, date, readingTime, author }) {

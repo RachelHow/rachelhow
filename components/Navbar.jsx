@@ -17,7 +17,7 @@ export default function Navbar({ fixed }) {
               type='button'
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              More
+              Menu
             </button>
           </div>
           <div

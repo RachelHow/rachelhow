@@ -14,7 +14,7 @@ const blog = ({ preview, allPosts }) => {
           <title>Rachel How</title>
         </Head>
 
-        <div className="container px-16 pt-40 pb-12 md:px-4 sm:px-8 sm:pt-36 sm:pb-0 text-center">
+        <div className="container pt-40 px-8 md:px-4 sm:px-8 sm:pt-36 sm:pb-0 text-center">
           <h1 className="text-xxxl md:text-xxl sm:text-xl">
             Thoughts
           </h1>
@@ -34,11 +34,11 @@ const blog = ({ preview, allPosts }) => {
           </div>
         </div>
 
-        <div className="container px-16 md:px-4 sm:px-8">
-          {/* {morePosts.length > 0 && <AllPosts posts={morePosts} />} */}
+        <div className="container px-8 md:px-4 sm:px-8">
+          {morePosts.length > 0 && <AllPosts posts={morePosts} />}
         </div>
 
-        <CTA />
+        {/* <CTA /> */}
 
       </Layout>
     </div>

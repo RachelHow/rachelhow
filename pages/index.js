@@ -36,9 +36,12 @@ export default function IndexPage({ preview, allPosts }) {
           </h3>
           {morePosts.length > 0 && <AllPosts posts={morePosts} />}
         </div> */}
+        
+        <div className="container grid grid-cols-2 py-16 md:px-4 sm:px-8 sm:py-8">
+          <Milestones />
+        </div>
 
-        <Milestones />
-        <Articles />
+        {/* <Articles /> */}
         <CTA />
 
       </Layout>
