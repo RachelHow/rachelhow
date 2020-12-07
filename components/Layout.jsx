@@ -11,11 +11,13 @@ const Layout = ({ children }) => (
     <Head>
       <title>Rachel How</title>
       <meta charSet='utf-8' />
+      <meta name='title' content='Rachel How'/>
+      <meta name='description' content='Product Designer, Writer, Indie Maker'/>
       <meta name='author' content='Rachel How' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta property='og:title' content='Rachel How' />
       <meta property='og:type' content='website' />
-      <meta name='og:description' content='Product Designer' />
+      <meta name='og:description' content='Product Designer, Writer, Indie Maker' />
       <meta property='og:url' content='https://rachelhow.com' />
       <meta
         property='og:image'
