@@ -4,20 +4,25 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import GoogleAnalytics from './GoogleAnalytics'
 import MakerWidget from './MakerWidget'
-import Ic_TwitterLarge from '../src/Ic_TwitterLarge'
 
 const Layout = ({ children }) => (
   <div>
     <Head>
       <title>Rachel How</title>
       <meta charSet='utf-8' />
-      <meta name='title' content='Rachel How'/>
-      <meta name='description' content='Product Designer, Writer, Indie Maker'/>
+      <meta name='title' content='Rachel How' />
+      <meta
+        name='description'
+        content='Rachel How designs, writes and builds indie products. Building community at Malaysians Who Make.'
+      />
       <meta name='author' content='Rachel How' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta property='og:title' content='Rachel How' />
       <meta property='og:type' content='website' />
-      <meta name='og:description' content='Product Designer, Writer, Indie Maker' />
+      <meta
+        name='og:description'
+        content='Rachel How designs, writes and builds indie products. Building community at Malaysians Who Make.'
+      />
       <meta property='og:url' content='https://rachelhow.com' />
       <meta
         property='og:image'
@@ -38,12 +43,12 @@ const Layout = ({ children }) => (
     </Head>
 
     <nav className='header w-screen'>
-      <Navbar/>
+      <Navbar />
     </nav>
 
     {children}
 
-    <Footer/>
+    <Footer />
   </div>
 )
 

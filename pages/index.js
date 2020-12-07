@@ -15,7 +15,7 @@ export default function IndexPage({ preview, allPosts }) {
     <div>
       <Layout preview={preview}>
         <Head>
-          <title>Rachel How</title>
+          <title>Rachel How - Product Designer, Writer, Indie Maker</title>
         </Head>
 
         <div className="hero-glow">

@@ -7,7 +7,13 @@ function About() {
   return (
     <Layout>
       <Head>
-        <title>About Me</title>
+        <title>About Me - Rachel How</title>
+        <meta
+          name='description'
+          content="I'm a polymath - Product Designer at Fave, Writer, Indie Maker, Community Builder.
+          I design delightful user experiences at the intersection of people and business.
+          I also love coffee, cats, food, design, writing, and building stuff with code."
+        />
       </Head>
 
       <div className='container px-16 pt-24 pb-12 md:px-4 sm:px-8 sm:pt-32 text-center'>
@@ -18,7 +24,9 @@ function About() {
           width='100%'
           height='auto'
         />
-        <h1 className='text-xxxl md:text-xxl sm:text-xl'>Hi! I'm Rachel How.</h1>
+        <h1 className='text-xxxl md:text-xxl sm:text-xl'>
+          Hi! I'm Rachel How.
+        </h1>
         <br />
         <p className='mx-36 md:mx-24 sm:mx-0 text-lightgray leading-relaxed text-base md:text-s sm:text-s'>
           I'm a polymath—Product Designer at{' '}
@@ -31,7 +39,7 @@ function About() {
           business.
           <br />I also love coffee, cats, food, design, writing, and building
           stuff with code.
-          <br/>
+          <br />
           You can also check out my{' '}
           <a
             href='https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl'
@@ -82,9 +90,9 @@ function About() {
             my own product through code — Constantly learning new things makes
             me feel super energised. To give back to the community, I share my
             journey through{' '}
-            <Link href="/blog"><a className='font-sb'>
-              writing
-            </a></Link>{' '}
+            <Link href='/blog'>
+              <a className='font-sb'>writing</a>
+            </Link>{' '}
             and speaking.
           </p>
         </div>

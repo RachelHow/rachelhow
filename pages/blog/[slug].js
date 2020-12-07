@@ -24,7 +24,7 @@ export default function Post({ post, morePosts, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title[0].text} | Rachel How
+                  {post.title[0].text} - Rachel How
                 </title>
                 <meta property="og:image" content={post.coverImage} />
               </Head>
