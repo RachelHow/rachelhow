@@ -26,11 +26,11 @@ const Layout = ({ children }) => (
       <meta property='og:url' content='https://rachelhow.com' />
       <meta
         property='og:image'
-        content='https://i.ibb.co/4TXZvfK/URL-image-preview.png'
+        content='https://i.ibb.co/88C36Hd/6d44afc5-3814-49b2-b1f1-fdd9fb5042b5.png'
       />
       <meta
         property='twitter:image'
-        content='https://i.ibb.co/4TXZvfK/URL-image-preview.png'
+        content='https://i.ibb.co/88C36Hd/6d44afc5-3814-49b2-b1f1-fdd9fb5042b5.png'
       />
       <link
         href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800'
