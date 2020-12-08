@@ -4,7 +4,7 @@ const About = () => (
   <div className='py-24 sm:py-12'>
     <div className='container grid grid-flow-col py-12 md:px-4 sm:px-8 sm:py-0 md:grid-cols-1 md:block sm:grid-cols-1 sm:block'>
       <div className='my-auto pr-32 sm:w-full sm:pr-0'>
-        <h2 className='text-xxl md:text-xl sm:text-xl'>
+        <h2 className='text-xxl md:text-xl sm:text-xxl'>
           Let’s be friends! <br/>
           <span className='text-medgray font-r'>
             {' '}

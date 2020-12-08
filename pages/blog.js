@@ -12,8 +12,14 @@ const blog = ({ preview, allPosts }) => {
       <Layout preview={preview}>
         <Head>
           <title>Blog - Rachel How</title>
+          <meta name='title' content='Blog - Rachel How' />
           <meta
             name='description'
+            content='Musings on design, personal growth, and building indie products.'
+          />
+          <meta property='og:title' content='Blog - Rachel How' />
+          <meta
+            property='og:description'
             content='Musings on design, personal growth, and building indie products.'
           />
         </Head>

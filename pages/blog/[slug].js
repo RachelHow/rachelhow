@@ -16,17 +16,25 @@ export default function Post({ post, morePosts, preview }) {
 
   return (
     <Layout preview={preview}>
-      <div className="container mx-auto pt-20 pb-12 px-8 md:px-4 sm:px-8">
+      <div className='container mx-auto pt-20 pb-12 px-8 md:px-4 sm:px-8'>
         {router.isFallback ? (
-          "Loading…"
+          'Loading…'
         ) : (
           <>
             <article>
               <Head>
-                <title>
-                  {post.title[0].text} - Rachel How
-                </title>
-                <meta property="og:image" content={post.coverImage} />
+                <title>{post.title} - Rachel How</title>
+                <meta name='title' content={post.title} />
+                <meta
+                  name='description'
+                  content="Rachel How's Blog"
+                />
+                <meta property='og:title' content={post.title} />
+                <meta
+                  property='og:description'
+                  content="Rachel How's Blog"
+                />
+                <meta property='og:image' content={post.coverImage} />
               </Head>
               <PostHeader
                 title={post.title}
@@ -38,8 +46,8 @@ export default function Post({ post, morePosts, preview }) {
               <PostBody content={post.content} />
             </article>
             <SectionSeparator />
-            <div className="pt-10 text-center">
-              <h4 className="text-l">Continue reading</h4>
+            <div className='pt-10 text-center'>
+              <h4 className='text-l'>Continue reading</h4>
             </div>
             {morePosts && morePosts.length > 0 && (
               <AllPosts posts={morePosts} />

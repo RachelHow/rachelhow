@@ -63,9 +63,9 @@ p {
 .header {
   z-index: 50;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.8); 
-  backdrop-filter: saturate(180%) blur(10px);
-  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  background-color: rgba(255, 255, 255, 0.4); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0px 0.5px 0.25px #dbdbdb;
   transition: box-shadow .2s ease 0s;
 }
@@ -85,7 +85,8 @@ p {
 
 .hero-glow {
   position: absolute;
-  left: 75%;
+  opacity: 100%;
+  left: 85%;
   right: 0;
   top: 0;
   bottom: 0;

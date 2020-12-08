@@ -5,7 +5,7 @@ import Ic_DownArrow from '../src/Ic_DownArrow'
 const Hero = () => (
   <div className='flex h-screen'>
     <div className='container m-auto sm:px-8'>
-      <h1 className='text-xxxl md:text-xxl sm:text-xl w-3/4 md:w-full sm:w-full'>
+      <h1 className='text-xxxl md:text-xxl sm:text-xxl w-3/4 md:w-full sm:w-full'>
         Hey there, I'm Rachel.<br/>
         <span className='text-medgray font-r'>
           {' '}
