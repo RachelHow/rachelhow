@@ -13,23 +13,13 @@ const Layout = ({ children }) => (
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://rachelhow.com' />
-      {/* <meta name='title' content='Rachel How' />
-      <meta
-        name='description'
-        content='Rachel How designs, writes and builds indie products. Building community at Malaysians Who Make.'
-      />
-      <meta property='og:title' content='Rachel How' />
-      <meta
-        name='og:description'
-        content='Rachel How designs, writes and builds indie products. Building community at Malaysians Who Make.'
-      /> */}
       <meta
         property='og:image'
-        content='https://i.ibb.co/88C36Hd/6d44afc5-3814-49b2-b1f1-fdd9fb5042b5.png'
+        content='https://i.ibb.co/gWT0Vbc/477fa316-020d-4d90-93a1-483f5d484446.png'
       />
       <meta
         property='twitter:image'
-        content='https://i.ibb.co/88C36Hd/6d44afc5-3814-49b2-b1f1-fdd9fb5042b5.png'
+        content='https://i.ibb.co/gWT0Vbc/477fa316-020d-4d90-93a1-483f5d484446.png'
       />
       <link
         href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800'
