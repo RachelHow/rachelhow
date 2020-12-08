@@ -30,7 +30,7 @@ const blog = ({ preview, allPosts }) => {
               target='_blank'
             >
               <button className='cta-button rounded shadow'>
-                <h5>rachelhow95@gmail.com</h5>
+                <span>rachelhow95@gmail.com</span>
               </button>
             </a>
           </div>

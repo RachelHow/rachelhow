@@ -16,7 +16,7 @@ module.exports = {
       'lg': {'min': '1024px'}
     },
     fontFamily: {
-      display: ['Inter', 'sans-serif'],
+      display: ['Argesta Headline', 'Inter', 'sans-serif'],
       body: ['Inter', 'sans-serif']
     },
     fontWeight: {
@@ -40,8 +40,8 @@ module.exports = {
       'base': '1rem',
       'l': '1.25rem', 
       'xl': '1.75rem', //28px
-      'xxl': '2.25rem', //32px
-      'xxxl': '3rem' //48px
+      'xxl': '2.5rem', //32px
+      'xxxl': '3.4rem' //48px
     },
     inset: {
       'smileylg':'28rem',

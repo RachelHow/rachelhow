@@ -53,7 +53,7 @@ function About() {
         <div className='py-10'>
           <a href='mailto:rachelhow95@gmail.com?Subject=Hello!' target='_blank'>
             <button className='cta-button rounded shadow'>
-              <h5>rachelhow95@gmail.com</h5>
+              <span>rachelhow95@gmail.com</span>
             </button>
           </a>
         </div>
@@ -76,7 +76,7 @@ function About() {
           I believe that
         </p>
 
-        <h2 className='text-xl'>Great design solves a real problem</h2>
+        <h2 className='text-xxl'>Great design solves a real problem</h2>
         <div className='pt-6 pb-20'>
           <p className='mx-32 md:mx-0 sm:mx-0 text-lightgray tracking-tight leading-relaxed text-base md:text-s sm:text-s'>
             I always strive to design profitable solutions for you. I’ve been
@@ -115,7 +115,7 @@ function About() {
           My principles
         </p>
 
-        <h2 className='text-xl'>Creating value for your business</h2>
+        <h2 className='text-xxl'>Creating value for your business</h2>
         <div className='pt-6'>
           <p className='mx-32 md:mx-0 sm:mx-0 text-lightgray tracking-tight leading-relaxed text-base md:text-s sm:text-s'>
             I start every project by understanding your business and customers
@@ -163,7 +163,7 @@ function About() {
           <br />
           <a href='mailto:rachelhow95@gmail.com?Subject=Hello!' target='_blank'>
             <button className='cta-button rounded shadow'>
-              <h5>rachelhow95@gmail.com</h5>
+              <span>rachelhow95@gmail.com</span>
             </button>
           </a>
         </div>

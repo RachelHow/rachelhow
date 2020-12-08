@@ -36,6 +36,7 @@ const Layout = ({ children }) => (
         href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800'
         rel='stylesheet'
       />
+      <link href='/fonts/styles.css' rel='stylesheet' />
       <link rel='shortcut icon' href='/favicon/favicon.ico' />
       <link rel='canonical' href='https://rachelhow.com' />
       <MakerWidget />

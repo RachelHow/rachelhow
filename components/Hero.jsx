@@ -5,11 +5,11 @@ import Ic_DownArrow from '../src/Ic_DownArrow'
 const Hero = () => (
   <div className='flex h-screen'>
     <div className='container m-auto sm:px-8'>
-      <h1 className='text-xxxl md:text-xxl sm:text-xl w-3/4 md:w-full sm:w-full leading-snug'>
-        <span>Hey there, I'm Rachel.</span>
+      <h1 className='text-xxxl md:text-xxl sm:text-xl w-3/4 md:w-full sm:w-full'>
+        Hey there, I'm Rachel.<br/>
         <span className='text-medgray font-r'>
           {' '}
-          I design, write &amp; build indie products. Product Designer at{' '}
+          I design, write &amp; build indie products. Product Designer* at{' '}
           <a href='https://myfave.com/careers' className='underline'>
             Fave
           </a>
@@ -21,12 +21,12 @@ const Hero = () => (
         </span>
       </h1>
       <br />
-      <span className="text-l">
+      <h5 className="text-l">
         More
         <Link href='/about'>
-          <a className='font-sb'> about me.</a>
+          <a className='font-b'> about me.</a>
         </Link>
-      </span>
+      </h5>
     </div>
     <div className='hero-caption text-lightgray text-s sm:px-12 sm:hidden'>
       Welcome to my journey where I explore,{' '}
