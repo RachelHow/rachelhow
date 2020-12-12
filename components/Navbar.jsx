@@ -43,7 +43,7 @@ export default function Navbar({ fixed }) {
               </li>
               <li>
                 <a
-                  href='https://www.notion.so/Rachel-s-Mind-Garden-5df9abdb778b49acadac4c3ac2eac4d8'
+                  href='https://notes.rachelhow.com'
                   target='_blank'
                   className='px-3 sm:px-0 md:px-0 py-2 font-sb flex items-center leading-snug hover:opacity-75'
                 >
