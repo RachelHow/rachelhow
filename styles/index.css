@@ -86,9 +86,9 @@ p {
 .hero-glow {
   position: absolute;
   opacity: 100%;
-  left: 85%;
+  left: 0;
   right: 0;
-  top: 0;
+  top: 20%;
   bottom: 0;
   margin: auto;
   display: flex;

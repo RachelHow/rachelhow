@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Argesta Headline';
-    src: url('./argestaheadline-regular-webfont.eot');
-    src: url('./argestaheadline-regular-webfont.eot') format('embedded-opentype'),
-      url('./argestaheadline-regular-webfont.woff2') format('woff2'), 
-      url('./argestaheadline-regular-webfont.woff') format('woff'),
-      url('./argestaheadline-regular-webfont.ttf') format('truetype');
+    src: url('./silka-semibold-webfont.eot');
+    src: url('./silka-semibold-webfont.eot') format('embedded-opentype'),
+      url('./silka-semibold-webfont.woff2') format('woff2'), 
+      url('./silka-semibold-webfont.woff') format('woff'),
+      url('./silka-semibold-webfont.ttf') format('truetype');
 }
 

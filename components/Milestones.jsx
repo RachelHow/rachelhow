@@ -1,45 +1,51 @@
 const MilestoneList = [
   {
-    date: '2020-10-13',
-    stone: "Webinar: A Self-Taught Designer's Journey",
+    date: ' / Dec 2020',
+    stone: 'Guest Speaker, Friends of Figma Kuala Lumpur',
   },
   {
-    date: '2020-09-14',
+    date: ' / Oct 2020',
+    stone: "Webinar, A Self-Taught Designer's Journey",
+  },
+  {
+    date: ' / Sep 2020',
     stone: 'Guest Speaker at Monash University Malaysia',
   },
   {
-    date: '2020-08-31',
-    stone: 'Reached $1.3K MRR by helping clients to scale their UI/UX designs',
+    date: ' / Aug 2020',
+    stone: '$1.3K MRR on product design for clients',
   },
   {
-    date: '2020-05-20',
-    stone: 'Built my first product, Malaysians Who Make: 1K+ views in 7 days',
+    date: ' / May 2020',
+    stone: 'Built Malaysians Who Make — 1,000+ views in 7 days',
   },
   {
-    date: '2019-04-28',
-    stone: 'Won Top 10 Team in my first hackathon by Hong Leong Bank',
+    date: ' / Apr 2019',
+    stone: 'Top 10 Team at CYHI Hackathon, Hong Leong Bank',
   },
 ]
 
 const Milestones = () => (
-  <div>
-      <h3 className='font-sb pb-8 text-xxl'>
-        Milestones
-      </h3>
+  <div className='pb-16 px-48 md:px-4 sm:px-8'>
+    <div className='container grid grid-cols-3 col-gap-48 py-12 sm:grid-cols-1'>
+      <div className='col-span-1 sm:pb-8'>
+        <h1 className='text-xl'>Milestones</h1>
+      </div>
 
-      <div>
+      <div className='col-span-2 sm:col-span-1'>
         <ul>
           {MilestoneList.map((a, index) => (
-            <li key={index} className='pb-4 sm:block'>
-              <p className='text-s text-lightgray uppercase tracking-wider'>
+            <li key={index} className='pb-6 sm:block'>
+              <span className='font-sb'>{a.stone}</span>
+              <span className='text-medgray'>
                 {a.date}
-              </p>
-              <p className='text-l sm:text-base font-m'>{a.stone}</p>
+              </span>
             </li>
           ))}
         </ul>
       </div>
     </div>
+  </div>
 )
 
 export default Milestones

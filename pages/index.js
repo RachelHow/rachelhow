@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import Head from "next/head";
 import { getAllPostsForHome } from "../lib/api";
 import Hero from "../components/Hero";
-import About from "../components/About";
+import Now from "../components/Now";
 // import AllPosts from "../components/allPosts";
 import Milestones from "../components/Milestones";
 // import Articles from "../components/Articles";
@@ -37,8 +37,9 @@ export default function IndexPage({ preview, allPosts }) {
         </div>  
 
         <Hero />
-
-        <About />
+        <Now />
+        {/* <Articles /> */}
+        <Milestones />
 
         {/* <div className="container px-16 md:px-4 sm:px-8">
           <h3 className="py-10 text-xl md:text-xl sm:text-xl">
@@ -46,12 +47,6 @@ export default function IndexPage({ preview, allPosts }) {
           </h3>
           {morePosts.length > 0 && <AllPosts posts={morePosts} />}
         </div> */}
-        
-        <div className="container grid grid-cols-2 sm:grid-cols-1 py-16 md:px-4 sm:px-8 sm:py-20">
-          <Milestones />
-        </div>
-
-        {/* <Articles /> */}
         {/* <CTA /> */}
 
       </Layout>
