@@ -4,7 +4,7 @@ export default function PostPreview({ title, readingTime, coverImage, date, slug
   return (
     <div className="flex mb-20 sm:flex-col">
       <div>
-        <Link as={`/blog/${slug}`} href="/blog/[slug]">
+        <Link as={`/articles/${slug}`} href="/articles/[slug]">
           <a>
             <div className="mb-2">
                 <img

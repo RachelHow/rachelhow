@@ -16,9 +16,9 @@ const Now = () => (
             <span className='text-medgray'>Malaysians Who Make, a space to showcase local creators.</span>
           </li>
           <li className='pb-6'>
-          <Link href='/blog'><a  className='font-sb'>Writing about random ideas, personal growth, design</a></Link> <Ic_RightArrow/>
+          <Link href='/articles'><a  className='font-sb'>Writing about random ideas, personal growth, design</a></Link> <Ic_RightArrow/>
             <br />
-            <span className='text-medgray'>Read the blog.</span>
+            <span className='text-medgray'>Read my best articles.</span>
           </li>
           <li className='pb-6'>
             <a className='font-sb' href='https://notes.rachelhow.com' target='_blank'>Growing my digital garden</a><Ic_RightArrow/><br />

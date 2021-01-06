@@ -4,20 +4,20 @@ import { getAllPostsForHome } from '../lib/api'
 import AllPosts from '../components/allPosts'
 import CTA from '../components/CTA'
 
-const blog = ({ preview, allPosts }) => {
+const articles = ({ preview, allPosts }) => {
   const morePosts = allPosts
 
   return (
     <div>
       <Layout preview={preview}>
         <Head>
-          <title>Blog - Rachel How</title>
-          <meta name='title' content='Blog - Rachel How' />
+          <title>Best Articles - Rachel How</title>
+          <meta name='title' content='Best Articles - Rachel How' />
           <meta
             name='description'
             content='Musings on design, personal growth, and building indie products.'
           />
-          <meta property='og:title' content='Blog - Rachel How' />
+          <meta property='og:title' content='Best Articles - Rachel How' />
           <meta
             property='og:description'
             content='Musings on design, personal growth, and building indie products.'
@@ -25,7 +25,7 @@ const blog = ({ preview, allPosts }) => {
         </Head>
 
         <div className='container pt-40 px-8 md:px-4 sm:px-8 sm:pt-36 sm:pb-0 text-center'>
-          <h1 className='text-xxxl md:text-xxl sm:text-xl'>Thoughts</h1>
+          <h1 className='text-xxxl md:text-xxl sm:text-xl'>Best Articles</h1>
           <br />
           <p className='mx-48 md:mx-24 sm:mx-0 text-medgray tracking-tight text-base md:text-s'>
             Musings on design, personal growth, and building indie products.
@@ -52,7 +52,7 @@ const blog = ({ preview, allPosts }) => {
   )
 }
 
-export default blog
+export default articles
 
 export async function getStaticProps({ preview = false }) {
   const allPosts = (await getAllPostsForHome(preview)) || []

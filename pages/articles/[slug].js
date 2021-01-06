@@ -27,12 +27,12 @@ export default function Post({ post, morePosts, preview }) {
                 <meta name='title' content={post.title} />
                 <meta
                   name='description'
-                  content="Rachel How's Blog"
+                  content="Rachel How's Article"
                 />
                 <meta property='og:title' content={post.title} />
                 <meta
                   property='og:description'
-                  content="Rachel How's Blog"
+                  content="Rachel How's Article"
                 />
                 <meta property='og:image' content={post.coverImage} />
               </Head>
@@ -74,7 +74,7 @@ export async function getStaticProps({ params, preview = false, previewData }) {
 export async function getStaticPaths() {
   const allPosts = await getAllPostsWithSlug()
   return {
-    paths: allPosts?.map((post) => `/blog/${post.slug}`) || [],
+    paths: allPosts?.map((post) => `/articles/${post.slug}`) || [],
     fallback: true,
   }
 }

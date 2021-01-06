@@ -98,7 +98,7 @@ function About() {
             my own product through code — Constantly learning new things makes
             me feel super energised. To give back to the community, I share my
             journey through{' '}
-            <Link href='/blog'>
+            <Link href='/articles'>
               <a className='font-sb'>writing</a>
             </Link>{' '}
             and speaking.

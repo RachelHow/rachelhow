@@ -28,17 +28,17 @@ export default function Navbar({ fixed }) {
           >
             <ul className='flex flex-col lg:flex-row list-none lg:ml-auto text-s md:pt-2 sm:pt-2'>
               <li>
-                <Link href='/about'>
+                <Link href='/articles'>
                   <a className='px-3 sm:px-0 md:px-0 py-2 font-sb flex items-center leading-snug hover:opacity-75'>
-                    About
+                    Articles
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href='/blog'>
-                  <a className='px-3 sm:px-0 md:px-0 py-2 font-sb flex items-center leading-snug hover:opacity-75'>
-                    Thoughts
-                  </a>
+                <Link href='/newsletter'>
+                <a className='px-3 sm:px-0 md:px-0 py-2 font-sb flex items-center leading-snug hover:opacity-75'>
+                Newsletter
+                </a>
                 </Link>
               </li>
               <li>
@@ -53,10 +53,17 @@ export default function Navbar({ fixed }) {
                   href='https://notes.rachelhow.com'
                   target='_blank'
                   className='px-3 sm:px-0 md:px-0 py-2 font-sb flex items-center leading-snug hover:opacity-75'
-                  >
+                >
                   Notebook
                 </a>
-                  </li>
+              </li>
+              <li>
+                <Link href='/about'>
+                  <a className='px-3 sm:px-0 md:px-0 py-2 font-sb flex items-center leading-snug hover:opacity-75'>
+                    About
+                  </a>
+                </Link>
+              </li>
               <li>
                 <a
                   href='https://www.notion.so/FAQ-1bf38aa7b403424b8058bb74eea8e873'

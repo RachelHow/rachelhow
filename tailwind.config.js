@@ -41,7 +41,7 @@ module.exports = {
       'l': '1.25rem', 
       'xl': '1.75rem', //28px
       'xxl': '2.5rem', //32px
-      'xxxl': '3.4rem' //48px
+      'xxxl': '2.8rem' //48px
     },
     inset: {
       'smileylg':'28rem',
