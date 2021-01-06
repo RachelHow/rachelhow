@@ -1,34 +1,35 @@
 import Layout from '../components/Layout'
 import Head from 'next/head'
-import { getAllPostsForHome } from '../lib/api'
-import AllPosts from '../components/allPosts'
-import CTA from '../components/CTA'
+import { getAllWorkForHome } from '../lib/api'
+import AllWork from '../components/allWork'
+// import CTA from '../components/CTA'
 
-const blog = ({ preview, allPosts }) => {
+const work = ({ preview, allPosts }) => {
   const morePosts = allPosts
 
   return (
     <div>
       <Layout preview={preview}>
         <Head>
-          <title>Blog - Rachel How</title>
-          <meta name='title' content='Blog - Rachel How' />
+          <title>Selected Work - Rachel How</title>
+          <meta name='title' content='Selected Work - Rachel How' />
           <meta
             name='description'
-            content='Musings on design, personal growth, and building indie products.'
+            content="I'm a Product Designer by profession, designing thoughtful experiences that your users will love."
           />
-          <meta property='og:title' content='Blog - Rachel How' />
+          <meta property='og:title' content='Selected Work - Rachel How' />
           <meta
             property='og:description'
-            content='Musings on design, personal growth, and building indie products.'
+            content="I'm a Product Designer by profession, designing thoughtful experiences that your users will love."
           />
         </Head>
 
         <div className='container pt-40 px-8 md:px-4 sm:px-8 sm:pt-36 sm:pb-0 text-center'>
-          <h1 className='text-xxxl md:text-xxl sm:text-xl'>Thoughts</h1>
+          <h1 className='text-xxxl md:text-xxl sm:text-xl'>Selected Work</h1>
           <br />
           <p className='mx-48 md:mx-24 sm:mx-0 text-medgray tracking-tight text-base md:text-s'>
-            Musings on design, personal growth, and building indie products.
+            I'm a Product Designer by profession, designing thoughtful
+            experiences that your users will love.
           </p>
           <div className='py-10'>
             <a
@@ -42,8 +43,8 @@ const blog = ({ preview, allPosts }) => {
           </div>
         </div>
 
-        <div className='container px-8 md:px-4 sm:px-8'>
-          {morePosts.length > 0 && <AllPosts posts={morePosts} />}
+        <div className='container px-8 pb-20 md:px-4 sm:px-8'>
+          {morePosts.length > 0 && <AllWork posts={morePosts} />}
         </div>
 
         {/* <CTA /> */}
@@ -52,10 +53,10 @@ const blog = ({ preview, allPosts }) => {
   )
 }
 
-export default blog
+export default work
 
 export async function getStaticProps({ preview = false }) {
-  const allPosts = (await getAllPostsForHome(preview)) || []
+  const allPosts = (await getAllWorkForHome(preview)) || []
   return {
     props: { preview, allPosts },
   }

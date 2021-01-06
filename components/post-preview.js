@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function PostPreview({ title, readingTime, coverImage, date, slug }) {
   return (
     <div className="flex mb-20 sm:flex-col">
-      <div className="my-auto">
+      <div>
         <Link as={`/blog/${slug}`} href="/blog/[slug]">
           <a>
             <div className="mb-2">
@@ -18,7 +18,7 @@ export default function PostPreview({ title, readingTime, coverImage, date, slug
             </h4>
           </a>
         </Link>
-        <p className="text-s md:text-xs text-lightgray">
+        <p className="text-s md:text-xs text-medgray">
           {date} • {readingTime}
         </p>
       </div>

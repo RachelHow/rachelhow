@@ -3,13 +3,15 @@ import Ic_DownArrow from '../src/Ic_DownArrow'
 
 const Hero = () => (
   <div className='flex h-screen text-center '>
-    <div className='container m-auto sm:px-8'>
-      <img
-        src='/images/profileimage.png'
-        alt='rachel-how'
-        className='profileimage mx-auto'
-      />
-      <h1 className='text-xl pt-8 mb-4 text-black'>
+    <div className='container m-auto'>
+      <div className='profileimage mx-auto'>
+        <img
+          src='/images/profileimage.png'
+          alt='rachel-how'
+          className='sm:mx-auto'
+        />
+      </div>
+      <h1 className='text-xl pt-8 sm:pt-4 mb-4 text-black'>
         Hi! I’m Rachel, Product Designer who codes &amp; writes.
       </h1>
       <span className='text-medgray'>Based in Kuala Lumpur 🇲🇾</span>

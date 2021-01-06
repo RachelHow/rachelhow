@@ -1,9 +1,10 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
-import { getAllPostsForHome } from "../lib/api";
+import { getAllWorkForHome } from "../lib/api";
 import Hero from "../components/Hero";
 import Now from "../components/Now";
-// import AllPosts from "../components/allPosts";
+import AllWork from "../components/allWork";
+import Work from "../components/Work";
 import Milestones from "../components/Milestones";
 // import Articles from "../components/Articles";
 import CTA from "../components/CTA";
@@ -32,7 +33,7 @@ export default function IndexPage({ preview, allPosts }) {
           <img
             src="/images/Gradient-Full-01.png"
             alt="gradient"
-            className="fixed h-screen"
+            className="fixed h-screen sm:hidden"
           />
         </div>  
 
@@ -40,13 +41,7 @@ export default function IndexPage({ preview, allPosts }) {
         <Now />
         {/* <Articles /> */}
         <Milestones />
-
-        {/* <div className="container px-16 md:px-4 sm:px-8">
-          <h3 className="py-10 text-xl md:text-xl sm:text-xl">
-            Selected work
-          </h3>
-          {morePosts.length > 0 && <AllPosts posts={morePosts} />}
-        </div> */}
+        <Work posts={allPosts}/>
         {/* <CTA /> */}
 
       </Layout>
@@ -55,7 +50,7 @@ export default function IndexPage({ preview, allPosts }) {
 }
 
 export async function getStaticProps({ preview = false }) {
-  const allPosts = await getAllPostsForHome(preview) || [];
+  const allPosts = await getAllWorkForHome(preview) || [];
   return {
     props: { preview, allPosts },
   };

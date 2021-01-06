@@ -42,14 +42,21 @@ export default function Navbar({ fixed }) {
                 </Link>
               </li>
               <li>
+                <Link href='/work'>
+                  <a className='px-3 sm:px-0 md:px-0 py-2 font-sb flex items-center leading-snug hover:opacity-75'>
+                    Work
+                  </a>
+                </Link>
+              </li>
+              <li>
                 <a
                   href='https://notes.rachelhow.com'
                   target='_blank'
                   className='px-3 sm:px-0 md:px-0 py-2 font-sb flex items-center leading-snug hover:opacity-75'
-                >
+                  >
                   Notebook
                 </a>
-              </li>
+                  </li>
               <li>
                 <a
                   href='https://www.notion.so/FAQ-1bf38aa7b403424b8058bb74eea8e873'
