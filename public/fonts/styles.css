@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Argesta Headline';
+    font-family: 'Silka Semibold';
     src: url('./silka-semibold-webfont.eot');
     src: url('./silka-semibold-webfont.eot') format('embedded-opentype'),
       url('./silka-semibold-webfont.woff2') format('woff2'), 
@@ -7,3 +7,37 @@
       url('./silka-semibold-webfont.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Silka Medium';
+  src: url('./silka-medium-webfont.eot');
+  src: url('./silka-medium-webfont.eot') format('embedded-opentype'),
+    url('./silka-medium-webfont.woff2') format('woff2'), 
+    url('./silka-medium-webfont.woff') format('woff'),
+    url('./silka-medium-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Silka Regular';
+  src: url('./silka-regular-webfont.eot');
+  src: url('./silka-regular-webfont.eot') format('embedded-opentype'),
+    url('./silka-regular-webfont.woff2') format('woff2'), 
+    url('./silka-regular-webfont.woff') format('woff'),
+    url('./silka-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Silka Bold Italic';
+  src: url('./silka-bolditalic-webfont.eot');
+  src: url('./silka-bolditalic-webfont.eot') format('embedded-opentype'),
+    url('./silka-bolditalic-webfont.woff2') format('woff2'), 
+    url('./silka-bolditalic-webfont.woff') format('woff'),
+    url('./silka-bolditalic-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Silka Mono';
+  src: url('./silkamono-regular-webfont.eot');
+  src: url('./silkamono-regular-webfont.eot') format('embedded-opentype'),
+    url('./silkamono-regular-webfont.woff2') format('woff2'), 
+    url('./silkamono-regular-webfont.ttf') format('truetype');
+}

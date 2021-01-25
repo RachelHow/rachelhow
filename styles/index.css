@@ -2,50 +2,92 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html, body {
+  @apply bg-white dark:bg-black;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Silka Regular', 'Inter', sans-serif;
+  font-size: 0.875rem;
   font-weight: 400;
-}
-
-h1 {
-  font-family: 'Argesta Headline', 'Inter', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 120%;
-}
-
-h2 {
-  font-family: 'Argesta Headline', 'Inter', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 120%;
-}
-
-h3 {
-  font-family: 'Argesta Headline', 'Inter', sans-serif;
-  color: #000;
-  font-weight: 400;
-  line-height: 2.8rem;
-  letter-spacing: -0.02em;
-}
-
-h4 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  line-height: 2.4rem;
-  letter-spacing: -0.02em;
-}
-
-h5 {
-  display: inline;
-  font-family: 'Argesta Headline', 'Inter', sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  line-height: 150%;
 }
 
 p {
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Silka Regular', 'Inter', sans-serif;
   font-weight: 400;
+  line-height: 150%;
+  @apply text-s text-gray1 dark:text-gray3;
+}
+
+h1 {
+  font-family: 'Silka Semibold', 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  @apply text-black dark:text-white;
+}
+
+h2 {
+  font-family: 'Silka Semibold', 'Inter', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  @apply text-black dark:text-white;
+}
+
+h3 {
+  font-family: 'Silka Semibold', 'Inter', sans-serif;
+  font-weight: 700;
+  @apply text-l text-black dark:text-white leading-relaxed;
+}
+
+h4 {
+  font-family: 'Silka Medium', 'Inter', sans-serif;
+  font-weight: 500;
+  @apply text-base text-black dark:text-white;
+}
+
+/* subtitle */
+h5 {
+  font-family: 'Silka Regular', 'Inter', sans-serif;
+  font-weight: 400;
+  @apply text-s text-gray2;
+}
+
+/* overline */
+h6 {
+  font-family: 'Silka Medium', 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 5%;
+  @apply text-xs text-gray2 uppercase;
+}
+
+.caption {
+  @apply text-s text-gray2 leading-loose;
+}
+
+.menu-text {
+  @apply text-s text-black dark:text-white flex items-center px-3 sm:px-0 md:px-0 py-2;
+}
+
+hr {
+  border: 1px solid #dedede;
+}
+
+.btn {
+  @apply flex items-center font-semibold justify-center px-4 py-2 focus:outline-none;
+}
+
+.btn-primary {
+  @apply text-white bg-orange rounded-full;
+}
+
+.cta-button {
+  display: inline;
+  background-color: #fff;
+  vertical-align: middle;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 60px;
+  padding: 16px 24px;
 }
 
 .underlinestyle {
@@ -63,11 +105,11 @@ p {
 .header {
   z-index: 50;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.4); 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0px 0.5px 0.25px #dbdbdb;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   transition: box-shadow .2s ease 0s;
+  width: 100vw;
+  @apply bg-headerLight dark:bg-headerDark;
 }
 
 .hero {
@@ -75,38 +117,13 @@ p {
   height: 100vh;
 }
 
-.hero-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 2rem;
-  text-align: center;
-}
-
-.hero-glow {
-  position: absolute;
-  opacity: 100%;
-  left: 0;
-  right: 0;
-  top: 20%;
-  bottom: 0;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -5;
-}
-
 .profilecontainer {
-  max-height: 350px; 
-  /* previously 400px */
+  max-height: 300px; 
 }
 
 .profileimage {
-  width: 300px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 16px;
+  width: 240px;
+  height: 244px;
 }
 
 .blogpreviewimg {
@@ -118,15 +135,6 @@ p {
 
 .workpreviewimg {
   border-radius: 16px;
-}
-
-.cta-button {
-  display: inline;
-  background-color: #fff;
-  vertical-align: middle;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-  border-radius: 60px;
-  padding: 16px 24px;
 }
 
 /* animation */

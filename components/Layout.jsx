@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
       <GoogleAnalytics />
     </Head>
 
-    <nav className='header w-screen'>
+    <nav className='header dark:text-white'>
       <Navbar />
     </nav>
 

@@ -1,5 +1,6 @@
 module.exports = {
   purge: false,
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -16,7 +17,8 @@ module.exports = {
       'lg': {'min': '1024px'}
     },
     fontFamily: {
-      display: ['Argesta Headline', 'Inter', 'sans-serif'],
+      display: ['Silka', 'Inter', 'sans-serif'],
+      semibold: ['Silka Semibold', 'Inter', 'sans-serif'],
       body: ['Inter', 'sans-serif']
     },
     fontWeight: {
@@ -27,26 +29,28 @@ module.exports = {
       b: 700
     },
     colors: {
-      'white':'#fff',
-      'lightestgray': '#f2f2f2', //prev F2F2F2
+      'black': '#181818',
+      'white':'#ffffff',
+      'gray1': '#343434',
+      'gray2': '#969696',
+      'gray3': '#B2B2B2',
+      'lightestgray': '#f8f8f8',
+      'orange': '#FF7A00',
       'lightgray': '#525252', //prev 525252
-      'medgray': '#8E96A4', //prev C2C2C2
-      'black':'#2D3A53'
+      'medgray': '#969696', //prev 8E96A4
+      'cardBgDark': '#212121',
+      'headerLight': 'hsla(0, 0%, 100%, 0.4)',
+      'headerDark': 'hsla(0, 0%, 0%, 0.4)',
     },
     fontSize: {
       'xxs': '0.6875rem', //11px
-      'xs': '0.75rem', //12px
-      's': '0.875rem', //14px
-      'base': '1rem',
-      'l': '1.25rem', 
-      'xl': '1.75rem', //28px
-      'xxl': '2.5rem', //32px
+      'xs': '0.75rem', //overline,12px
+      's': '0.875rem', //h5, 14px
+      'base': '1rem', //h4, 16px
+      'l': '1.5rem',  //h3,24px
+      'xl': '1.75rem', //h2,28px
+      'xxl': '2rem', //h1,32px
       'xxxl': '2.8rem' //48px
-    },
-    inset: {
-      'smileylg':'28rem',
-      'smileymd':'4rem',
-      'smileysm':'4rem'
     },
     extend: {
       lineHeight: {
@@ -55,5 +59,7 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    // require('tailwindcss-line-clamp'),
+  ],
 }

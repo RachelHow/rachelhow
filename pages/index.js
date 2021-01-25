@@ -1,57 +1,97 @@
-import Layout from "../components/Layout";
-import Head from "next/head";
-import { getAllWorkForHome } from "../lib/api";
-import Hero from "../components/Hero";
-import Now from "../components/Now";
-import AllWork from "../components/allWork";
-import Work from "../components/Work";
-import Milestones from "../components/Milestones";
-// import Articles from "../components/Articles";
-import CTA from "../components/CTA";
+import Layout from '../components/Layout'
+import Head from 'next/head'
+import { getAllWorkForHome } from '../lib/api'
+import Work from '../components/Work'
 
 export default function IndexPage({ preview, allPosts }) {
-  const morePosts = allPosts;
+  const morePosts = allPosts
 
   return (
     <div>
       <Layout preview={preview}>
         <Head>
           <title>Rachel How - Product Designer, Writer, Indie Maker</title>
-          <meta name='title' content='Rachel How - Product Designer, Writer, Indie Maker' />
+          <meta
+            name='title'
+            content='Rachel How - Product Designer, Writer, Indie Maker'
+          />
           <meta
             name='description'
             content='Rachel How designs, writes and builds indie products. Building community at Malaysians Who Make.'
           />
-          <meta property='og:title' content='Rachel How - Product Designer, Writer, Indie Maker' />
+          <meta
+            property='og:title'
+            content='Rachel How - Product Designer, Writer, Indie Maker'
+          />
           <meta
             property='og:description'
             content='Rachel How designs, writes and builds indie products. Building community at Malaysians Who Make.'
           />
         </Head>
 
-        <div className="hero-glow">
+        <div className='container max-w-screen-md	 flex pt-32 pb-8'>
           <img
-            src="/images/Gradient-Full-01.png"
-            alt="gradient"
-            className="fixed h-screen sm:hidden"
+            src='/images/profileimage.png'
+            alt='rachel-how'
+            className='profileimage sm:mx-auto mr-8'
           />
-        </div>  
 
-        <Hero />
-        <Now />
-        {/* <Articles /> */}
-        <Milestones />
-        <Work posts={allPosts}/>
-        {/* <CTA /> */}
+          <div className='mt-12'>
+            <h1 className='pt-8 sm:pt-4 mb-4'>Hi! I’m Rachel 🌶</h1>
+            <p className='w-3/5'>
+              I’m a product designer who codes &amp; writes. Currently designing
+              products at Fave.
+            </p>
+          </div>
+        </div>
 
+        <div className='container max-w-screen-md	py-12'>
+          <h6>Thinking out loud</h6>
+          <h3>I write about personal growth, design &amp; more.</h3>
+          <button className='btn btn-primary mt-8'>More on the blog</button>
+        </div>
+
+        <Work posts={allPosts} />
+
+        <div className='container max-w-screen-md	py-12'>
+          <h6>Never stop learning</h6>
+          <h3>Here are resources that might help you.</h3>
+          <div className='pt-6'>
+            <div className='bg-lightestgray dark:bg-cardBgDark p-6 mb-4 rounded-3xl'>
+              <h3>Personal FAQs</h3>
+              <span className='caption'>
+                Answering the most-asked questions by aspiring designers/indie
+                makers.
+              </span>
+            </div>
+            <div className='bg-lightestgray dark:bg-cardBgDark p-6 rounded-3xl'>
+              <h3>Digital Garden</h3>
+              <span className='caption'>
+                A public notebook where I openly share my notes, thoughts, questions and unknowns.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className='container max-w-screen-md	py-12'>
+          <h6>On the newsletter</h6>
+          <h3 className='pb-2'>
+            Stay updated with my articles on personal growth &amp; design.
+          </h3>
+          <span className='caption'>
+            Get articles straight to your inbox, 1 - 2 times a month. No spam,
+            no hard feelings.
+          </span>
+          <button className='btn btn-primary mt-8'>Subscribe</button>
+        </div>
       </Layout>
     </div>
-  );
+  )
 }
 
 export async function getStaticProps({ preview = false }) {
-  const allPosts = await getAllWorkForHome(preview) || [];
+  const allPosts = (await getAllWorkForHome(preview)) || []
   return {
     props: { preview, allPosts },
-  };
+  }
 }

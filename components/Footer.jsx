@@ -5,12 +5,12 @@ import Ic_Behance from "../src/Ic_Behance";
 import Ic_Email from "../src/Ic_Email";
 
 const Footer = () => (
-  <div>
-    <footer className="mx-16 py-4 text-center sm:mx-8 align-middle">
-      <div className="text-lightgray pt-2 float-left text-s sm:pb-4 sm:w-full sm:justify-center">
-        Design+Code by Rachel © 2020
+  <div className='py-16 px-16'>
+    <footer className='text-center align-middle'>
+      <div className="text-gray3 float-left text-s sm:pb-4 sm:w-full sm:justify-center">
+        © 2020-2021. Design + Code by Rachel
       </div>
-      <div className="flex float-right pb-8 sm:w-full sm:justify-center">
+      <div className="flex float-right sm:w-full sm:justify-center">
           <a href='mailto:rachelhow95@gmail.com?Subject=Hello!' target='_blank' className="pr-3">
             <Ic_Email />
           </a>
