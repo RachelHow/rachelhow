@@ -7,7 +7,7 @@ export default function Work({ posts }) {
       <div className='py-8'>
         <div className='grid grid-cols-2 gap-12 sm:grid-cols-1'>
           {posts.slice(0, 4).map((post) => (
-            <div className='flex sm:flex-col'>
+            <div className='flex sm:flex-col' key={post.slug}>
               <div>
                 <img
                   src={post.coverImage.url}

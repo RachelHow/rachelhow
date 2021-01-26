@@ -1,5 +1,6 @@
 module.exports = {
-  purge: false,
+  // purge: false,
+  purge: ['./components//*.{js,ts,jsx,tsx}', './pages//*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
     container: {
