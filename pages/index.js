@@ -50,7 +50,7 @@ export default function IndexPage({ preview, allPosts }) {
         <div className='container max-w-800	py-12'>
           <h6>Thinking out loud</h6>
           <h3>I write about personal growth and design.</h3>
-          <button className='btn btn-primary mt-8'>More on the blog</button>
+          <button className='btn btn-primary mt-8'>More on the blog ➝</button>
         </div>
 
         <Work posts={allPosts} />

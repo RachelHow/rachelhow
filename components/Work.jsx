@@ -28,7 +28,7 @@ export default function Work({ posts }) {
         </div>
 
         <Link href='/work'>
-          <button className='btn btn-primary mt-8'>Selected work</button>
+          <button className='btn btn-primary mt-8'>Selected work ➝</button>
         </Link>
       </div>
     </div>
