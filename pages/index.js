@@ -2,6 +2,8 @@ import Layout from '../components/Layout'
 import Head from 'next/head'
 import { getAllWorkForHome } from '../lib/api'
 import Work from '../components/Work'
+import Ic_DigitalGarden from '../src/Ic_DigitalGarden'
+import Ic_FAQ from '../src/Ic_FAQ'
 
 export default function IndexPage({ preview, allPosts }) {
   const morePosts = allPosts
@@ -29,7 +31,7 @@ export default function IndexPage({ preview, allPosts }) {
           />
         </Head>
 
-        <div className='container max-w-screen-md	 flex pt-32 pb-8'>
+        <div className='container	max-w-800	flex pt-32 pb-8'>
           <img
             src='/images/profileimage.png'
             alt='rachel-how'
@@ -45,7 +47,7 @@ export default function IndexPage({ preview, allPosts }) {
           </div>
         </div>
 
-        <div className='container max-w-screen-md	py-12'>
+        <div className='container max-w-800	py-12'>
           <h6>Thinking out loud</h6>
           <h3>I write about personal growth and design.</h3>
           <button className='btn btn-primary mt-8'>More on the blog</button>
@@ -53,27 +55,34 @@ export default function IndexPage({ preview, allPosts }) {
 
         <Work posts={allPosts} />
 
-        <div className='container max-w-screen-md	py-12'>
+        <div className='container	max-w-800 py-12'>
           <h6>Never stop learning</h6>
           <h3>Here are resources that might help you.</h3>
           <div className='pt-6'>
-            <div className='bg-lightestgray dark:bg-cardBgDark p-6 mb-4 rounded-3xl'>
-              <h3>Personal FAQs</h3>
-              <span className='caption'>
-                Answering the most-asked questions by aspiring designers/indie
-                makers.
-              </span>
+            <div className='flex bg-lightestgray dark:bg-cardBgDark p-6 mb-4 rounded-3xl'>
+              <Ic_FAQ />
+              <div className='pl-4 my-auto'>
+                <h4>Personal FAQs</h4>
+                <span className='caption'>
+                  Answering the most-asked questions by aspiring designers/indie
+                  makers.
+                </span>
+              </div>
             </div>
-            <div className='bg-lightestgray dark:bg-cardBgDark p-6 rounded-3xl'>
-              <h3>Digital Garden</h3>
-              <span className='caption'>
-                A public notebook where I openly share my notes, thoughts, questions and unknowns.
-              </span>
+            <div className='flex bg-lightestgray dark:bg-cardBgDark p-6 rounded-3xl'>
+              <Ic_DigitalGarden />
+              <div className='pl-4 my-auto'>
+                <h4>Digital Garden</h4>
+                <span className='caption'>
+                  A public notebook where I openly share my notes, thoughts,
+                  questions and unknowns.
+                </span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className='container max-w-screen-md	py-12'>
+        <div className='container	max-w-800 py-12'>
           <h6>On the newsletter</h6>
           <h3 className='pb-2'>
             Stay updated with my articles on personal growth &amp; design.

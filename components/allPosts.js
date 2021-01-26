@@ -2,8 +2,7 @@ import PostPreview from "./post-preview";
 
 export default function AllPosts({ posts }) {
   return (
-    <div className="py-8">
-      <div className="grid grid-cols-2 col-gap-12 md:grid-cols-1 sm:grid-cols-1">
+    <div>
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
@@ -15,7 +14,6 @@ export default function AllPosts({ posts }) {
             slug={post.slug}
           />
         ))}
-      </div>
     </div>
   );
 }

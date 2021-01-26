@@ -2,7 +2,9 @@ import Layout from '../components/Layout'
 import Head from 'next/head'
 import { getAllWorkForHome } from '../lib/api'
 import AllWork from '../components/allWork'
-import SectionSeparator from '../components/section-separator'
+import Ic_Resume from '../src/Ic_Resume'
+import Ic_Email from '../src/Ic_Email'
+import Ic_LinkedIn from '../src/Ic_LinkedIn'
 
 const work = ({ preview, allPosts }) => {
   const morePosts = allPosts
@@ -24,71 +26,102 @@ const work = ({ preview, allPosts }) => {
           />
         </Head>
 
-        <div className='container pt-40 px-8 md:px-4 sm:px-8 sm:pt-36 sm:pb-0 text-center'>
-          <h1 className='text-xxxl md:text-xxl sm:text-xl'>Selected Work</h1>
-          <br />
-          <p className='mx-48 md:mx-24 sm:mx-0 text-medgray tracking-tight text-base md:text-s'>
-            I'm a Product Designer by profession, designing thoughtful
-            experiences that your users will love.
-          </p>
-          <div className='py-10'>
-            <a
-              href='mailto:rachelhow95@gmail.com?Subject=Hello!'
-              target='_blank'
-            >
-              <button className='cta-button rounded shadow'>
-                <span>rachelhow95@gmail.com</span>
-              </button>
-            </a>
+        <div className='container max-w-800 pt-24'>
+          <h1 className='pt-8 sm:pt-4 mb-8'>
+            I design digital experiences
+            <br />
+            that your users will love.
+          </h1>
+        </div>
+
+        <div className='container max-w-800 flex py-8'>
+          <div>
+            <h6>I believe that</h6>
+            <h3 className='pb-2'>Great design solves a real problem</h3>
+            <span className='caption'>
+              I stand in the intersection of technology, business and marketing.
+              Currently I’m a Product Designer at Fave, in cross-collaboration
+              with a team of designers, product managers and engineers.
+            </span>
+          </div>
+          <div>
+            <img
+              src='/images/designsprint-01.png'
+              alt='designsprint1'
+              className='rounded-lg pl-20'
+              width='100%'
+              height='auto'
+            />
           </div>
         </div>
 
-        <div className='container px-8 md:px-4 sm:px-8'>
+        <div className='container	max-w-800 py-8 grid grid-cols-2'>
+          <div className='col-span-1'>
+            <h6>My principles</h6>
+            <h3 className='pb-2'>To create value for your business</h3>
+            <span className='caption'>
+              I start every project by understanding your business and customers
+              first before diving into design. I will only accept your project
+              if I believe I can create value for your business and make it
+              worth your investment. If I feel that I am not a good fit for your
+              project, I will recommend alternatives.
+            </span>
+          </div>
+          <div className='col-span-1'>
+            <img
+              src='/images/designsprint-02.png'
+              alt='designsprint2'
+              className='rounded-lg pl-20'
+              width='100%'
+              height='auto'
+            />
+          </div>
+        </div>
+
+        <div className='container max-w-800'>
+          <h1 className='pt-16 sm:pt-4 mb-4'>Selected work</h1>
+          <p className='font-mono pb-4'>
+            Case studies coming soon. Scroll to see more ➝
+          </p>
           {morePosts.length > 0 && <AllWork posts={morePosts} />}
         </div>
 
-        <div className='container px-16 pt-0 md:px-4 sm:px-8 text-center'>
-        <SectionSeparator />
-        <div className='inline-block justify-center pb-4 pt-24'>
-          <img
-            src='/images/Avatar-Online.png'
-            alt='avatar-rachel'
-            width='80px'
-            height='80px'
-          />
+        <div className='container max-w-800'>
+          <div className='pt-12 pb-20'>
+            <img
+              src='/images/Avatar-Online.png'
+              alt='avatar-rachel'
+              width='80px'
+              height='80px'
+              className='pb-6'
+            />
+            <h6>Let’s work together</h6>
+            <h3 className='pb-2'>Contact me</h3>
+            <span className='caption'>
+              I’m available on selected freelance projects and speaking
+              engagements. My time books quickly but I will get back to you
+              within 2 working days. Thank you!
+            </span>
+            <div className='flex pt-4'>
+              <a
+                href='mailto:rachelhow95@gmail.com?Subject=Hello!'
+                target='_blank'
+                className='pr-3'
+              >
+                <Ic_Email />
+              </a>
+              <a
+                href='https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl'
+                className='pr-3'
+              >
+                <Ic_Resume />
+              </a>
+              <a href='https://www.linkedin.com/in/rachelhow' className='pr-3'>
+                <Ic_LinkedIn />
+              </a>
+            </div>
+          </div>
         </div>
-        <h1 className='text-xxl sm:text-xl'>Let’s work together</h1>
-        <div className='pt-6 pb-20'>
-          <p className='mx-32 md:mx-24 sm:mx-0 text-lightgray tracking-tight leading-relaxed text-base md:text-s sm:text-s'>
-            I’m available for freelance projects / speaking engagements. You can{' '}
-            <a
-              href='mailto:rachelhow95@gmail.com?Subject=Hello!'
-              target='_blank'
-              className='font-b'
-            >
-              email
-            </a>{' '}
-            or{' '}
-            <a
-              href='https://twitter.com/rachelhxw'
-              target='_blank'
-              className='font-b'
-            >
-              {' '}
-              tweet
-            </a>{' '}
-            me. My time books quickly but I will get back to you within 1 - 2
-            working days. Thank you!
-          </p>
-          <br />
-          <a href='mailto:rachelhow95@gmail.com?Subject=Hello!' target='_blank'>
-            <button className='cta-button rounded shadow'>
-              <span>rachelhow95@gmail.com</span>
-            </button>
-          </a>
-        </div>
-      </div>
-
       </Layout>
     </div>
   )

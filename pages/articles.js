@@ -2,7 +2,6 @@ import Layout from '../components/Layout'
 import Head from 'next/head'
 import { getAllPostsForHome } from '../lib/api'
 import AllPosts from '../components/allPosts'
-import CTA from '../components/CTA'
 
 const articles = ({ preview, allPosts }) => {
   const morePosts = allPosts
@@ -24,29 +23,15 @@ const articles = ({ preview, allPosts }) => {
           />
         </Head>
 
-        <div className='container pt-40 px-8 md:px-4 sm:px-8 sm:pt-36 sm:pb-0 text-center'>
-          <h1 className='text-xxxl md:text-xxl sm:text-xl'>Best Articles</h1>
-          <br />
-          <p className='mx-48 md:mx-24 sm:mx-0 text-medgray tracking-tight text-base md:text-s'>
-            Musings on design, personal growth, and building indie products.
-          </p>
-          <div className='py-10'>
-            <a
-              href='mailto:rachelhow95@gmail.com?Subject=Hello!'
-              target='_blank'
-            >
-              <button className='cta-button rounded shadow'>
-                <span>rachelhow95@gmail.com</span>
-              </button>
-            </a>
-          </div>
+        <div className='container max-w-800 pt-24 pb-20'>
+          <h1 className='pt-8 sm:pt-4 mb-4'>Best articles</h1>
+          <p>Musings on design, personal growth, and building indie products.</p>
         </div>
 
-        <div className='container px-8 md:px-4 sm:px-8'>
+        <div className='container max-w-800 pb-12 md:px-4 sm:px-8'>
           {morePosts.length > 0 && <AllPosts posts={morePosts} />}
         </div>
 
-        {/* <CTA /> */}
       </Layout>
     </div>
   )

@@ -26,25 +26,18 @@ const MilestoneList = [
 ]
 
 const Milestones = () => (
-  <div className='pb-16 px-48 md:px-4 sm:px-8'>
-    <div className='container grid grid-cols-3 col-gap-48 py-12 sm:grid-cols-1'>
-      <div className='col-span-1 sm:pb-8'>
-        <h1 className='text-xl'>Milestones</h1>
-      </div>
+  <div className='container max-w-800 pb-16'>
+      <h1 className='pt-8 sm:pt-4 mb-8'>Milestones</h1>
 
-      <div className='col-span-2 sm:col-span-1'>
+      <div>
         <ul>
           {MilestoneList.map((a, index) => (
-            <li key={index} className='pb-6 sm:block'>
-              <span className='font-sb'>{a.stone}</span>
-              <span className='text-medgray'>
-                {a.date}
-              </span>
+            <li key={index} className='pb-3'>
+              <p>{a.stone} {a.date}</p>
             </li>
           ))}
         </ul>
       </div>
-    </div>
   </div>
 )
 

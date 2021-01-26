@@ -1,5 +1,5 @@
 import React from "react";
-const RightArrow = ({ size = 18, color = "#2D3A53" }) => (
+const RightArrow = ({ size = 18, color = "#969696" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}

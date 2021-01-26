@@ -24,7 +24,7 @@ h1 {
   font-family: 'Silka Semibold', 'Inter', sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  @apply text-black dark:text-white;
+  @apply text-black dark:text-white leading-normal;
 }
 
 h2 {
@@ -62,7 +62,7 @@ h6 {
 }
 
 .caption {
-  @apply text-s text-gray2 leading-loose;
+  @apply text-s text-gray2 leading-relaxed;
 }
 
 .menu-text {
@@ -74,7 +74,7 @@ hr {
 }
 
 .btn {
-  @apply flex items-center font-semibold justify-center px-4 py-2 focus:outline-none;
+  @apply flex items-center font-semibold justify-center px-5 py-3 focus:outline-none;
 }
 
 .btn-primary {
@@ -124,13 +124,6 @@ hr {
 .profileimage {
   width: 240px;
   height: 244px;
-}
-
-.blogpreviewimg {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 12px;
 }
 
 .workpreviewimg {

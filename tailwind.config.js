@@ -8,8 +8,8 @@ module.exports = {
       padding: {
         default: '0',
         sm: '2rem',
-        md: '4rem',
-        lg: '5rem',
+        md: '0rem',
+        lg: '0rem',
       },
     },
     screens: {
@@ -20,7 +20,9 @@ module.exports = {
     fontFamily: {
       display: ['Silka', 'Inter', 'sans-serif'],
       semibold: ['Silka Semibold', 'Inter', 'sans-serif'],
-      body: ['Inter', 'sans-serif']
+      medium: ['Silka Medium', 'Inter', 'sans-serif'],
+      body: ['Inter', 'sans-serif'],
+      mono: ['Silka Mono', 'Inter', 'sans-serif']
     },
     fontWeight: {
       l: 300,
@@ -42,6 +44,8 @@ module.exports = {
       'cardBgDark': '#212121',
       'headerLight': 'hsla(0, 0%, 100%, 0.4)',
       'headerDark': 'hsla(0, 0%, 0%, 0.4)',
+      'lineLight': '#DEDEDE',
+      'lineDark': '#2F2F2F'
     },
     fontSize: {
       'xxs': '0.6875rem', //11px
@@ -57,6 +61,9 @@ module.exports = {
       lineHeight: {
         '12': '2.4rem'
       }
+    },
+    maxWidth:{
+      '800': '800px'
     }
   },
   variants: {},

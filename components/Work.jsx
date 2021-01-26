@@ -1,6 +1,8 @@
+import Link from 'next/link'
+
 export default function Work({ posts }) {
   return (
-    <div className='container max-w-screen-md py-12'>
+    <div className='container max-w-800	py-12'>
       <h6>Product design work</h6>
       <h3>I design digital experiences that your users will love.</h3>
 
@@ -25,8 +27,9 @@ export default function Work({ posts }) {
           ))}
         </div>
 
-        <button className='btn btn-primary mt-8'>Selected work</button>
-
+        <Link href='/work'>
+          <button className='btn btn-primary mt-8'>Selected work</button>
+        </Link>
       </div>
     </div>
   )
