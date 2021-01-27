@@ -1,13 +1,13 @@
 import Layout from '../components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
-import { getAllWorkForHome } from '../lib/api'
+import { getAllWorkForHome, getAllPostsForHome } from '../lib/api'
 import Work from '../components/Work'
 import Ic_DigitalGarden from '../src/Ic_DigitalGarden'
 import Ic_FAQ from '../src/Ic_FAQ'
+import { format } from 'timeago.js'
 
-export default function IndexPage({ preview, allPosts }) {
-  const morePosts = allPosts
+export default function IndexPage({ preview, allPosts, allArticles }) {
 
   return (
     <div>
@@ -20,15 +20,15 @@ export default function IndexPage({ preview, allPosts }) {
           />
           <meta
             name='description'
-            content='Rachel How designs, writes and builds indie products. Building community at Malaysians Who Make.'
+            content="I’m a product designer who codes &amp; writes."
           />
           <meta
             property='og:title'
-            content='Rachel How - Product Designer, Writer, Indie Maker'
+            content="Rachel How - Product Designer, Writer, Indie Maker"
           />
           <meta
             property='og:description'
-            content='Rachel How designs, writes and builds indie products. Building community at Malaysians Who Make.'
+            content="I’m a product designer who codes &amp; writes."
           />
         </Head>
 
@@ -51,7 +51,24 @@ export default function IndexPage({ preview, allPosts }) {
         <div className='container max-w-600	sm:px-8 py-12'>
           <h6>Thinking out loud</h6>
           <h3>I write about personal growth and design.</h3>
-          <Link href='/articles'><button className='btn btn-primary mt-8'>More on the blog ➝</button></Link>
+          <div className='py-6'>
+            {allArticles.slice(0, 3).map((article) => (
+              <Link as={`/articles/${article.slug}`} href='/articles/[slug]'>
+                <a>
+                  <div
+                    className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'
+                    key={article.slug}
+                  >
+                    <h4>{article.title}</h4>
+                    <p>{format(article.date)}</p>
+                  </div>
+                </a>
+              </Link>
+            ))}
+          </div>
+          <Link href='/articles'>
+            <button className='btn btn-primary'>More on the blog ➝</button>
+          </Link>
         </div>
 
         <Work posts={allPosts} />
@@ -66,7 +83,9 @@ export default function IndexPage({ preview, allPosts }) {
                 target='_blank'
                 className='flex'
               >
-                <div className='my-auto'><Ic_FAQ /></div>
+                <div className='my-auto'>
+                  <Ic_FAQ />
+                </div>
                 <div className='pl-6 my-auto'>
                   <h4>Personal FAQs</h4>
                   <span className='caption'>
@@ -82,7 +101,9 @@ export default function IndexPage({ preview, allPosts }) {
                 target='_blank'
                 className='flex'
               >
-                <div className='my-auto'><Ic_DigitalGarden /></div>
+                <div className='my-auto'>
+                  <Ic_DigitalGarden />
+                </div>
                 <div className='pl-6 my-auto'>
                   <h4>Digital Garden</h4>
                   <span className='caption'>
@@ -105,8 +126,13 @@ export default function IndexPage({ preview, allPosts }) {
             no hard feelings.
           </span>
           <div className='flex mt-6'>
-              <input type='text' name='subscribe' id='subscribe' placeholder="What's your email?"></input>
-              <button className='btn btn-primary'>Subscribe ⚡️</button>
+            <input
+              type='text'
+              name='subscribe'
+              id='subscribe'
+              placeholder="What's your email?"
+            ></input>
+            <button className='btn btn-primary'>Subscribe ⚡️</button>
           </div>
         </div>
       </Layout>
@@ -116,7 +142,8 @@ export default function IndexPage({ preview, allPosts }) {
 
 export async function getStaticProps({ preview = false }) {
   const allPosts = (await getAllWorkForHome(preview)) || []
+  const allArticles = (await getAllPostsForHome(preview)) || []
   return {
-    props: { preview, allPosts },
+    props: { preview, allPosts, allArticles },
   }
 }

@@ -83,11 +83,11 @@ hr {
 }
 
 .btn-primary {
-  @apply text-white bg-orange rounded-full hover:bg-opacity-80 transition duration-300 ease-in-out;
+  @apply text-white bg-orange rounded-full hover:bg-opacity-75 transition duration-200 ease-in-out;
 }
 
 a {
-  @apply text-black dark:text-white font-semibold hover:opacity-75 transition duration-300 ease-in-out;
+  @apply text-black dark:text-white font-semibold hover:opacity-75 transition duration-200 ease-in-out;
 }
 
 .textlink {

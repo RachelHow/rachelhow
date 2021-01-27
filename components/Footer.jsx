@@ -3,6 +3,7 @@ import Ic_LinkedIn from "../src/Ic_LinkedIn";
 import Ic_Dribbble from "../src/Ic_Dribbble";
 import Ic_Behance from "../src/Ic_Behance";
 import Ic_Email from "../src/Ic_Email";
+import Ic_Github from "../src/Ic_Github"
 
 const Footer = () => (
   <div className='py-16 px-16 sm:px-8'>
@@ -25,6 +26,9 @@ const Footer = () => (
           </a>
           <a href="https://www.behance.net/rachelhow" className="pr-3">
             <Ic_Behance />
+          </a>
+          <a href="https://github.com/RachelHow" className="pr-3">
+            <Ic_Github />
           </a>
       </div>
     </footer>

@@ -8,20 +8,18 @@ function About() {
   return (
     <Layout>
       <Head>
-        <title>About Me - Rachel How</title>
-        <meta name='title' content='About Me - Rachel How' />
+        <title>Rachel How</title>
+        <meta name='title' content='Rachel How' />
         <meta
           name='description'
-          content="I'm a polymath - Product Designer at Fave, Writer, Indie Maker, Community Builder.
-          I design delightful user experiences at the intersection of people and business.
-          I also love coffee, cats, food, design, writing, and building stuff with code."
+          content="I'm a polymath—Product designer, writer, indie maker, community
+          builder."
         />
-        <meta property='og:title' content='About Me - Rachel How' />
+        <meta property='og:title' content='Rachel How' />
         <meta
           property='og:description'
-          content="I'm a polymath - Product Designer at Fave, Writer, Indie Maker, Community Builder.
-          I design delightful user experiences at the intersection of people and business.
-          I also love coffee, cats, food, design, writing, and building stuff with code."
+          content="I'm a polymath—Product designer, writer, indie maker, community
+          builder."
         />
       </Head>
 

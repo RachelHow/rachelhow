@@ -25,11 +25,11 @@ export default function Post({ post, morePosts, preview }) {
               <Head>
                 <title>{post.title} - Rachel How</title>
                 <meta name='title' content={post.title} />
-                <meta name='description' content="Rachel How's Article" />
+                <meta name='description' content="Article by Rachel How" />
                 <meta property='og:title' content={post.title} />
                 <meta
                   property='og:description'
-                  content="Rachel How's Article"
+                  content="Article by Rachel How"
                 />
                 <meta property='og:image' content={post.coverImage} />
               </Head>

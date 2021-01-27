@@ -17,12 +17,12 @@ const work = ({ preview, allPosts }) => {
           <meta name='title' content='Selected Work - Rachel How' />
           <meta
             name='description'
-            content="I'm a Product Designer by profession, designing thoughtful experiences that your users will love."
+            content="I design digital experiences that your users will love."
           />
           <meta property='og:title' content='Selected Work - Rachel How' />
           <meta
             property='og:description'
-            content="I'm a Product Designer by profession, designing thoughtful experiences that your users will love."
+            content="I design digital experiences that your users will love."
           />
         </Head>
 

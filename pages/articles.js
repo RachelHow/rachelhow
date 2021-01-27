@@ -10,13 +10,13 @@ const articles = ({ preview, allPosts }) => {
     <div>
       <Layout preview={preview}>
         <Head>
-          <title>Best Articles - Rachel How</title>
-          <meta name='title' content='Best Articles - Rachel How' />
+          <title>Best Articles | Rachel How</title>
+          <meta name='title' content='Best Articles | Rachel How' />
           <meta
             name='description'
             content='Musings on design, personal growth, and building indie products.'
           />
-          <meta property='og:title' content='Best Articles - Rachel How' />
+          <meta property='og:title' content='Best Articles | Rachel How' />
           <meta
             property='og:description'
             content='Musings on design, personal growth, and building indie products.'
