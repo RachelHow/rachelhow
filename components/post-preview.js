@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { format } from 'timeago.js'
 
 export default function PostPreview({
   title,
@@ -14,7 +15,7 @@ export default function PostPreview({
           <div className='col-span-2 pr-8'>
             <h4 className='pb-2'>{title}</h4>
             <p>
-              {date} • {readingTime}
+              {format(date)} • {readingTime}
             </p>
           </div>
 

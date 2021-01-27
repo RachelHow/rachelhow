@@ -83,7 +83,7 @@ hr {
 }
 
 .btn-primary {
-  @apply text-white bg-orange rounded-full hover:opacity-80 transition duration-300 ease-in-out;
+  @apply text-white bg-orange rounded-full hover:bg-opacity-80 transition duration-300 ease-in-out;
 }
 
 a {
@@ -118,6 +118,10 @@ a {
 .profileimage {
   width: 240px;
   height: auto;
+}
+
+input {
+  @apply text-orange font-medium px-5 py-3 mr-3 rounded-full bg-gray2 bg-opacity-10 focus:outline-none;
 }
 
 /* animation */

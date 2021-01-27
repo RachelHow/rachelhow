@@ -104,7 +104,10 @@ export default function IndexPage({ preview, allPosts }) {
             Get articles straight to your inbox, 1 - 2 times a month. No spam,
             no hard feelings.
           </span>
-          <button className='btn btn-primary mt-8'>Subscribe ⚡️</button>
+          <div className='flex mt-6'>
+              <input type='text' name='subscribe' id='subscribe' placeholder="What's your email?"></input>
+              <button className='btn btn-primary'>Subscribe ⚡️</button>
+          </div>
         </div>
       </Layout>
     </div>
