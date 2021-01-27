@@ -13,16 +13,20 @@ const work = ({ preview, allPosts }) => {
     <div>
       <Layout preview={preview}>
         <Head>
-          <title>Selected Work - Rachel How</title>
-          <meta name='title' content='Selected Work - Rachel How' />
+          <title>Work - Rachel How</title>
+          <meta name='title' content='Work - Rachel How' />
           <meta
             name='description'
-            content="I design digital experiences that your users will love."
+            content='I design digital experiences that your users will love.'
           />
-          <meta property='og:title' content='Selected Work - Rachel How' />
+          <meta property='og:title' content='Work - Rachel How' />
           <meta
             property='og:description'
-            content="I design digital experiences that your users will love."
+            content='I design digital experiences that your users will love.'
+          />
+          <link
+            rel='icon'
+            href={`data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡️</text></svg>`}
           />
         </Head>
 

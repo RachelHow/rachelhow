@@ -25,13 +25,17 @@ export default function Post({ post, morePosts, preview }) {
               <Head>
                 <title>{post.title} - Rachel How</title>
                 <meta name='title' content={post.title} />
-                <meta name='description' content="An article by Rachel How" />
+                <meta name='description' content='An article by Rachel How' />
                 <meta property='og:title' content={post.title} />
                 <meta
                   property='og:description'
-                  content="An article by Rachel How"
+                  content='An article by Rachel How'
                 />
                 <meta property='og:image' content={post.coverImage.url} />
+                <link
+                  rel='icon'
+                  href={`data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>`}
+                />
               </Head>
 
               {/* Cover Image */}
