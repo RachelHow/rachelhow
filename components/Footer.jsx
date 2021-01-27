@@ -27,9 +27,9 @@ const Footer = () => (
           <a href="https://www.behance.net/rachelhow" className="pr-3">
             <Ic_Behance />
           </a>
-          <a href="https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl" className="pr-3">
+          {/* <a href="https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl" className="pr-3">
             <Ic_Resume />
-          </a>
+          </a> */}
       </div>
     </footer>
   </div>

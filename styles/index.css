@@ -8,7 +8,7 @@ html, body {
 
 body {
   font-family: 'Silka Regular', 'Inter', sans-serif;
-  font-size: 0.875rem;
+  @apply text-s;
   font-weight: 400;
   line-height: 150%;
 }
@@ -31,7 +31,7 @@ h2 {
   font-family: 'Silka Semibold', 'Inter', sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
-  @apply text-black dark:text-white;
+  @apply text-black dark:text-white leading-relaxed;
 }
 
 h3 {
@@ -43,7 +43,7 @@ h3 {
 h4 {
   font-family: 'Silka Medium', 'Inter', sans-serif;
   font-weight: 500;
-  @apply text-base text-black dark:text-white;
+  @apply text-base text-black dark:text-white leading-relaxed;
 }
 
 /* subtitle */
@@ -59,6 +59,12 @@ h6 {
   font-weight: 500;
   letter-spacing: 5%;
   @apply text-xs text-gray2 uppercase;
+}
+
+ul, ol {
+  list-style-type: disc;
+  /* line-height: 1.8rem; */
+  @apply ml-12 text-s text-gray1 dark:text-gray3 leading-loose;
 }
 
 .caption {
@@ -78,7 +84,15 @@ hr {
 }
 
 .btn-primary {
-  @apply text-white bg-orange rounded-full;
+  @apply text-white bg-orange rounded-full hover:opacity-80 transition duration-300 ease-in-out ;
+}
+
+a {
+  @apply text-black dark:text-white;
+}
+
+.textlink {
+  @apply underline font-semibold;
 }
 
 .cta-button {
@@ -95,12 +109,18 @@ hr {
   text-underline-offset: 1em;
 }
 
-.pink-gradient-text {
+.img-150 {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .pink-gradient-text {
   background: linear-gradient(to right, #FF84C0, #FE5F5F 70%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 .header {
   z-index: 50;
@@ -112,11 +132,6 @@ hr {
   @apply bg-headerLight dark:bg-headerDark;
 }
 
-.hero {
-  background-color: #fff;
-  height: 100vh;
-}
-
 .profilecontainer {
   max-height: 300px; 
 }
@@ -126,12 +141,8 @@ hr {
   height: 244px;
 }
 
-.workpreviewimg {
-  border-radius: 16px;
-}
 
 /* animation */
-
 .spin-animation {
   -webkit-animation: spin 6s linear infinite;
   -moz-animation: spin 6s linear infinite;
@@ -183,11 +194,5 @@ hr {
 @media screen and (max-width: 639px) {
   .header {
     background-color: #fff;
-  }
-  .hero {
-    background: #fff;
-  }
-  .hero-glow {
-    max-width: 60%;
   }
 }

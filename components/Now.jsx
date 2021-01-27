@@ -1,9 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-import Ic_RightArrow from '../src/Ic_RightArrow'
 
 const Now = () => (
-  <div className='container max-w-800'>
+  <div className='container max-w-600'>
         <h1 className='pt-8 sm:pt-4 mb-8'>Now</h1>
 
       <div className=''>

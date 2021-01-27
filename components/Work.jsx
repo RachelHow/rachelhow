@@ -2,11 +2,11 @@ import Link from 'next/link'
 
 export default function Work({ posts }) {
   return (
-    <div className='container max-w-800	py-12'>
+    <div className='container max-w-600	py-12'>
       <h6>Product design work</h6>
       <h3>I design digital experiences that your users will love.</h3>
 
-      <div className='py-8'>
+      <div className='pt-6 pb-8'>
         <div className='grid grid-cols-2 gap-12 sm:grid-cols-1'>
           {posts.slice(0, 4).map((post) => (
             <div className='flex sm:flex-col' key={post.slug}>
@@ -14,7 +14,7 @@ export default function Work({ posts }) {
                 <img
                   src={post.coverImage.url}
                   alt={post.name}
-                  className='workpreviewimg object-contain'
+                  className='rounded-md object-contain'
                 />
                 <h4 className='text-l text-black font-sb leading-7 pt-4 pb-2'>
                   {post.name}

@@ -5,7 +5,7 @@ export default function CoverImage({ title, url, slug }) {
     <img
       src={url}
       alt={`Cover Image for ${title}`}
-      className="rounded-lg mx-auto object-cover"
+      className="rounded-md mx-auto object-cover"
       width="100%"
       height="auto"
     />

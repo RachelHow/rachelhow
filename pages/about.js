@@ -1,7 +1,5 @@
 import Layout from '../components/Layout'
 import Head from 'next/head'
-import Link from 'next/link'
-import SectionSeparator from '../components/section-separator'
 import Now from '../components/Now'
 import Milestones from '../components/Milestones'
 
@@ -26,7 +24,7 @@ function About() {
         />
       </Head>
 
-      <div className='container max-w-800 pt-32 pb-8'>
+      <div className='container max-w-600 pt-24 pb-8'>
         <img
           src='/images/rachel-how-ky.png'
           alt='rachelhow'
@@ -48,22 +46,22 @@ function About() {
           <br />
           <br />
           You can find me on {''}
-          <a href='https://twitter.com/rachelhxw' target='_blank' className='font-semibold underline'>
+          <a href='https://twitter.com/rachelhxw' target='_blank' className='textlink'>
             Twitter
           </a>{' '}
           or{' '}
-          <a href='https://www.linkedin.com/in/rachelhow' target='_blank' className='font-semibold underline'>
+          <a href='https://www.linkedin.com/in/rachelhow' target='_blank' className='textlink'>
             LinkedIn
           </a>{' '}
           where I talk about personal growth, design and development. You can
           also send me an{' '}
-          <a href='mailto:rachelhow95@gmail.com?Subject=Hello!' target='_blank' className='font-semibold underline'>
+          <a href='mailto:rachelhow95@gmail.com?Subject=Hello!' target='_blank' className='textlink'>
             email
           </a>{' '}
           or check out my{' '}
           <a
             href='https://drive.google.com/open?id=1dzwfoK_DJCCn4D91Lste_norBMDBvCYl'
-            target='_blank' className='font-semibold underline'
+            target='_blank' className='textlink'
           >
             CV.
           </a>

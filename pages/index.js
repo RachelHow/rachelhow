@@ -31,7 +31,7 @@ export default function IndexPage({ preview, allPosts }) {
           />
         </Head>
 
-        <div className='container	max-w-800	flex pt-32 pb-8'>
+        <div className='container	max-w-600	flex pt-32 pb-8'>
           <img
             src='/images/profileimage.png'
             alt='rachel-how'
@@ -40,14 +40,14 @@ export default function IndexPage({ preview, allPosts }) {
 
           <div className='mt-12'>
             <h1 className='pt-8 sm:pt-4 mb-4'>Hi! I’m Rachel 🌶</h1>
-            <p className='w-3/5'>
+            <p>
               I’m a product designer who codes &amp; writes. Currently designing
               products at Fave.
             </p>
           </div>
         </div>
 
-        <div className='container max-w-800	py-12'>
+        <div className='container max-w-600	py-12'>
           <h6>Thinking out loud</h6>
           <h3>I write about personal growth and design.</h3>
           <button className='btn btn-primary mt-8'>More on the blog ➝</button>
@@ -55,11 +55,11 @@ export default function IndexPage({ preview, allPosts }) {
 
         <Work posts={allPosts} />
 
-        <div className='container	max-w-800 py-12'>
+        <div className='container	max-w-600 py-12'>
           <h6>Never stop learning</h6>
           <h3>Here are resources that might help you.</h3>
           <div className='pt-6'>
-            <div className='flex bg-lightestgray dark:bg-cardBgDark p-6 mb-4 rounded-3xl'>
+            <div className='flex bg-lightestgray dark:bg-cardBgDark p-5 mb-6 rounded-3xl'>
               <Ic_FAQ />
               <div className='pl-4 my-auto'>
                 <h4>Personal FAQs</h4>
@@ -69,7 +69,7 @@ export default function IndexPage({ preview, allPosts }) {
                 </span>
               </div>
             </div>
-            <div className='flex bg-lightestgray dark:bg-cardBgDark p-6 rounded-3xl'>
+            <div className='flex bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl'>
               <Ic_DigitalGarden />
               <div className='pl-4 my-auto'>
                 <h4>Digital Garden</h4>
@@ -82,7 +82,7 @@ export default function IndexPage({ preview, allPosts }) {
           </div>
         </div>
 
-        <div className='container	max-w-800 py-12'>
+        <div className='container	max-w-600 py-12'>
           <h6>On the newsletter</h6>
           <h3 className='pb-2'>
             Stay updated with my articles on personal growth &amp; design.
