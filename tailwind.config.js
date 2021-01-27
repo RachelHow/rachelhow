@@ -7,7 +7,7 @@ module.exports = {
       center: true,
       padding: {
         default: '0',
-        sm: '2rem',
+        sm: '4rem',
         md: '0rem',
         lg: '0rem',
       },
@@ -32,7 +32,7 @@ module.exports = {
       b: 700
     },
     colors: {
-      'black': '#181818',
+      'black': '#111111',
       'white':'#ffffff',
       'gray1': '#343434',
       'gray2': '#969696',

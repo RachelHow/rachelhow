@@ -24,7 +24,7 @@ function About() {
         />
       </Head>
 
-      <div className='container max-w-600 pt-24 pb-8'>
+      <div className='container max-w-600 pt-24 pb-8 sm:px-8'>
         <img
           src='/images/rachel-how-ky.png'
           alt='rachelhow'

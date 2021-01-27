@@ -26,7 +26,7 @@ const work = ({ preview, allPosts }) => {
           />
         </Head>
 
-        <div className='container max-w-600 pt-24'>
+        <div className='container max-w-600 pt-24 sm:px-8'>
           <h1 className='pt-8 sm:pt-4 mb-8'>
             I design digital experiences
             <br />
@@ -34,8 +34,8 @@ const work = ({ preview, allPosts }) => {
           </h1>
         </div>
 
-        <div className='container max-w-600 py-4 grid grid-cols-2 gap-x-12'>
-          <div className='col-span-1'>
+        <div className='container max-w-600 py-4 grid grid-cols-2 gap-x-12 sm:px-8 sm:grid-cols-1'>
+          <div className='col-span-1 sm:pb-16'>
             <img
               src='/images/designsprint-01.png'
               alt='designsprint1'
@@ -49,7 +49,7 @@ const work = ({ preview, allPosts }) => {
               with a team of designers, product managers and engineers.
             </span>
           </div>
-          <div className='col-span-1'>
+          <div className='col-span-1 sm:pb-16'>
             <img
               src='/images/designsprint-02.png'
               alt='designsprint2'
@@ -67,7 +67,7 @@ const work = ({ preview, allPosts }) => {
           </div>
         </div>
 
-        <div className='container max-w-600'>
+        <div className='container max-w-600 sm:px-8 '>
           <h1 className='pt-16 sm:pt-4 mb-4'>Selected work</h1>
           <p className='font-mono pb-4'>
             Case studies coming soon. Scroll to see more ➝
@@ -75,7 +75,7 @@ const work = ({ preview, allPosts }) => {
           {morePosts.length > 0 && <AllWork posts={morePosts} />}
         </div>
 
-        <div className='container max-w-600'>
+        <div className='container max-w-600 sm:px-8 '>
           <div className='pt-12 pb-20'>
             <img
               src='/images/Avatar-Online.png'

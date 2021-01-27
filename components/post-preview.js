@@ -8,9 +8,9 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div className='pb-8 sm:flex-col'>
+    <div className='pb-8'>
       <Link as={`/articles/${slug}`} href='/articles/[slug]'>
-        <a className='grid grid-cols-3'>
+        <a className='grid grid-cols-3 sm:grid-cols-1'>
           <div className='col-span-2 pr-8'>
             <h4 className='pb-2'>{title}</h4>
             <p>
@@ -18,7 +18,7 @@ export default function PostPreview({
             </p>
           </div>
 
-          <div className='col-span-1'>
+          <div className='col-span-1 sm:hidden'>
             <img
               src={coverImage}
               alt={title}

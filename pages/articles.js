@@ -23,12 +23,12 @@ const articles = ({ preview, allPosts }) => {
           />
         </Head>
 
-        <div className='container max-w-600 pt-24 pb-20'>
-          <h1 className='pt-8 sm:pt-4 mb-4'>Best articles</h1>
+        <div className='container max-w-600 pt-24 pb-20 sm:px-8 sm:pb-16'>
+          <h1 className='pt-8 mb-4'>Best articles</h1>
           <p>Musings on design, personal growth, and building indie products.</p>
         </div>
 
-        <div className='container max-w-600 pb-12 md:px-4 sm:px-8'>
+        <div className='container max-w-600 pb-12 sm:px-8'>
           {morePosts.length > 0 && <AllPosts posts={morePosts} />}
         </div>
 

@@ -9,7 +9,7 @@ const CTA = () => (
         <p className='text-base'>
           Be the first to read my thoughts on design, personal growth and more.
         </p><br/>
-        <button className='cta-button rounded shadow'>
+        <button className='btn btn-primary'>
           <span>Subscribe</span>
         </button>
       </div>

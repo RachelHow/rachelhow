@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 
 const Now = () => (
-  <div className='container max-w-600'>
-        <h1 className='pt-8 sm:pt-4 mb-8'>Now</h1>
+  <div className='container max-w-600 sm:px-8'>
+        <h1 className='py-8'>Now</h1>
 
       <div className=''>
         <ul>

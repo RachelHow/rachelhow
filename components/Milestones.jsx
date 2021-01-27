@@ -26,8 +26,8 @@ const MilestoneList = [
 ]
 
 const Milestones = () => (
-  <div className='container max-w-600 pb-16'>
-      <h1 className='pt-8 sm:pt-4 mb-8'>Milestones</h1>
+  <div className='container max-w-600 pb-16 sm:px-8'>
+      <h1 className='py-8'>Milestones</h1>
 
       <div>
         <ul>

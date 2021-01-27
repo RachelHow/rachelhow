@@ -16,7 +16,7 @@ export default function Post({ post, morePosts, preview }) {
 
   return (
     <Layout preview={preview}>
-      <div className='container max-w-600 mx-auto pt-20 pb-12'>
+      <div className='container max-w-600 mx-auto pt-20 pb-12 sm:px-8'>
         {router.isFallback ? (
           'Loading…'
         ) : (

@@ -63,8 +63,7 @@ h6 {
 
 ul, ol {
   list-style-type: disc;
-  /* line-height: 1.8rem; */
-  @apply ml-12 text-s text-gray1 dark:text-gray3 leading-loose;
+  @apply ml-12 sm:ml-8 text-s text-gray1 dark:text-gray3 leading-loose;
 }
 
 .caption {
@@ -84,24 +83,15 @@ hr {
 }
 
 .btn-primary {
-  @apply text-white bg-orange rounded-full hover:opacity-80 transition duration-300 ease-in-out ;
+  @apply text-white bg-orange rounded-full hover:opacity-80 transition duration-300 ease-in-out;
 }
 
 a {
-  @apply text-black dark:text-white;
+  @apply text-black dark:text-white font-semibold hover:opacity-75 transition duration-300 ease-in-out;
 }
 
 .textlink {
-  @apply underline font-semibold;
-}
-
-.cta-button {
-  display: inline;
-  background-color: #fff;
-  vertical-align: middle;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-  border-radius: 60px;
-  padding: 16px 24px;
+  @apply underline;
 }
 
 .underlinestyle {
@@ -115,13 +105,6 @@ a {
   object-fit: cover;
 }
 
-/* .pink-gradient-text {
-  background: linear-gradient(to right, #FF84C0, #FE5F5F 70%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
 .header {
   z-index: 50;
   position: fixed;
@@ -132,15 +115,10 @@ a {
   @apply bg-headerLight dark:bg-headerDark;
 }
 
-.profilecontainer {
-  max-height: 300px; 
-}
-
 .profileimage {
   width: 240px;
-  height: 244px;
+  height: auto;
 }
-
 
 /* animation */
 .spin-animation {
