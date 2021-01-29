@@ -2,50 +2,96 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html, body {
+  @apply bg-white dark:bg-black;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Silka Regular', 'Inter', sans-serif;
+  @apply text-s;
   font-weight: 400;
-}
-
-h1 {
-  font-family: 'Argesta Headline', 'Inter', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 120%;
-}
-
-h2 {
-  font-family: 'Argesta Headline', 'Inter', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 120%;
-}
-
-h3 {
-  font-family: 'Argesta Headline', 'Inter', sans-serif;
-  color: #000;
-  font-weight: 400;
-  line-height: 2.8rem;
-  letter-spacing: -0.02em;
-}
-
-h4 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  line-height: 2.4rem;
-  letter-spacing: -0.02em;
-}
-
-h5 {
-  display: inline;
-  font-family: 'Argesta Headline', 'Inter', sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  line-height: 150%;
 }
 
 p {
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Silka Regular', 'Inter', sans-serif;
   font-weight: 400;
+  line-height: 150%;
+  @apply text-s text-gray1 dark:text-gray3;
+}
+
+h1 {
+  font-family: 'Silka Semibold', 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  @apply text-black dark:text-white leading-normal;
+}
+
+h2 {
+  font-family: 'Silka Semibold', 'Inter', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  @apply text-black dark:text-white leading-relaxed;
+}
+
+h3 {
+  font-family: 'Silka Semibold', 'Inter', sans-serif;
+  font-weight: 700;
+  @apply text-l text-black dark:text-white leading-relaxed;
+}
+
+h4 {
+  font-family: 'Silka Medium', 'Inter', sans-serif;
+  font-weight: 500;
+  @apply text-base text-black dark:text-white leading-relaxed;
+}
+
+/* subtitle */
+h5 {
+  font-family: 'Silka Regular', 'Inter', sans-serif;
+  font-weight: 400;
+  @apply text-s text-gray2;
+}
+
+/* overline */
+h6 {
+  font-family: 'Silka Medium', 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 5%;
+  @apply text-xs text-gray2 uppercase;
+}
+
+ul, ol {
+  list-style-type: disc;
+  @apply ml-12 sm:ml-8 text-s text-gray1 dark:text-gray3 leading-loose;
+}
+
+.caption {
+  @apply text-s text-gray2 leading-relaxed;
+}
+
+.menu-text {
+  @apply text-s text-black dark:text-white flex items-center px-3 sm:px-0 md:px-0 py-2;
+}
+
+hr {
+  border: 1px solid #dedede;
+}
+
+.btn {
+  @apply flex items-center font-semibold justify-center px-5 py-3 focus:outline-none;
+}
+
+.btn-primary {
+  @apply text-white bg-orange rounded-full hover:bg-opacity-75 transition duration-200 ease-in-out;
+}
+
+a {
+  @apply text-black dark:text-white font-semibold hover:opacity-75 transition duration-200 ease-in-out;
+}
+
+.textlink {
+  @apply underline;
 }
 
 .underlinestyle {
@@ -53,84 +99,32 @@ p {
   text-underline-offset: 1em;
 }
 
-.pink-gradient-text {
-  background: linear-gradient(to right, #FF84C0, #FE5F5F 70%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.img-150 {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .header {
   z-index: 50;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.4); 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0px 0.5px 0.25px #dbdbdb;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   transition: box-shadow .2s ease 0s;
-}
-
-.hero {
-  background-color: #fff;
-  height: 100vh;
-}
-
-.hero-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 2rem;
-  text-align: center;
-}
-
-.hero-glow {
-  position: absolute;
-  opacity: 100%;
-  left: 0;
-  right: 0;
-  top: 20%;
-  bottom: 0;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -5;
-}
-
-.profilecontainer {
-  max-height: 350px; 
-  /* previously 400px */
+  width: 100vw;
+  @apply bg-headerLight dark:bg-headerDark;
 }
 
 .profileimage {
-  width: 300px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 16px;
+  width: 240px;
+  height: auto;
 }
 
-.blogpreviewimg {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.workpreviewimg {
-  border-radius: 16px;
-}
-
-.cta-button {
-  display: inline;
-  background-color: #fff;
-  vertical-align: middle;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-  border-radius: 60px;
-  padding: 16px 24px;
+input {
+  @apply text-orange font-medium px-5 py-3 mr-3 rounded-full bg-gray2 bg-opacity-10 focus:outline-none;
 }
 
 /* animation */
-
 .spin-animation {
   -webkit-animation: spin 6s linear infinite;
   -moz-animation: spin 6s linear infinite;
@@ -182,11 +176,5 @@ p {
 @media screen and (max-width: 639px) {
   .header {
     background-color: #fff;
-  }
-  .hero {
-    background: #fff;
-  }
-  .hero-glow {
-    max-width: 60%;
   }
 }

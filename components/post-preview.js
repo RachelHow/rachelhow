@@ -1,27 +1,33 @@
-import Link from "next/link";
+import Link from 'next/link'
+import { format } from 'timeago.js'
 
-export default function PostPreview({ title, readingTime, coverImage, date, slug }) {
+export default function PostPreview({
+  title,
+  readingTime,
+  coverImage,
+  date,
+  slug,
+}) {
   return (
-    <div className="flex mb-20 sm:flex-col">
-      <div>
-        <Link as={`/articles/${slug}`} href="/articles/[slug]">
-          <a>
-            <div className="mb-2">
-                <img
-                  src={coverImage}
-                  alt={title}
-                  className="rounded-lg mx-auto object-cover blogpreviewimg"
-                />
-            </div>
-            <h4 className="text-l text-black font-sb leading-7 py-2">
-              {title}
-            </h4>
-          </a>
-        </Link>
-        <p className="text-s md:text-xs text-medgray">
-          {date} • {readingTime}
-        </p>
-      </div>
+    <div className='pb-8'>
+      <Link as={`/articles/${slug}`} href='/articles/[slug]'>
+        <a className='grid grid-cols-3 sm:grid-cols-1'>
+          <div className='col-span-2 pr-8'>
+            <h4 className='pb-2'>{title}</h4>
+            <p>
+              {format(date)} • {readingTime}
+            </p>
+          </div>
+
+          <div className='col-span-1 sm:hidden'>
+            <img
+              src={coverImage}
+              alt={title}
+              className='rounded-lg object-cover'
+            />
+          </div>
+        </a>
+      </Link>
     </div>
-  );
+  )
 }

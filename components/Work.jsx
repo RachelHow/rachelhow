@@ -1,19 +1,20 @@
+import Link from 'next/link'
+
 export default function Work({ posts }) {
   return (
-    <div className='text-center pb-20 px-48 md:px-4 sm:px-8'>
-      <h3 className='pb-4 text-xl md:text-xl sm:text-xl'>Selected work</h3>
-          <p className='pb-10 mx-48 md:mx-24 sm:mx-0 text-medgray tracking-tight text-base md:text-s'>
-          I design thoughtful experiences that your users will love.
-          </p>
-      <div className='py-8 px-24 sm:px-0'>
+    <div className='container max-w-600	py-12 sm:px-8'>
+      <h6>Product design work</h6>
+      <h3>I design digital experiences that your users will love.</h3>
+
+      <div className='pt-6 pb-8'>
         <div className='grid grid-cols-2 gap-12 sm:grid-cols-1'>
           {posts.slice(0, 4).map((post) => (
-            <div className='flex sm:flex-col'>
+            <div className='flex sm:flex-col' key={post.slug}>
               <div>
                 <img
                   src={post.coverImage.url}
                   alt={post.name}
-                  className='workpreviewimg object-contain'
+                  className='rounded-md object-contain'
                 />
                 <h4 className='text-l text-black font-sb leading-7 pt-4 pb-2'>
                   {post.name}
@@ -25,6 +26,10 @@ export default function Work({ posts }) {
             </div>
           ))}
         </div>
+
+        <Link href='/work'>
+          <button className='btn btn-primary mt-8'>Selected work ➝</button>
+        </Link>
       </div>
     </div>
   )

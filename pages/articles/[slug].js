@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import Layout from '../../components/Layout'
 import ErrorPage from 'next/error'
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostBody from '../../components/post-body'
 import AllPosts from '../../components/allPosts'
-import PostHeader from '../../components/post-header'
 import SectionSeparator from '../../components/section-separator'
-import Layout from '../../components/Layout'
-import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
+import CoverImage from '../../components/cover-image'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -16,7 +16,7 @@ export default function Post({ post, morePosts, preview }) {
 
   return (
     <Layout preview={preview}>
-      <div className='container mx-auto pt-20 pb-12 px-8 md:px-4 sm:px-8'>
+      <div className='container max-w-600 mx-auto pt-20 pb-12 sm:px-8'>
         {router.isFallback ? (
           'Loading…'
         ) : (
@@ -25,33 +25,43 @@ export default function Post({ post, morePosts, preview }) {
               <Head>
                 <title>{post.title} - Rachel How</title>
                 <meta name='title' content={post.title} />
-                <meta
-                  name='description'
-                  content="Rachel How's Article"
-                />
+                <meta name='description' content='An article by Rachel How' />
                 <meta property='og:title' content={post.title} />
                 <meta
                   property='og:description'
-                  content="Rachel How's Article"
+                  content='An article by Rachel How'
                 />
-                <meta property='og:image' content={post.coverImage} />
+                <meta property='og:image' content={post.coverImage.url} />
+                <link
+                  rel='icon'
+                  href={`data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>`}
+                />
               </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage.url}
-                readingTime={post.readingTime}
-                date={post.date}
-                author={post.author}
-              />
+
+              {/* Cover Image */}
+              <div>
+                <CoverImage title={post.title} url={post.coverImage.url} />
+              </div>
+
+              {/* Post Header */}
+              <div className='pb-8'>
+                <h1 className='pt-8 sm:pt-4 mb-8'>{post.title}</h1>
+                <span className='font-mono caption'>
+                  By {post.author.name} on {post.date} • {post.readingTime}
+                </span>
+              </div>
+
               <PostBody content={post.content} />
             </article>
+
             <SectionSeparator />
-            <div className='pt-10 text-center'>
-              <h4 className='text-l'>Continue reading</h4>
+
+            <div className='pt-20'>
+              <h3 className='pb-12'>Continue reading</h3>
+              {morePosts && morePosts.length > 0 && (
+                <AllPosts posts={morePosts} />
+              )}
             </div>
-            {morePosts && morePosts.length > 0 && (
-              <AllPosts posts={morePosts} />
-            )}
           </>
         )}
       </div>

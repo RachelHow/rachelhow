@@ -1,10 +1,5 @@
-.post {
-  @apply text-base;
-  line-height: 1.7;
-}
-
 .post p {
-  @apply my-6;
+  @apply my-6 leading-relaxed;
 }
 
 .post blockquote {
@@ -13,36 +8,26 @@
   padding: 12px 30px;
 }
 
-.post ol {
-  @apply ml-12;
-  list-style-type: decimal;
-  line-height: 2;
-}
-
-.post ul {
-  @apply ml-12;
-  list-style-type: disc;
-  line-height: 2;
+.post li {
+  @apply my-4;
 }
 
 .post h1 {
-  @apply text-xxl mt-12 mb-4;
-  color: #1a1a1a;
+  @apply pt-8;
 }
 
 .post h2 {
-  @apply text-xxl mt-12 mb-4 ;
+  @apply pt-8;
 }
 
 .post h3 {
-  @apply text-xl font-sb mt-12 mb-4;
-}
-
-.post h5 {
-  @apply text-l mt-8 mb-4;
+  @apply pt-8;
 }
 
 .post a {
-  font-weight: 600;
-  text-decoration: underline;
+  @apply underline font-semibold;
+}
+
+.post img {
+  @apply rounded-md w-full mx-auto pt-4;
 }

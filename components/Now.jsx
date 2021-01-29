@@ -1,48 +1,39 @@
 import React from 'react'
 import Link from 'next/link'
-import Ic_RightArrow from '../src/Ic_RightArrow'
 
 const Now = () => (
-  <div className='pt-12 px-48 md:px-4 sm:px-8'>
-    <div className='container grid grid-cols-3 col-gap-48 py-12 sm:grid-cols-1'>
-      <div className='col-span-1 sm:pb-8'>
-        <h1 className='text-xl'>Now</h1>
-      </div>
+  <div className='container max-w-600 sm:px-8'>
+        <h1 className='py-8'>Now</h1>
 
-      <div className='col-span-2'>
+      <div className=''>
         <ul>
           <li className='pb-6'>
-            <a className='font-sb' href='https://malaysianswhomake.com' target='_blank'>Building a local creator community</a><Ic_RightArrow/><br />
-            <span className='text-medgray'>Malaysians Who Make, a space to showcase local creators.</span>
+            <a className='text-s text-black dark:text-white font-medium' href='https://malaysianswhomake.com' target='_blank'>Building a local creator community ➝</a>
+            <p className='mt-1'>Malaysians Who Make, a space to showcase local creators.</p>
           </li>
           <li className='pb-6'>
-          <Link href='/articles'><a  className='font-sb'>Writing about random ideas, personal growth, design</a></Link> <Ic_RightArrow/>
-            <br />
-            <span className='text-medgray'>Read my best articles.</span>
+          <Link href='/articles'><a  className='text-s text-black dark:text-white font-medium'>Writing about random ideas, personal growth, design ➝</a></Link>
+            <p className='mt-1'>Read my best articles.</p>
           </li>
           <li className='pb-6'>
-            <a className='font-sb' href='https://notes.rachelhow.com' target='_blank'>Growing my digital garden</a><Ic_RightArrow/><br />
-            <span className='text-medgray'>A public notebook where I share my learnings, explore ideas,
-            thoughts, questions and unknowns.</span>
+            <a className='text-s text-black dark:text-white font-medium' href='https://notes.rachelhow.com' target='_blank'>Growing my digital garden ➝</a>
+            <p className='mt-1'>A public notebook where I share my learnings, explore ideas,
+            thoughts, questions and unknowns.</p>
           </li>
           <li className='pb-6'>
-          <span className='font-sb'>Product Designer at Fave</span>
-            <br />
-            <span className='text-medgray'>Case studies coming soon.</span>
+          <span className='text-s text-black dark:text-white font-medium'>Product Designer at Fave</span>
+            <p className='mt-1'>Case studies coming soon.</p>
           </li>
           <li className='pb-6'>
-            <a className='font-sb'
+            <a className='text-s text-black dark:text-white font-medium'
               href='https://twitter.com/rachelhxw'
               target='_blank'
             >
-              You can find me on Twitter
-            <Ic_RightArrow/></a>
-            <br />
-            <span className='text-medgray'>Let’s be friends!</span>
+              You can find me on Twitter ➝</a>
+            <p className='mt-1'>Let’s be friends!</p>
           </li>
         </ul>
       </div>
-    </div>
   </div>
 )
 

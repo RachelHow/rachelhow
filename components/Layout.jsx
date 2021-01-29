@@ -15,24 +15,27 @@ const Layout = ({ children }) => (
       <meta property='og:url' content='https://rachelhow.com' />
       <meta
         property='og:image'
-        content='https://i.ibb.co/gWT0Vbc/477fa316-020d-4d90-93a1-483f5d484446.png'
+        content='https://rachelhow.com/images/og-image.png'
       />
       <meta
         property='twitter:image'
-        content='https://i.ibb.co/gWT0Vbc/477fa316-020d-4d90-93a1-483f5d484446.png'
+        content='https://rachelhow.com/images/og-image.png'
       />
       <link
         href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800'
         rel='stylesheet'
       />
       <link href='/fonts/styles.css' rel='stylesheet' />
-      <link rel='shortcut icon' href='/favicon/favicon.ico' />
+      <link
+        rel='icon'
+        href={`data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌶</text></svg>`}
+      />
       <link rel='canonical' href='https://rachelhow.com' />
       <MakerWidget />
       <GoogleAnalytics />
     </Head>
 
-    <nav className='header w-screen'>
+    <nav className='header dark:text-white'>
       <Navbar />
     </nav>
 
