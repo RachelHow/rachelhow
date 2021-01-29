@@ -2,6 +2,7 @@ import Layout from '../components/Layout'
 import Head from 'next/head'
 import { getAllPostsForHome } from '../lib/api'
 import AllPosts from '../components/allPosts'
+import SubscribeForm from '../components/SubscribeForm'
 
 const articles = ({ preview, allPosts }) => {
   const morePosts = allPosts
@@ -29,7 +30,8 @@ const articles = ({ preview, allPosts }) => {
 
         <div className='container max-w-600 pt-24 pb-20 sm:px-8 sm:pb-16'>
           <h1 className='pt-8 mb-4'>Best articles</h1>
-          <p>Musings on design, personal growth, and building indie products.</p>
+          <p>Stay updated on my musings on design, personal growth, and building indie products.</p>
+          <SubscribeForm />
         </div>
 
         <div className='container max-w-600 pb-12 sm:px-8'>

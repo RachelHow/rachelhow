@@ -18,10 +18,10 @@ module.exports = {
       'lg': {'min': '1024px'}
     },
     fontFamily: {
-      display: ['Silka', 'Inter', 'sans-serif'],
+      display: ['Silka Regular', 'Inter', 'sans-serif'],
       semibold: ['Silka Semibold', 'Inter', 'sans-serif'],
       medium: ['Silka Medium', 'Inter', 'sans-serif'],
-      body: ['Inter', 'sans-serif'],
+      body: ['Silka Regular', 'Inter', 'sans-serif'],
       mono: ['Silka Mono', 'Inter', 'sans-serif']
     },
     fontWeight: {

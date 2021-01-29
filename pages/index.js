@@ -1,14 +1,14 @@
 import Layout from '../components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
+import { format } from 'timeago.js'
 import { getAllWorkForHome, getAllPostsForHome } from '../lib/api'
 import Work from '../components/Work'
+import SubscribeForm from '../components/SubscribeForm'
 import Ic_DigitalGarden from '../src/Ic_DigitalGarden'
 import Ic_FAQ from '../src/Ic_FAQ'
-import { format } from 'timeago.js'
 
 export default function IndexPage({ preview, allPosts, allArticles }) {
-
   return (
     <div>
       <Layout preview={preview}>
@@ -20,15 +20,15 @@ export default function IndexPage({ preview, allPosts, allArticles }) {
           />
           <meta
             name='description'
-            content="I’m a product designer who codes &amp; writes."
+            content='I’m a product designer who codes &amp; writes.'
           />
           <meta
             property='og:title'
-            content="Rachel How - Product Designer, Writer, Indie Maker"
+            content='Rachel How - Product Designer, Writer, Indie Maker'
           />
           <meta
             property='og:description'
-            content="I’m a product designer who codes &amp; writes."
+            content='I’m a product designer who codes &amp; writes.'
           />
         </Head>
 
@@ -53,12 +53,13 @@ export default function IndexPage({ preview, allPosts, allArticles }) {
           <h3>I write about personal growth and design.</h3>
           <div className='py-6'>
             {allArticles.slice(0, 3).map((article) => (
-              <Link as={`/articles/${article.slug}`} href='/articles/[slug]'>
+              <Link
+                as={`/articles/${article.slug}`}
+                href='/articles/[slug]'
+                key={article.slug}
+              >
                 <a>
-                  <div
-                    className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'
-                    key={article.slug}
-                  >
+                  <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
                     <h4>{article.title}</h4>
                     <p>{format(article.date)}</p>
                   </div>
@@ -81,7 +82,7 @@ export default function IndexPage({ preview, allPosts, allArticles }) {
               <a
                 href='https://www.notion.so/FAQ-1bf38aa7b403424b8058bb74eea8e873'
                 target='_blank'
-                className='flex'
+                className='flex font-body'
               >
                 <div className='my-auto'>
                   <Ic_FAQ />
@@ -99,7 +100,7 @@ export default function IndexPage({ preview, allPosts, allArticles }) {
               <a
                 href='https://notes.rachelhow.com'
                 target='_blank'
-                className='flex'
+                className='flex font-body'
               >
                 <div className='my-auto'>
                   <Ic_DigitalGarden />
@@ -125,16 +126,9 @@ export default function IndexPage({ preview, allPosts, allArticles }) {
             Get articles straight to your inbox, 1 - 2 times a month. No spam,
             no hard feelings.
           </span>
-          <div className='flex mt-6'>
-            <input
-              type='text'
-              name='subscribe'
-              id='subscribe'
-              placeholder="What's your email?"
-            ></input>
-            <button className='btn btn-primary'>Subscribe ⚡️</button>
-          </div>
+          <SubscribeForm />
         </div>
+
       </Layout>
     </div>
   )

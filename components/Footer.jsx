@@ -9,7 +9,7 @@ const Footer = () => (
   <div className='py-16 px-16 sm:px-8'>
     <footer className='text-center align-middle sm:pb-12'>
       <div className="float-left text-s sm:pb-4 sm:w-full sm:justify-center">
-        <p className='mt-2 text-gray1 dark:text-gray3'>© 2021 Designed/Coded by Rachel</p>
+        <p className='mt-2 text-gray1 dark:text-gray3'>© 2021 Design + Code by Rachel</p>
       </div>
       <div className="flex float-right sm:w-full sm:justify-center">
           <a href='mailto:rachel@rachelhow.com?Subject=Enquiry from site!' target='_blank' className="pr-3">
