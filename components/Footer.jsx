@@ -12,7 +12,7 @@ const Footer = () => (
         <p className='mt-2 text-gray1 dark:text-gray3'>© 2021 Designed/Coded by Rachel</p>
       </div>
       <div className="flex float-right sm:w-full sm:justify-center">
-          <a href='mailto:rachelhow95@gmail.com?Subject=Hello!' target='_blank' className="pr-3">
+          <a href='mailto:rachel@rachelhow.com?Subject=Enquiry from site!' target='_blank' className="pr-3">
             <Ic_Email />
           </a>
           <a href="https://twitter.com/rachelhxw" className="pr-3">

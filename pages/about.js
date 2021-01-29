@@ -68,7 +68,7 @@ function About() {
           where I talk about personal growth, design and development. You can
           also send me an{' '}
           <a
-            href='mailto:rachelhow95@gmail.com?Subject=Hello!'
+            href='mailto:rachel@rachelhow.com?Subject=Enquiry from site!'
             target='_blank'
             className='textlink'
           >

@@ -97,7 +97,7 @@ const work = ({ preview, allPosts }) => {
             </span>
             <div className='flex pt-6'>
               <a
-                href='mailto:rachelhow95@gmail.com?Subject=Hello!'
+                href='mailto:rachel@rachelhow.com?Subject=Work Enquiry!'
                 target='_blank'
                 className='pr-3'
               >
