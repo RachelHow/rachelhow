@@ -39,7 +39,7 @@ export default function Post({ post, morePosts, preview }) {
               </Head>
 
               {/* Cover Image */}
-              <div>
+              <div className='pt-24 sm:px-8'>
                 <CoverImage title={post.title} url={post.coverImage.url} />
               </div>
 
