@@ -57,7 +57,7 @@ export default function Post({ post, morePosts, preview }) {
             <SectionSeparator />
 
             <div className='pt-20'>
-              <h3 className='pb-12'>Continue reading</h3>
+              <h3 className='py-12'>Continue reading</h3>
               {morePosts && morePosts.length > 0 && (
                 <AllPosts posts={morePosts} />
               )}
