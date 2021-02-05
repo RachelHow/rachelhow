@@ -7,6 +7,7 @@ import PostBody from '../../components/post-body'
 import AllPosts from '../../components/allPosts'
 import SectionSeparator from '../../components/section-separator'
 import CoverImage from '../../components/cover-image'
+import SubscribeForm from '../../components/SubscribeForm'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -56,11 +57,24 @@ export default function Post({ post, morePosts, preview }) {
 
             <SectionSeparator />
 
-            <div className='pt-20'>
-              <h3 className='py-12'>Continue reading</h3>
+            <div className='py-12'>
+              <h3 className='pt-8 pb-12'>Continue reading</h3>
               {morePosts && morePosts.length > 0 && (
                 <AllPosts posts={morePosts} />
               )}
+            </div>
+
+            <SectionSeparator />
+
+            <div className='container	max-w-600 py-12'>
+              <h6 className='pt-8'>On the newsletter</h6>
+              <h3 className='pb-2'>
+                Stay updated with my articles on personal growth &amp; design.
+              </h3>
+              <span className='caption'>
+                Thanks for reading. You can get my articles straight to your inbox, once a month.
+              </span>
+              <SubscribeForm />
             </div>
           </>
         )}
