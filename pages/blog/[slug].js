@@ -54,7 +54,7 @@ export default function Post({ posts, morePosts, source, frontMatter }) {
               </Head>
 
               {/* Post Header */}
-              <div className='pt-20 pb-8'>
+              <div className='mt-20 pb-8'>
                 <img
                   src={frontMatter.image}
                   alt={frontMatter.title}
