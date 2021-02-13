@@ -31,7 +31,7 @@ export default function Post({ posts, morePosts, source, frontMatter }) {
 
   return (
     <Layout>
-      <div className='container max-w-600 mx-auto pt-20 pb-12 sm:px-8'>
+      <div className='container max-w-600 mx-auto pt-36 pb-12 sm:px-8'>
         {router.isFallback ? (
           'Loading…'
         ) : (
@@ -54,7 +54,7 @@ export default function Post({ posts, morePosts, source, frontMatter }) {
               </Head>
 
               {/* Post Header */}
-              <div className='mt-20 pb-8'>
+              <div className='pb-8'>
                 <img
                   src={frontMatter.image}
                   alt={frontMatter.title}
