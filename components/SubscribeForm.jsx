@@ -6,10 +6,10 @@ const SubscribeForm = () => (
       action='https://buttondown.email/api/emails/embed-subscribe/rachelhow'
       method='post'
       target='popupwindow'
-      onsubmit="window.open('https://buttondown.email/rachelhow', 'popupwindow')"
-      class='embeddable-buttondown-form flex mt-6 sm:flex-col'
+      onSubmit={ () => window.open('https://buttondown.email/rachelhow', 'popupwindow')}
+      className='embeddable-buttondown-form flex mt-6 sm:flex-col'
     >
-      <label for='bd-email'></label>
+      <label htmlFor='bd-email'></label>
       <input
         type='email'
         name='email'

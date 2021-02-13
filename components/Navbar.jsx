@@ -75,8 +75,8 @@ export default function Navbar({ fixed }) {
                 </Link>
               </li>
               <li>
-                <Link href='/articles'>
-                  <a className='menu-text'>Articles</a>
+                <Link href='/blog'>
+                  <a className='menu-text'>Blog</a>
                 </Link>
               </li>
               <li>
@@ -90,7 +90,7 @@ export default function Navbar({ fixed }) {
                   target='_blank'
                   className='menu-text'
                 >
-                  Notebook
+                  Notes
                 </a>
               </li>
               <li>

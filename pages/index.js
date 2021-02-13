@@ -8,7 +8,7 @@ import SubscribeForm from '../components/SubscribeForm'
 import Ic_DigitalGarden from '../src/Ic_DigitalGarden'
 import Ic_FAQ from '../src/Ic_FAQ'
 
-export default function IndexPage({ preview, allPosts, allArticles }) {
+export default function IndexPage({ preview, allPosts, allBlog }) {
   return (
     <div>
       <Layout preview={preview}>
@@ -52,10 +52,10 @@ export default function IndexPage({ preview, allPosts, allArticles }) {
           <h6>Thinking out loud</h6>
           <h3>I write about personal growth and design.</h3>
           <div className='py-6'>
-            {allArticles.slice(0, 3).map((article) => (
+            {allBlog.slice(0, 3).map((article) => (
               <Link
-                as={`/articles/${article.slug}`}
-                href='/articles/[slug]'
+                as={`/blog/${article.slug}`}
+                href='/blog/[slug]'
                 key={article.slug}
               >
                 <a>
@@ -67,7 +67,7 @@ export default function IndexPage({ preview, allPosts, allArticles }) {
               </Link>
             ))}
           </div>
-          <Link href='/articles'>
+          <Link href='/blog'>
             <button className='btn btn-primary'>More on the blog ➝</button>
           </Link>
         </div>
@@ -120,10 +120,10 @@ export default function IndexPage({ preview, allPosts, allArticles }) {
         <div className='container	max-w-600 sm:px-8 py-12'>
           <h6>On the newsletter</h6>
           <h3 className='pb-2'>
-            Stay updated with my articles on personal growth &amp; design.
+            Stay updated with my musings on personal growth &amp; design.
           </h3>
           <span className='caption'>
-            Get articles straight to your inbox, 1 - 2 times a month. No spam,
+            Get my blog posts straight to your inbox, 1 - 2 times a month. No spam,
             no hard feelings.
           </span>
           <SubscribeForm />
@@ -136,8 +136,8 @@ export default function IndexPage({ preview, allPosts, allArticles }) {
 
 export async function getStaticProps({ preview = false }) {
   const allPosts = (await getAllWorkForHome(preview)) || []
-  const allArticles = (await getAllPostsForHome(preview)) || []
+  const allBlog = (await getAllPostsForHome(preview)) || []
   return {
-    props: { preview, allPosts, allArticles },
+    props: { preview, allPosts, allBlog },
   }
 }

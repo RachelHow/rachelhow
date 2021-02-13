@@ -5,12 +5,11 @@ export default function AllPosts({ posts }) {
     <div>
         {posts.map((post) => (
           <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage.url}
-            date={post.date}
+            key={post.filePath}
+            title={post.data.title}
+            coverImage={post.image}
+            date={post.publishedAt}
             readingTime={post.readingTime}
-            author={post.author}
             slug={post.slug}
           />
         ))}

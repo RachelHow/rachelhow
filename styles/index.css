@@ -71,7 +71,7 @@ ul, ol {
 }
 
 .menu-text {
-  @apply text-s text-black dark:text-white flex items-center px-3 sm:px-0 md:px-0 py-2;
+  @apply text-s text-black dark:text-white flex items-center px-6 sm:px-0 md:px-0 py-2;
 }
 
 hr {

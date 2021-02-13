@@ -6,14 +6,15 @@ export default function PostPreview({
   readingTime,
   coverImage,
   date,
+  post,
   slug,
 }) {
   return (
     <div className='pb-8'>
-      <Link as={`/articles/${slug}`} href='/articles/[slug]'>
+      <Link as={`/blog/${post.filePath.replace(/\.mdx?$/, '')}}`} href='/blog/[slug]'>
         <a className='grid grid-cols-3 sm:grid-cols-1'>
           <div className='col-span-2 pr-8'>
-            <h4 className='pb-2'>{title}</h4>
+            <h4 className='pb-2'>{post.data.title}</h4>
             <p>
               {format(date)} • {readingTime}
             </p>

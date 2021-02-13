@@ -1,0 +1,135 @@
+---
+id: '2'
+title: 'Native Lottie animations with Sketch & AE, the simple way.'
+slug: 'native-lottie-animations'
+publishedAt: '2019-09-09'
+readingTime: '8 min read'
+description: ''
+image: '/images/blog/2-0.jpg'
+---
+
+I used to think that it takes days to animate icons and illustrations that works with native apps. I was wrong. You can now import Sketch layers into After Effects without redrawing everything in Adobe Illustrator, with the help of Lottie by Airbnb. How awesome is that?!
+
+Here, I will try my best to explain in the simplest way possible to get things done. I'm fairly new to this but I thought I'd share some tips that might help others. 🙌
+
+For this tutorial, I assume you already have Sketch & After Effects running in your computer, and you have basic knowledge of Sketch and After Effects. :)
+
+### Why Lottie?
+
+Before we start diving into the tutorial, I'd like to share the benefits of using Lottie animations. Lottie, built by Airbnb, gives good UX because they are:
+
+* Open-source (free!)
+* Super lightweight, loads quickly even on slow devices
+* Universal, can be played on different web/mobile devices
+* Animation is accurate and high-quality
+* Flexible and efficient
+
+Let's get to work!
+
+### 1. You will need: 🛠
+
+* [Sketch](https://www.sketch.com/)
+* Adobe [After Effects](http://adobe.com/aftereffects)
+* [AEUX](https://aeux.io/) plugin for Sketch (Formerly Sketch2AE)
+* Bodymovin plugin for After Effects (download at [Adobe](https://exchange.adobe.com/creativecloud.details.12557.html) or [aescripts](https://aescripts.com/bodymovin/))
+* [ZXP Installer](https://aescripts.com/learn/zxp-installer/) to install the plugins in .zxp format
+
+### 2. Install AEUX.zxp & Bodymovin.zxp in After Effects by using ZXP Installer
+
+<Image
+  alt="ZXP Installer"
+  src="/images/blog/2-1.png"
+  width={800}
+  height={397}
+/>
+
+* First, download all the above tools.
+* Launch ZXP Installer
+* Drag 'aeux.zxp' to ZXP Installer
+* Drag 'bodymovin.zxp' to ZXP Installer. (You can find the file at: lottie-web-master \> build \> extension \> bodymovin.zxp)
+* You should now have both AEUX and Bodymovin plugin in After Effects.
+
+### 3. Install AEUX plugin in Sketch 🔸
+
+* You only need 1 Sketch plugin --- AEUX.sketchplugin.
+* Double-click to install.
+
+### 4. Export vector assets from Sketch to After Effects, using AEUX
+
+<Image
+  alt="ZXP Installer"
+  src="/images/blog/2-2.png"
+  width={800}
+  height={440}
+/>
+
+* Select your vector asset, then go to: Sketch \> Plugins \> AEUX \> Selection to AE
+* Launch Sketch.
+* Tidy up your vector artwork, rename it (optional) for easy reference later.
+* Select entire artboard or select the layers you want to export.
+* Then, go to: Sketch \> Plugins \> AEUX \> Selection to AE. The data is transferred in the background to After Effects! 👍 Images (if necessary) will be exported to disk in a location you specify.
+* If you're using Figma instead of Sketch, refer [here](https://aeux.io/#workflow).
+
+### 5. Import and Animate them in After Effects
+
+<Image
+  alt="ZXP Installer"
+  src="/images/blog/2-3.png"
+  width={800}
+  height={581}
+/>
+
+* After Effects \> Window \> Extensions \> AEUX
+* Launch After Effects.
+* Go to: After Effects \> Window \> Extensions \> AEUX
+* You should see your imported layer data on the plugin pop up window. The blue number shows the number of layers in your composition.
+* Set the composition size (I use 3x). "New Comp" is selected by default.
+* Click on 'Build Comp'. Sit back and watch the magic happen!
+* Now, you can animate the layers. Go crazy with it!
+
+### 6. Render and export your animation using Bodymovin
+
+<Image
+  alt="ZXP Installer"
+  src="/images/blog/2-4.jpg"
+  width={800}
+  height={398}
+/>
+
+* Left: Bodymovin Plugin Window | Right: Enable in Preferences
+* Launch Bodymovin. Go to: After Effects \> Window \> Extensions \> Bodymovin
+* Then, go to: After Effects \> Preferences \> General \> make sure "Allow scripts to Write Files and Access Network" is enabled.
+* Now, you will see the Bodymovin pop up window.
+* Select the composition that you wish to render. If you want to render the entire artboard as one, select the first one. Specify the render destination and click 'Render'.
+* The animations are now rendered as JSON files 😋
+
+### 7. Preview and share your Lottie animation on web or phone:
+
+<Image
+  alt="ZXP Installer"
+  src="/images/blog/2-5.gif"
+  width={700}
+  height={300}
+/>
+Credits: [Airbnb](https://airbnb.design/the-future-of-lottie/)
+
+* Drag & drop the JSON file to [LottieFiles.com/preview](http://lottiefiles.com/preview)
+* It will generate a private link for you to share with others. You can also toggle the animation speed and background color!
+* To preview on app, download [LottieFiles App](https://apps.apple.com/us/app/lottiefiles/id1231821260) and scan the QR code using your phone.
+
+### 8. This JSON file is ready to be used to build a working prototype.
+
+<Image
+  alt="ZXP Installer"
+  src="/images/blog/2-6.png"
+  width={800}
+  height={398}
+/>
+
+Your JSON file can be used directly in your favourite IDE (Integrated Development Environment)
+
+This is the stage where developers grab the JSON file, import to Xcode or Android Studio, loop the animation using code, then test it on a phone emulator.
+
+🖊 If you're curious, you can find Lottie's Github repo [here](https://github.com/airbnb/lottie-ios).
+
+Voilà! I hope this helps you. Thank you for taking the time to read this! 🙏
