@@ -51,8 +51,8 @@ export default function IndexPage({ preview, allPosts, allBlog }) {
         <div className='container max-w-600	sm:px-8 py-12'>
           <h6>Thinking out loud</h6>
           <h3>I write about personal growth and design.</h3>
-          <div className='py-6'>
-            {allBlog.slice(0, 3).map((article) => (
+          <div className='py-2'>
+            {/* {allBlog.slice(0, 3).map((article) => (
               <Link
                 as={`/blog/${article.slug}`}
                 href='/blog/[slug]'
@@ -65,7 +65,7 @@ export default function IndexPage({ preview, allPosts, allBlog }) {
                   </div>
                 </a>
               </Link>
-            ))}
+            ))} */}
           </div>
           <Link href='/blog'>
             <button className='btn btn-primary'>More on the blog ➝</button>
