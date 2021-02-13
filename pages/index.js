@@ -2,13 +2,23 @@ import Layout from '../components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
 import { format } from 'timeago.js'
-import { getAllWorkForHome, getAllPostsForHome } from '../lib/api'
+import { getAllWorkForHome } from '../lib/api'
 import Work from '../components/Work'
 import SubscribeForm from '../components/SubscribeForm'
 import Ic_DigitalGarden from '../src/Ic_DigitalGarden'
 import Ic_FAQ from '../src/Ic_FAQ'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { postFilePaths, POSTS_PATH } from '../lib/mdxUtils'
 
-export default function IndexPage({ preview, allPosts, allBlog }) {
+export default function IndexPage({ preview, allPosts, posts }) {
+
+  const sortPosts = posts.sort(
+    (a, b) =>
+    Number(new Date(b.data.publishedAt)) - Number(new Date(a.data.publishedAt))
+    )
+
   return (
     <div>
       <Layout preview={preview}>
@@ -51,21 +61,21 @@ export default function IndexPage({ preview, allPosts, allBlog }) {
         <div className='container max-w-600	sm:px-8 py-12'>
           <h6>Thinking out loud</h6>
           <h3>I write about personal growth and design.</h3>
-          <div className='py-2'>
-            {/* {allBlog.slice(0, 3).map((article) => (
-              <Link
-                as={`/blog/${article.slug}`}
-                href='/blog/[slug]'
-                key={article.slug}
-              >
-                <a>
-                  <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
-                    <h4>{article.title}</h4>
-                    <p>{format(article.date)}</p>
-                  </div>
-                </a>
-              </Link>
-            ))} */}
+          <div className='py-6'>
+              {sortPosts.slice(0, 3).map((post) => (
+                <Link
+                    as={`/blog/${post.filePath.replace(/\.mdx?$/, '')}`}
+                    href={'/blog/[slug]'}
+                    key={post.filePath}
+                >
+                  <a>
+                    <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
+                      <h4>{post.data.title}</h4>
+                      <p>{format(post.data.publishedAt)}</p>
+                    </div>
+                  </a>
+                </Link>
+              ))}
           </div>
           <Link href='/blog'>
             <button className='btn btn-primary'>More on the blog ➝</button>
@@ -135,9 +145,18 @@ export default function IndexPage({ preview, allPosts, allBlog }) {
 }
 
 export async function getStaticProps({ preview = false }) {
+  const posts = postFilePaths.map((filePath) => {
+    const source = fs.readFileSync(path.join(POSTS_PATH, filePath))
+    const { content, data } = matter(source)
+    return {
+      content,
+      data,
+      filePath,
+    }
+  })
   const allPosts = (await getAllWorkForHome(preview)) || []
-  const allBlog = (await getAllPostsForHome(preview)) || []
+  // const allBlog = (await getAllPostsForHome(preview)) || []
   return {
-    props: { preview, allPosts, allBlog },
+    props: { preview, allPosts, posts },
   }
 }
