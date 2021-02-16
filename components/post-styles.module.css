@@ -1,5 +1,5 @@
 .post p {
-  @apply my-6 leading-relaxed;
+  @apply text-base my-6 leading-relaxed;
 }
 
 .post blockquote {
