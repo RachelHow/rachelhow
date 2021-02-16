@@ -42,10 +42,7 @@ export default function Post({ posts, morePosts, source, frontMatter }) {
                 <meta name='title' content={frontMatter.title} />
                 <meta name='description' content='An article by Rachel How' />
                 <meta property='og:title' content={frontMatter.title} />
-                <meta
-                  property='og:description'
-                  content='An article by Rachel How'
-                />
+                <meta property='og:description' content='An article by Rachel How' />
                 <meta property='og:image' content={frontMatter.image} />
                 <meta property='twitter:image' content={frontMatter.image} />
                 <meta property='twitter:card' content={frontMatter.image} />

@@ -13,16 +13,6 @@ const Layout = ({ children }) => (
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://rachelhow.com' />
-      <meta
-        property='og:image'
-        content='https://rachelhow.com/images/og-image.png'
-      />
-      <meta property='twitter:image' content='https://rachelhow.com/images/og-image.png' />
-      <meta property='twitter:card' content='https://rachelhow.com/images/og-image.png' />
-      <meta name="twitter:title" content='Rachel How' />
-      <meta name="twitter:description" content="Musings on growth, design and productivity." />
-      <meta name="twitter:site" content="@rachelhxw"/>
-      <meta name="twitter:creator" content="Rachel How"/>
       <link
         href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800'
         rel='stylesheet'
