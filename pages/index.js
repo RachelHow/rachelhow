@@ -45,7 +45,7 @@ export default function IndexPage({ preview, allPosts, posts }) {
         content='https://rachelhow.com/images/og-image.png'
       />
       <meta property='twitter:image' content='https://rachelhow.com/images/og-image.png' />
-      <meta property='twitter:card' content='https://rachelhow.com/images/og-image.png' />
+      <meta property='twitter:card' content='summary_large_image' />
       <meta name="twitter:title" content='Rachel How' />
       <meta name="twitter:description" content="I’m a product designer who codes &amp; writes." />
       <meta name="twitter:site" content="@rachelhxw"/>

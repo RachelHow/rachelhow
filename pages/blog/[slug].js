@@ -40,14 +40,16 @@ export default function Post({ posts, morePosts, source, frontMatter }) {
               <Head>
                 <title>{frontMatter.title} - Rachel How</title>
                 <meta name='title' content={frontMatter.title} />
-                <meta name='description' content='An article by Rachel How' />
+                <meta name='description' content={frontMatter.description} />
                 <meta property='og:title' content={frontMatter.title} />
-                <meta property='og:description' content='An article by Rachel How' />
-                <meta property='og:image' content={frontMatter.image} />
-                <meta property='twitter:image' content={frontMatter.image} />
-                <meta property='twitter:card' content={frontMatter.image} />
+                <meta property='og:description' content={frontMatter.description} />
+                <meta property='og:type' content="article" />
+                <meta date={new Date(frontMatter.publishedAt).toISOString()} />
+                <meta property='og:image' content={`https://rachelhow.com${frontMatter.image}`} />
+                <meta property='twitter:image' content={`https://rachelhow.com${frontMatter.image}`} />
+                <meta property='twitter:card' content="summary_large_image" />
                 <meta name="twitter:title" content={frontMatter.title} />
-                <meta name="twitter:description" content="On Rachel's blog" />
+                <meta name="twitter:description" content={frontMatter.description} />
                 <meta name="twitter:site" content="@rachelhxw"/>
                 <meta name="twitter:creator" content="Rachel How"/>
                 <link

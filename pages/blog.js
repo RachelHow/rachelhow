@@ -35,7 +35,7 @@ const blog = ({ posts }) => {
         content='https://rachelhow.com/images/og-image.png'
       />
       <meta property='twitter:image' content='https://rachelhow.com/images/og-image.png' />
-      <meta property='twitter:card' content='https://rachelhow.com/images/og-image.png' />
+      <meta property='twitter:card' content='summary_large_image' />
       <meta name="twitter:title" content='Rachel How' />
       <meta name="twitter:description" content="Musings on growth, design and productivity." />
       <meta name="twitter:site" content="@rachelhxw"/>

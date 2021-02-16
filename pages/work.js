@@ -29,7 +29,7 @@ const work = ({ preview, allPosts }) => {
         content='https://rachelhow.com/images/og-image.png'
       />
       <meta property='twitter:image' content='https://rachelhow.com/images/og-image.png' />
-      <meta property='twitter:card' content='https://rachelhow.com/images/og-image.png' />
+      <meta property='twitter:card' content='summary_large_image' />
       <meta name="twitter:title" content='Rachel How' />
       <meta name="twitter:description" content="I design digital experiences that your users will love." />
       <meta name="twitter:site" content="@rachelhxw"/>
