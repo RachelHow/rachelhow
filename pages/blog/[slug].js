@@ -81,7 +81,7 @@ export default function Post({ posts, morePosts, source, frontMatter }) {
             <div className='container	max-w-600 py-12'>
               <h6 className='pt-8'>On the newsletter</h6>
               <h3 className='pb-2'>
-                Stay updated with my musings on personal growth &amp; design.
+                Stay updated with my musings on growth, design and productivity.
               </h3>
               <span className='caption'>
                 Thanks for reading. You can get my blog posts straight to your

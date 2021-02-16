@@ -12,7 +12,7 @@ const Now = () => (
             <p className='mt-1'>Malaysians Who Make, a space to showcase local creators.</p>
           </li>
           <li className='pb-6'>
-          <Link href='/blog'><a  className='text-s text-black dark:text-white font-medium'>Writing about random ideas, personal growth, design ➝</a></Link>
+          <Link href='/blog'><a  className='text-s text-black dark:text-white font-medium'>Writing about growth, design and productivity ➝</a></Link>
             <p className='mt-1'>Read my best essays.</p>
           </li>
           <li className='pb-6'>

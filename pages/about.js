@@ -65,7 +65,7 @@ function About() {
           >
             LinkedIn
           </a>{' '}
-          where I talk about personal growth, design and development. You can
+          where I talk about growth, design and productivity. You can
           also send me an{' '}
           <a
             href='mailto:rachel@rachelhow.com?Subject=Enquiry from site!'

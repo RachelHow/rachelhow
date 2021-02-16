@@ -60,7 +60,7 @@ export default function IndexPage({ preview, allPosts, posts }) {
 
         <div className='container max-w-600	sm:px-8 py-12'>
           <h6>Thinking out loud</h6>
-          <h3>I write about personal growth and design.</h3>
+          <h3>I write about growth, design and productivity.</h3>
           <div className='py-6'>
               {sortPosts.slice(0, 3).map((post) => (
                 <Link
@@ -130,7 +130,7 @@ export default function IndexPage({ preview, allPosts, posts }) {
         <div className='container	max-w-600 sm:px-8 py-12'>
           <h6>On the newsletter</h6>
           <h3 className='pb-2'>
-            Stay updated with my musings on personal growth &amp; design.
+            Stay updated with my musings on growth, design and productivity.
           </h3>
           <span className='caption'>
             Get my blog posts straight to your inbox, 1 - 2 times a month. No spam,

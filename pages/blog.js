@@ -23,12 +23,12 @@ const blog = ({ posts }) => {
           <meta name='title' content='Blog | Rachel How' />
           <meta
             name='description'
-            content='Musings on design, personal growth, and building indie products.'
+            content='Musings on growth, design and productivity.'
           />
           <meta property='og:title' content='Blog | Rachel How' />
           <meta
             property='og:description'
-            content='Musings on design, personal growth, and building indie products.'
+            content='Musings on growth, design and productivity.'
           />
           <link
             rel='icon'
@@ -39,8 +39,7 @@ const blog = ({ posts }) => {
         <div className='container max-w-600 pt-24 pb-20 sm:px-8 sm:pb-16'>
           <h1 className='pt-8 mb-4'>Blog</h1>
           <p>
-            Stay updated on my musings on design, personal growth, and building
-            indie products.
+            Stay updated on my musings on growth, design and productivity.
           </p>
           <SubscribeForm />
         </div>
