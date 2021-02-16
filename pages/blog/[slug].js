@@ -47,6 +47,12 @@ export default function Post({ posts, morePosts, source, frontMatter }) {
                   content='An article by Rachel How'
                 />
                 <meta property='og:image' content={frontMatter.image} />
+                <meta property='twitter:image' content={frontMatter.image} />
+                <meta property='twitter:card' content={frontMatter.image} />
+                <meta name="twitter:title" content={frontMatter.title} />
+                <meta name="twitter:description" content="On Rachel's blog" />
+                <meta name="twitter:site" content="@rachelhxw"/>
+                <meta name="twitter:creator" content="Rachel How"/>
                 <link
                   rel='icon'
                   href={`data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>`}
