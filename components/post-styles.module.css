@@ -9,7 +9,7 @@
 }
 
 .post li {
-  @apply mt-4;
+  @apply text-base mt-4;
 }
 
 .post h1 {
