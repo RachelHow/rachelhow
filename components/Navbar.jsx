@@ -72,11 +72,6 @@ export default function Navbar({ fixed }) {
           >
             <ul className='flex flex-col lg:flex-row list-none lg:ml-auto md:pt-2 sm:pt-2 md:ml-0 sm:ml-0'>
               <li>
-                <Link href='/about'>
-                  <a className='menu-text'>About</a>
-                </Link>
-              </li>
-              <li>
                 <Link href='/blog'>
                   <a className='menu-text'>Blog</a>
                 </Link>
@@ -84,6 +79,11 @@ export default function Navbar({ fixed }) {
               <li>
                 <Link href='/work'>
                   <a className='menu-text'>Work</a>
+                </Link>
+              </li>
+              <li>
+                <Link href='/about'>
+                  <a className='menu-text'>About</a>
                 </Link>
               </li>
               <li>
