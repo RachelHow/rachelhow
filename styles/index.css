@@ -99,6 +99,18 @@ a {
   text-underline-offset: 1em;
 }
 
+#sidebar {
+  width: 33.33%;
+  margin-right: 8rem;
+}
+
+#navwrapper {
+  height: 100vh;
+  position: sticky;
+  overflow-y: auto;
+  top: 0;
+}
+
 .ascrollbar::-webkit-scrollbar {
   width: 4px;
   height: 12px;

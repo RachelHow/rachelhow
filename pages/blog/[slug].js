@@ -42,8 +42,8 @@ export default function Post({ posts, source, frontMatter }) {
           'Loading…'
         ) : (
           <>
-              <div id='sidebar' className='flex w-1/3 mr-24 pt-24 md:hidden sm:hidden'>
-                  <div className='h-screen sticky top-0 overflow-y-auto pr-4 ascrollbar'>
+              <div id='sidebar' className='flex pt-24 md:hidden sm:hidden'>
+                  <div id='navwrapper' className='ascrollbar'>
                           {sortPosts.map((post) => (
                             <Link
                               as={`/blog/${post.filePath.replace(/\.mdx?$/, '')}`}
@@ -61,7 +61,7 @@ export default function Post({ posts, source, frontMatter }) {
                     </div>
               </div>
 
-              <div id='content-wrapper' className='w-full flex-auto lg:static lg:max-h-full lg:overflow:visible'>
+              <div id='content-wrapper' className='pl-16 w-full flex-auto lg:static lg:max-h-full lg:overflow:visible'>
 
                 <article className='pt-24 max-w-600'>
                   <Head>
