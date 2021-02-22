@@ -17,7 +17,7 @@ export default function Navbar({ fixed }) {
           {/* Left */}
           <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
             <Link href='/'>
-              <a className='my-auto'>Rachel How.</a>
+              <a className='my-auto text-base'>Rachel How.</a>
             </Link>
             <div className='flex'>
               <button
