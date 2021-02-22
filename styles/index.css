@@ -99,6 +99,23 @@ a {
   text-underline-offset: 1em;
 }
 
+.ascrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 12px;
+}
+ 
+.ascrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(156, 156, 156, 0.56);
+}
+ 
+.ascrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(100, 100, 100);
+  outline: 1px solid #b2b2b2;
+  border: 6px solid transparent;
+  border-radius: 100px;
+  /* background-clip: content-box; */
+}
+
 .img-150 {
   height: 150px;
   width: 100%;
