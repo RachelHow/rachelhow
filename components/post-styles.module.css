@@ -38,6 +38,10 @@
   @apply underline font-semibold;
 }
 
+.post strong {
+  @apply font-semibold;
+}
+
 .post img {
   @apply rounded-md w-full mx-auto;
 }
