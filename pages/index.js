@@ -58,15 +58,14 @@ export default function IndexPage({ preview, allPosts, posts }) {
           <meta name='twitter:creator' content='Rachel How' />
         </Head>
 
-        <div className='container	max-w-600	flex pt-32 pb-8 sm:block sm:pt-20 sm:px-8'>
+        <div className='container	max-w-600	flex pt-32 pb-8 sm:block sm:pt-20 sm:px-8 '>
           <img
             src='/images/profileimage.png'
             alt='rachel-how'
             className='profileimage sm:mx-auto mr-8'
           />
-
-          <div className='mt-12 sm:mt-4 sm:text-center'>
-            <h1 className='pt-8 sm:pt-4 mb-4'>Hi! I’m Rachel 🌶</h1>
+          <div className='sm:text-center my-auto'>
+            <h1 className='mb-4'>Hi! I’m Rachel 🌶</h1>
             <p>
               I’m a product designer who codes &amp; writes. Currently designing
               products at Fave.
