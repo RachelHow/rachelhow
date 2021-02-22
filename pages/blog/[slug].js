@@ -42,16 +42,28 @@ export default function Post({ posts, morePosts, source, frontMatter }) {
                 <meta name='title' content={frontMatter.title} />
                 <meta name='description' content={frontMatter.description} />
                 <meta property='og:title' content={frontMatter.title} />
-                <meta property='og:description' content={frontMatter.description} />
-                <meta property='og:type' content="article" />
+                <meta
+                  property='og:description'
+                  content={frontMatter.description}
+                />
+                <meta property='og:type' content='article' />
                 <meta date={new Date(frontMatter.publishedAt).toISOString()} />
-                <meta property='og:image' content={`https://rachelhow.com${frontMatter.image}`} />
-                <meta property='twitter:image' content={`https://rachelhow.com${frontMatter.image}`} />
-                <meta property='twitter:card' content="summary_large_image" />
-                <meta name="twitter:title" content={frontMatter.title} />
-                <meta name="twitter:description" content={frontMatter.description} />
-                <meta name="twitter:site" content="@rachelhxw"/>
-                <meta name="twitter:creator" content="Rachel How"/>
+                <meta
+                  property='og:image'
+                  content={`https://rachelhow.com${frontMatter.image}`}
+                />
+                <meta
+                  property='twitter:image'
+                  content={`https://rachelhow.com${frontMatter.image}`}
+                />
+                <meta property='twitter:card' content='summary_large_image' />
+                <meta name='twitter:title' content={frontMatter.title} />
+                <meta
+                  name='twitter:description'
+                  content={frontMatter.description}
+                />
+                <meta name='twitter:site' content='@rachelhxw' />
+                <meta name='twitter:creator' content='Rachel How' />
                 <link
                   rel='icon'
                   href={`data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>`}
@@ -60,11 +72,13 @@ export default function Post({ posts, morePosts, source, frontMatter }) {
 
               {/* Post Header */}
               <div className='pb-8'>
-                <img
-                  src={frontMatter.image}
-                  alt={frontMatter.title}
-                  className='rounded-lg object-cover'
-                />
+                {frontMatter.image ? (
+                  <img
+                    src={frontMatter.image}
+                    alt={frontMatter.title}
+                    className='rounded-lg object-cover'
+                  />
+                ) : null}
                 <h1 className='pt-8 sm:pt-4 mb-4'>{frontMatter.title}</h1>
                 <span className='font-mono caption'>
                   By Rachel on {frontMatter.publishedAt} {` • `}

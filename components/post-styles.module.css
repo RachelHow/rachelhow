@@ -1,11 +1,21 @@
 .post p {
-  @apply text-base my-6 leading-relaxed;
+  @apply text-base leading-relaxed;
+  margin-bottom: 2em;
 }
 
 .post blockquote {
-  border-left: 6px solid #f2f2f2;
-  margin: 12px 12px;
-  padding: 12px 30px;
+  border-left: 3px solid #b2b2b2;
+  padding: 12px 1em;
+  margin-bottom: 2em;
+  font-style: italic;
+}
+
+.post blockquote p {
+  display: inline;
+}
+
+.post ul {
+  margin-bottom: 2em;
 }
 
 .post li {

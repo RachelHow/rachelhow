@@ -13,11 +13,11 @@ import matter from 'gray-matter'
 import { postFilePaths, POSTS_PATH } from '../lib/mdxUtils'
 
 export default function IndexPage({ preview, allPosts, posts }) {
-
   const sortPosts = posts.sort(
     (a, b) =>
-    Number(new Date(b.data.publishedAt)) - Number(new Date(a.data.publishedAt))
-    )
+      Number(new Date(b.data.publishedAt)) -
+      Number(new Date(a.data.publishedAt))
+  )
 
   return (
     <div>
@@ -40,16 +40,22 @@ export default function IndexPage({ preview, allPosts, posts }) {
             property='og:description'
             content='I’m a product designer who codes &amp; writes.'
           />
-                <meta
-        property='og:image'
-        content='https://rachelhow.com/images/og-image.png'
-      />
-      <meta property='twitter:image' content='https://rachelhow.com/images/og-image.png' />
-      <meta property='twitter:card' content='summary_large_image' />
-      <meta name="twitter:title" content='Rachel How' />
-      <meta name="twitter:description" content="I’m a product designer who codes &amp; writes." />
-      <meta name="twitter:site" content="@rachelhxw"/>
-      <meta name="twitter:creator" content="Rachel How"/>
+          <meta
+            property='og:image'
+            content='https://rachelhow.com/images/og-image.png'
+          />
+          <meta
+            property='twitter:image'
+            content='https://rachelhow.com/images/og-image.png'
+          />
+          <meta property='twitter:card' content='summary_large_image' />
+          <meta name='twitter:title' content='Rachel How' />
+          <meta
+            name='twitter:description'
+            content='I’m a product designer who codes &amp; writes.'
+          />
+          <meta name='twitter:site' content='@rachelhxw' />
+          <meta name='twitter:creator' content='Rachel How' />
         </Head>
 
         <div className='container	max-w-600	flex pt-32 pb-8 sm:block sm:pt-20 sm:px-8'>
@@ -72,31 +78,31 @@ export default function IndexPage({ preview, allPosts, posts }) {
           <h6>Thinking out loud</h6>
           <h3>I write about growth, design and productivity.</h3>
           <div className='py-6'>
-              {sortPosts.slice(0, 3).map((post) => (
-                <Link
-                    as={`/blog/${post.filePath.replace(/\.mdx?$/, '')}`}
-                    href={'/blog/[slug]'}
-                    key={post.filePath}
-                >
-                  <a>
-                    <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
-                      <h4>{post.data.title}</h4>
-                      <p>{format(post.data.publishedAt)}</p>
-                    </div>
-                  </a>
-                </Link>
-              ))}
+            {sortPosts.slice(0, 3).map((post) => (
+              <Link
+                as={`/blog/${post.filePath.replace(/\.mdx?$/, '')}`}
+                href={'/blog/[slug]'}
+                key={post.filePath}
+              >
+                <a>
+                  <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
+                    <h4>{post.data.title}</h4>
+                    <p>{format(post.data.publishedAt)}</p>
+                  </div>
+                </a>
+              </Link>
+            ))}
           </div>
           <Link href='/blog'>
             <button className='btn btn-primary'>More on the blog ➝</button>
           </Link>
         </div>
 
-        <Work posts={allPosts} />
+        {/* <Work posts={allPosts} /> */}
 
         <div className='container	max-w-600 sm:px-8 py-12'>
           <h6>Never stop learning</h6>
-          <h3>Here are resources that might help you.</h3>
+          <h3>Resources that might help you</h3>
           <div className='pt-6'>
             <div className='bg-lightestgray dark:bg-cardBgDark p-5 mb-6 rounded-3xl'>
               <a
@@ -143,12 +149,11 @@ export default function IndexPage({ preview, allPosts, posts }) {
             Stay updated with my musings on growth, design and productivity.
           </h3>
           <span className='caption'>
-            Get my blog posts straight to your inbox, 1 - 2 times a month. No spam,
-            no hard feelings.
+            Get my blog posts straight to your inbox, 1 - 2 times a month. No
+            spam, no hard feelings.
           </span>
           <SubscribeForm />
         </div>
-
       </Layout>
     </div>
   )

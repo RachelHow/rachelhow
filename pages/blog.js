@@ -71,11 +71,11 @@ const blog = ({ posts }) => {
                         </p>
                       </div>
                       <div className='col-span-1 sm:hidden'>
-                        <img
+                        {post.data.image ? (<img
                           src={post.data.image}
                           alt={post.data.title}
                           className='rounded-lg object-cover'
-                        />
+                        />) : null}
                       </div>
                     </a>
                   </Link>
