@@ -42,7 +42,7 @@ export default function Post({ posts, source, frontMatter }) {
           'Loading…'
         ) : (
           <>
-              <div id='sidebar' className='flex lg:w-1/3 lg:mr-24 pt-24 md:hidden sm:hidden'>
+              <div id='sidebar' className='flex w-1/3 mr-24 pt-24 md:hidden sm:hidden'>
                   <div className='h-screen sticky top-0 overflow-y-auto pr-4 ascrollbar'>
                           {sortPosts.map((post) => (
                             <Link
