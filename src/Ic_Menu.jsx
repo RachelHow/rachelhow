@@ -1,4 +1,4 @@
-const Ic_Menu = () => (
+const Ic_Menu = ({ color = "#ffffff" }) => (
   <svg
     width='24'
     height='24'
@@ -8,13 +8,13 @@ const Ic_Menu = () => (
   >
     <path
       d='M6 8.72656H18.2182'
-      stroke='white'
+      stroke={color}
       strokeWidth='1.63636'
       strokeLinecap='round'
     />
     <path
       d='M18.2182 15.709H6'
-      stroke='white'
+      stroke={color}
       strokeWidth='1.63636'
       strokeLinecap='round'
     />

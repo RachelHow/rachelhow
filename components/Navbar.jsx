@@ -30,15 +30,15 @@ export default function Navbar({ fixed }) {
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       viewBox='0 0 24 24'
-                      fill='currentColor'
-                      stroke='currentColor'
-                      className='h-5 w-5 text-black dark:text-white'
+                      className='h-5 w-5'
                     >
                       {theme === 'dark' ? (
                         <path
                           strokeLinecap='round'
                           strokeLinejoin='round'
                           strokeWidth={2}
+                          fill="#ffffff"
+                          stroke="#ffffff"
                           d='M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z'
                         />
                       ) : (
@@ -46,6 +46,8 @@ export default function Navbar({ fixed }) {
                           strokeLinecap='round'
                           strokeLinejoin='round'
                           strokeWidth={2}
+                          fill="#111111"
+                          stroke="#111111"
                           d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z'
                         />
                       )}
@@ -57,7 +59,7 @@ export default function Navbar({ fixed }) {
                 type='button'
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
-                <Ic_Menu />
+                {theme === 'dark'  ? <Ic_Menu color={"#ffffff"}/> : <Ic_Menu color={"#111111"}/>}
               </button>
             </div>
           </div>
