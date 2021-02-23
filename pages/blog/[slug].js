@@ -61,7 +61,7 @@ export default function Post({ posts, source, frontMatter }) {
                     </div>
               </div>
 
-              <div id='content-wrapper' className='pl-16 w-full flex-auto lg:static lg:max-h-full lg:overflow:visible'>
+              <div id='content-wrapper' className='w-full flex-auto lg:static lg:max-h-full lg:overflow:visible'>
 
                 <article className='pt-24 max-w-600'>
                   <Head>
@@ -103,10 +103,10 @@ export default function Post({ posts, source, frontMatter }) {
                       <img
                         src={frontMatter.image}
                         alt={frontMatter.title}
-                        className='rounded-lg object-cover'
+                        className='rounded-lg object-cover mb-8 sm:mb-4'
                       />
                     ) : null}
-                    <h1 className='pt-8 sm:pt-4 mb-4'>{frontMatter.title}</h1>
+                    <h1 className='mb-4'>{frontMatter.title}</h1>
                     <span className='font-mono caption'>
                       By Rachel on {frontMatter.publishedAt} {` • `}
                       {frontMatter.readingTime}
