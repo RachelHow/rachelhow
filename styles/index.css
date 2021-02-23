@@ -108,7 +108,7 @@ a {
   height: 100vh;
   position: sticky;
   overflow-y: auto;
-  top: 0;
+  top: 5rem;
 }
 
 .ascrollbar::-webkit-scrollbar {
