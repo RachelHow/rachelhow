@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { format } from 'timeago.js'
 import { getAllWorkForHome } from '../lib/api'
-import Work from '../components/Work'
 import SubscribeForm from '../components/SubscribeForm'
 import Ic_DigitalGarden from '../src/Ic_DigitalGarden'
 import Ic_FAQ from '../src/Ic_FAQ'
@@ -122,22 +121,20 @@ export default function IndexPage({ preview, allPosts, posts }) {
               </a>
             </div>
             <div className='bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl'>
-              <a
-                href='https://notes.rachelhow.com'
-                target='_blank'
-                className='flex font-body'
-              >
-                <div className='my-auto'>
-                  <Ic_DigitalGarden />
-                </div>
-                <div className='pl-6 my-auto'>
-                  <h4>Digital Garden</h4>
-                  <span className='caption'>
-                    A public notebook where I openly share my notes, thoughts,
-                    questions and unknowns.
-                  </span>
-                </div>
-              </a>
+              <Link href='/notes'>
+                <a className='flex font-body'>
+                  <div className='my-auto'>
+                    <Ic_DigitalGarden />
+                  </div>
+                  <div className='pl-6 my-auto'>
+                    <h4>Digital Garden</h4>
+                    <span className='caption'>
+                      A public notebook where I openly share my notes, thoughts,
+                      questions and unknowns.
+                    </span>
+                  </div>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

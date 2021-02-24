@@ -16,7 +16,7 @@ const Now = () => (
             <p className='mt-1'>Read my best essays.</p>
           </li>
           <li className='pb-6'>
-            <a className='text-s text-black dark:text-white font-medium' href='https://notes.rachelhow.com' target='_blank'>Growing my digital garden ➝</a>
+            <Link href='notes'><a className='text-s text-black dark:text-white font-medium'>Growing my digital garden ➝</a></Link>
             <p className='mt-1'>A public notebook where I share my learnings, explore ideas,
             thoughts, questions and unknowns.</p>
           </li>

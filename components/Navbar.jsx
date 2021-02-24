@@ -82,13 +82,13 @@ export default function Navbar({ fixed }) {
                 </Link>
               </li>
               <li>
-                <Link href='/about'>
-                  <a className='menu-text'>About</a>
+                <Link href='/notes'>
+                  <a className='menu-text'>Notes</a>
                 </Link>
               </li>
               <li>
-                <Link href='/notes'>
-                  <a className='menu-text'>Notes</a>
+                <Link href='/about'>
+                  <a className='menu-text'>About</a>
                 </Link>
               </li>
               <li>
