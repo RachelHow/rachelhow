@@ -40,67 +40,74 @@ const notes = () => {
 
         <div className='container max-w-600 pt-24 sm:px-8 sm:pb-16'>
           <h1 className='pt-8 mb-4'>Welcome to my mind garden</h1>
-          <p>Last updated: 25 Feb 2021, 12:39AM (Malaysia Time)</p>
-          <br />
-          <h4>Start exploring</h4>
-          <br />
-          <Link href='/notes/mental-models'>
-            <a>
-              <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
-                Mental Models{' '}
-              </div>
-            </a>
-          </Link>
-          <Link href='/notes/creativity'>
-            <a>
-              <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
-                Creativity
-              </div>
-            </a>
-          </Link>
-
-          <Link href='/notes/bookshelf'>
-            <a>
-              <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
-                Bookshelf
-              </div>
-            </a>
-          </Link>
-          <br />
-
-          <h4>What's a mind garden</h4>
-          <br />
-          <p>
-            This digital garden is a public notebook where I can freely explore
-            ideas, thoughts, resources, questions, unknowns, and stuff I find
-            useful and interesting. My garden embrace imperfection and is filled
-            with interconnected ideas where it will change, evolve, and grow
-            over time. It is unorganized on purpose—because what's life without
-            a little chaos? Read the{' '}
-            <Link href='/terms-of-service'>
-              <a>Terms of Service</a>
-            </Link>{' '}
-            of this garden.
+          <p className='font-mono'>
+            Updated: 25 Feb 2021, 2.44AM (Malaysia Time)
           </p>
-          <br />
-          <br />
 
-          <h4>Why am I doing this</h4>
-          <br />
-          <p>
-            I believe the best way to learn is to learn, share and exchange
-            ideas in public because we're all constantly a work-in-progress. My
-            main purposes are:
+          <div className='py-12'>
+            <p>
+              Hello! You're now in my digital garden, a public notebook where I
+              freely explore ideas, thoughts, resources, questions, unknowns,
+              and stuff I find useful or interesting. This garden embraces
+              imperfection and is filled with interconnected ideas where it will
+              change, evolve, and grow over time.
+              <br />
+              <br />
+              It is unorganized on purpose—because what's life without a little
+              chaos?
+            </p>
+          </div>
+
+          <div className='pb-12'>
+            <h4>Start exploring</h4>
             <br />
-            - To practice mindful learning
+            <Link href='/notes/mental-models'>
+              <a>
+                <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
+                  Mental Models{' '}
+                </div>
+              </a>
+            </Link>
+            <Link href='/notes/creativity'>
+              <a>
+                <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
+                  Creativity
+                </div>
+              </a>
+            </Link>
+            <Link href='/notes/bookshelf'>
+              <a>
+                <div className=' bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl mb-4 hover:opacity-75 transition duration-200 ease-in-out'>
+                  Bookshelf
+                </div>
+              </a>
+            </Link>
+          </div>
+
+          <div className='pb-12'>
+            <h4>Why am I doing this</h4>
             <br />
-            - To connect my learnings and thoughts that lead to new ideas
-            <br />
-            - To give back by helping others learn
-            <br />
-          </p>
-          <br />
-          <br />
+            <p>
+              I believe the best way to learn is to learn, share and exchange
+              ideas in public because we're all constantly a work-in-progress.
+              My main purposes are:
+              <br />
+              <br />
+              - To practice mindful learning
+              <br />
+              - To connect my learnings and thoughts that lead to new ideas
+              <br />
+              - To give back by helping others learn
+              <br />
+              <br />
+              For more info, you may read the
+              <Link href='/terms-of-service'>
+                <a> Terms of Service</a>
+              </Link>{' '}
+              of this garden.
+            </p>
+          </div>
+
           <SectionSeparator />
         </div>
 
