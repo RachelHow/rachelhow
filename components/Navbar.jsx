@@ -87,13 +87,9 @@ export default function Navbar({ fixed }) {
                 </Link>
               </li>
               <li>
-                <a
-                  href='https://notes.rachelhow.com'
-                  target='_blank'
-                  className='menu-text'
-                >
-                  Notes
-                </a>
+                <Link href='/notes'>
+                  <a className='menu-text'>Notes</a>
+                </Link>
               </li>
               <li>
                 <a

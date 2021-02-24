@@ -104,6 +104,11 @@ a {
   margin-right: 6rem;
 }
 
+#notesSidebar {
+  width: 40%;
+  margin-left: 4rem;
+}
+
 #navwrapper {
   height: 100vh;
   position: sticky;
@@ -153,51 +158,17 @@ input {
   @apply text-orange font-medium px-5 py-3 mr-3 rounded-full bg-gray2 bg-opacity-10 focus:outline-none;
 }
 
-/* animation */
-.spin-animation {
-  -webkit-animation: spin 6s linear infinite;
-  -moz-animation: spin 6s linear infinite;
-  animation: spin 6s linear infinite;
-}
-
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
+/* tablet */
+@media screen and (max-width: 1023px) {
+  #notesSidebar {
+    width: 100%;
+    margin-left: 0rem;
   }
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.bounce-animation {
-  animation: bounce 0.5s infinite alternate;
-  -webkit-animation: bounce 0.5s infinite alternate;
-  -moz-animation: bounce 0.5s infinite alternate;
-}
-@keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-2.5px);
-  }
-}
-@-webkit-keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-2.5px);
+  #navwrapper {
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    top: 0rem;
   }
 }
 
@@ -205,5 +176,15 @@ input {
 @media screen and (max-width: 639px) {
   .header {
     background-color: #fff;
+  }
+  #notesSidebar {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  #navwrapper {
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    top: 0rem;
   }
 }
