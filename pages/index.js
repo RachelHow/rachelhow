@@ -103,11 +103,7 @@ export default function IndexPage({ preview, allPosts, posts }) {
           <h3>Resources that might help you</h3>
           <div className='pt-6'>
             <div className='bg-lightestgray dark:bg-cardBgDark p-5 mb-6 rounded-3xl'>
-              <a
-                href='https://www.notion.so/FAQ-1bf38aa7b403424b8058bb74eea8e873'
-                target='_blank'
-                className='flex font-body'
-              >
+              <Link href='/faq'><a className='flex font-body'>
                 <div className='my-auto'>
                   <Ic_FAQ />
                 </div>
@@ -118,7 +114,7 @@ export default function IndexPage({ preview, allPosts, posts }) {
                     designers/indie makers.
                   </span>
                 </div>
-              </a>
+              </a></Link>
             </div>
             <div className='bg-lightestgray dark:bg-cardBgDark p-5 rounded-3xl'>
               <Link href='/notes'>

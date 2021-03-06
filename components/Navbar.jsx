@@ -92,13 +92,9 @@ export default function Navbar({ fixed }) {
                 </Link>
               </li>
               <li>
-                <a
-                  href='https://www.notion.so/FAQ-1bf38aa7b403424b8058bb74eea8e873'
-                  target='_blank'
-                  className='menu-text'
-                >
-                  AMA
-                </a>
+                <Link href='/faq'>
+                  <a className='menu-text'>FAQ</a>
+                </Link>
               </li>
             </ul>
           </div>
