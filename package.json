@@ -16,7 +16,7 @@
     "date-fns": "^2.14.0",
     "dotenv": "^8.2.0",
     "gray-matter": "^4.0.2",
-    "next": "^10.0.5",
+    "next": "^11.1.0",
     "next-images": "^1.4.0",
     "next-mdx-enhanced": "^5.0.0",
     "next-mdx-remote": "^2.1.3",
